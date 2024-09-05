@@ -1,5 +1,5 @@
 ---
-title: Fullstack Development
+title: Fullstack Javascript
 cascade:
   type: docs
 ---

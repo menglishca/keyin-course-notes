@@ -18,7 +18,7 @@ markup:
 
 menu:
   main:
-    - name: Fullstack Development
+    - name: Fullstack Javascript
       pageRef: /fullstack
       weight: 1
     - name: Databases
@@ -30,7 +30,7 @@ menu:
         type: search
     - name: GitHub
       weight: 5
-      url: "https://github.com/menglishca/keyin-cs-notes"
+      url: "https://github.com/menglishca/keyin-course-notes"
       params:
         icon: github
 
