@@ -7,7 +7,7 @@ title: Course Outline
 - Subjects covered and/or the order in which they're covered may change as the course gets more fleshed out. The review at the end is subject to the time we have left after covering all other materials, and it _may_ be dropped if the time doesn't allow for it.
 
 ## Outline/Schedule
-- Week 1: VSCode, Git and Github
+- Week 1: VSCode, Git and GitHub
 - Week 2: Building CLI applications with Node.js
 - **QAP 1**
 - Week 3: Reading and writing files; the event loop
