@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: Keyin CS Notes - 2024
+title: Keyin Course Notes - 2024
 
 # import hextra as module
 module:
@@ -35,6 +35,9 @@ menu:
         icon: github
 
 params:
+  page:
+    width: wide
+
   navbar:
     displayTitle: true
     displayLogo: false
