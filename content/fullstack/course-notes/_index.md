@@ -4,16 +4,4 @@ cascade:
   type: docs
 ---
 
-This is a demo of the theme's documentation layout.
-
-## Hello, World!
-
-```go {filename="main.go"}
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Hello, World!")
-}
-```
+Here you'll find the notes for all lectures from the course. Please use the left hand sidebar to navigate between topics

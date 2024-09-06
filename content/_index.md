@@ -3,9 +3,11 @@ title: Keyin Course Notes - 2024
 toc: false
 ---
 
-This is the landing page.
+Welcome to your Keyin Course Notes for 2024! Please use the cards below to navigate to the proper section for your specific course.
 
-## Explore
+Feel free to check the repo out on github if you're curious about the code for the site ([Hugo](https://gohugo.io/) does most of the heavy lifting).
+
+## Courses
 
 {{< cards >}}
   {{< card link="fullstack" title="Fullstack Javascript" icon="book-open" >}}

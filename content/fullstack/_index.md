@@ -4,16 +4,8 @@ cascade:
   type: docs
 ---
 
-This is a demo of the theme's documentation layout.
+## About
+An introductory course into fullstack web development using javascript.
 
-## Hello, World!
-
-```go {filename="main.go"}
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Hello, World!")
-}
-```
+## Notes
+Please use the left hand sidebar to navigate through the course notes, course outline and the QAPs.
