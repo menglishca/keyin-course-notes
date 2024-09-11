@@ -10,3 +10,4 @@ For our second topic in Fullstack Javascript, we'll be covering "Building CLI Ap
 2. Setting up Node.js
 3. Basics of a CLI application
 4. Creating a basic CLI application
+5. Extra CLI Application Examples
