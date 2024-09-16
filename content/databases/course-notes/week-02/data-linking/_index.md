@@ -97,19 +97,19 @@ A company wants to track which orders are placed by which customers. We need to 
 ### Resulting Table Structure:
 
 **Customers Table**
-- **Primary Key**: `customer_id`
-- | customer_id | name       | email               |
-- |-------------|------------|---------------------|
-- | 1           | Alice Smith| alice@example.com   |
-- | 2           | Bob Jones  | bob@example.com     |
+  **Primary Key**: `customer_id`
+  | customer_id | name       | email               |
+  |-------------|------------|---------------------|
+  | 1           | Alice Smith| alice@example.com   |
+  | 2           | Bob Jones  | bob@example.com     |
 
 **Orders Table**
-- **Primary Key**: `order_id`
-- **Foreign Key**: `customer_id` (refers to `customer_id` in the `Customers` table)
-- | order_id | customer_id | order_date  | amount |
-- |----------|-------------|-------------|--------|
-- | 101      | 1           | 2024-09-01  | 250.00 |
-- | 102      | 2           | 2024-09-02  | 150.00 |
+  **Primary Key**: `order_id`
+  **Foreign Key**: `customer_id` (refers to `customer_id` in the `Customers` table)
+  | order_id | customer_id | order_date  | amount |
+  |----------|-------------|-------------|--------|
+  | 101      | 1           | 2024-09-01  | 250.00 |
+  | 102      | 2           | 2024-09-02  | 150.00 |
 
 ### Explanation:
 - The **primary key** in each table ensures that every record is unique.
@@ -155,6 +155,40 @@ A library needs to track which books are checked out by which members.
   - `member_id` refers to the `member_id` in the `Members` table.
   - `book_id` refers to the `book_id` in the `Books` table.
   - This structure allows tracking which member has borrowed which book and the loan date.
+
+  <details>
+    <summary>Other possible solutions</summary>
+
+      **Members Table**
+      | member_id | name         | membership_date | borrowed_book_id |
+      |-----------|--------------|-----------------|------------------|
+      | 1         | Emily Brown  | 2023-01-15      | 301              |
+      | 2         | Mike Johnson | 2023-06-10      | 302              |
+
+      **Books Table**
+      | book_id | title               | author         |
+      |---------|---------------------|----------------|
+      | 301     | "1984"              | George Orwell  |
+      | 302     | "To Kill a Mockingbird" | Harper Lee   |
+
+      - This setup only allows a member to borrow one book at a time. Given libraries allow a member to borrow multiple books at a time, this **will not** work
+    
+        **Members Table**
+      | member_id | name         | membership_date |
+      |-----------|--------------|-----------------|
+      | 1         | Emily Brown  | 2023-01-15      |
+      | 2         | Mike Johnson | 2023-06-10      |
+
+      **Books Table**
+      | book_id | title               | author         | borrower_id
+      |---------|---------------------|----------------|--------------|
+      | 301     | "1984"              | George Orwell  | 1            |
+      | 302     | "To Kill a Mockingbird" | Harper Lee   | 2          |
+
+      - This setup would only work if the books in the table are representing specific copies of the book (aka, if the library had multiple copies of "1984", "1984" would be in the "Books Table" multiple times, each wih their own ID)
+      - You would also need to allow `NULL` values in the `borrowoer_id` field to indicate when a book is not actively loaned out, or come up with a "in library" member to be "borrowing" a book when another member doesn't have it
+      - You would also have no way to track historical book loans, as you only maintain data about the active loan
+  </details>
 
 </details>
 
