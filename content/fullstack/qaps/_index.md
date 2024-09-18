@@ -4,4 +4,4 @@ cascade:
   type: docs
 ---
 
-Placeholder until the QAPs are posted.
+Please see the sidebar for infomration on a particular QAP.
