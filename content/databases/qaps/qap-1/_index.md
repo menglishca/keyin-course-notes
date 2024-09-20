@@ -40,13 +40,7 @@ Imagine you are designing a database for a small online bookstore. The bookstore
   - An explanation of the benefits of using a database for this data.
 
 ## Pass with Distinction Criteria
-To achieve a pass with distinction, you **must**:
-  - Meet all other requirements outlined above
-  - Implement an additional table for book reviews:
-    - Each review is written by a customer for a specific book and includes a rating and comments
-    - A book can have multiple reviews and a customer can review multiple different books
-  - Desribe the relationships of the reviews table with the other entities it interacts with
-  - Eplain how the reviews table adheres to 1NF, 2NF and 3NF
+- Achieve a grade of 85% or above on the QAP.
 
 ## Grading Rubric
 
