@@ -2,66 +2,241 @@
 title: 4. Writing Unit Tests
 ---
 
-## Introduction
-- Unit tests are essential for ensuring that individual components of your code work as intended.
-- They help catch bugs early and provide documentation on how the code is expected to behave.
+As discussed earlier, unit tests are important to help maintain code quality and reduce bugs. But how do we write them?
 
-## Setting Up Your Test Environment
-1. **Install Jest** (if you haven't already):
-   ```bash
-   npm install --save-dev jest
+## Getting Started
+- Install Jest in your node project with `npm install --save-dev jest`
+- Create your test file (either in your `__tests__` folder or with file extension: `.test.js` or `.spec.js`)
+- Run your tests with `npm jest`
 
-    Create a Test File:
-        Naming convention: Use .test.js or .spec.js for your test files.
-        Example: If you have a function sum.js, create a file named sum.test.js.
+<details>
+    <summary><h2 style="display: inline-flex; margin-top: 10px; padding-left: 5px;">Example 1: Palindromess</h2></summary>
+    <ul>
+        <li><p>Write a function what checks if the provided string is the same forwards as it is backwards</p></li>
+        <ul style="margin-top: 0px">
+            <li style="list-style-type: circle;">Ignore spacing and punctuation</li>
+        </ul>
+        <li>
+            <details>
+                <summary style="list-style: none;"><strong>Finished Function</strong></summary>
 
-## Writing Your First Test
-1. Import the Function to Test:
 ```javascript
-  const sum = require('./sum');
-```
-2. Use the test Function:
-- The test function takes two arguments: a description and a function containing the test logic.
-```javascript
-    test('adds 1 + 2 to equal 3', () => {
-        expect(sum(1, 2)).toBe(3);
-    });
-```
-3. Assertions
-- Use assertions to verify the expected outcomes.
-
-4. Example of a Basic Unit Test
- - Here’s a complete example of a test for a simple sum function:
-```javascript
-
-// sum.js
-function sum(a, b) {
-    return a + b;
+export function isPalindrome(str) {
+    const cleanedStr = str.toLowerCase().replace(/[\W_]/g, '');
+    return cleanedStr === cleanedStr.split('').reverse().join('');
 }
-module.exports = sum;
+```
+</details>
+        </li>
+        <li>
+            <details>
+                <summary style="list-style: none;"><strong>Finished Tests</strong></summary>
 
-// sum.test.js
-const sum = require('./sum');
+```javascript
+const isPalindrome = require('./isPalindrome');
 
-test('adds 1 + 2 to equal 3', () => {
-    expect(sum(1, 2)).toBe(3);
+test('returns true for a simple palindrome', () => {
+    expect(isPalindrome('racecar')).toBe(true);
 });
 
-test('adds 0 + 0 to equal 0', () => {
-    expect(sum(0, 0)).toBe(0);
+test('returns false for a non-palindrome', () => {
+    expect(isPalindrome('hello')).toBe(false);
 });
 
-test('throws error when adding non-numbers', () => {
-    expect(() => sum('1', 2)).toThrow();
+test('ignores spaces and punctuation', () => {
+    expect(isPalindrome('A man, a plan, a canal, Panama')).toBe(true);
 });
 ```
+</details>
+        </li>
+    </ul>
+</details>
+<br />
+<details>
+    <summary><h2 style="display: inline-flex; margin-top: 10px; padding-left: 5px;">Example 2: Factorials</h2></summary>
+    <ul>
+        <li><p>Write a function that calculates the factorial of a number.</p></li>
+        <ul style="margin-top: 0px">
+            <li style="list-style-type: circle;">Ensure a factorial of 0 properly returns 1</li>
+            <li style="list-style-type: circle;">Factorials of negative numbers should return `undefined`</li>
+        </ul>
+        <li>
+            <details>
+                <summary style="list-style: none;"><strong>Finished Function</strong></summary>
 
-## Best Practices
-- Keep Tests Isolated: Each test should be independent of others.
-- Name Tests Clearly: Use descriptive names for tests to indicate what they verify.
-- Test Edge Cases: Don't forget to test unexpected inputs and boundary conditions.
+```javascript
+export function factorial(n) {
+    if (n < 0) {
+        return undefined;
+    }
+    if (n === 0) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+```
+</details>
+        </li>
+        <li>
+            <details>
+                <summary style="list-style: none;"><strong>Finished Tests</strong></summary>
 
-## Conclusion
-- Writing unit tests is a crucial part of the development process.
-- It helps ensure that your code remains reliable and maintainable over time.
+```javascript
+const factorial = require('./factorial');
 
+test('calculates factorial of a positive number', () => {
+    expect(factorial(5)).toBe(120);
+});
+
+test('returns 1 for factorial of 0', () => {
+    expect(factorial(0)).toBe(1);
+});
+
+test('returns -1 for negative numbers', () => {
+    expect(factorial(-3)).toBe(-1);
+});
+```
+</details>
+        </li>
+    </ul>
+</details>
+<br />
+<details>
+    <summary><h2 style="display: inline-flex; margin-top: 10px; padding-left: 5px;">Example 3: FizzBuzz</h2></summary>
+    <ul>
+        <li><p>Write a function that to compute the proper FizzBuzz word.</p></li>
+        <ul style="margin-top: 0px">
+            <li style="list-style-type: circle;">If a number is divisible by 3, return "Fizz"</li>
+            <li style="list-style-type: circle;">If a number is divisible by 5, return "Buzz"</li>
+            <li style="list-style-type: circle;">If a number is divisible by 3 and 5, return "FizzBuzz"</li>
+            <li style="list-style-type: circle;">Otherwise, return the provided number</li>
+        </ul>
+        <li>
+            <details>
+                <summary style="list-style: none;"><strong>Finished Function</strong></summary>
+
+```javascript
+export function fizzBuzz(number) {
+    if (numnber % 3 == 0 && number % 5 == 0) {
+        return 'FizzBuzz';
+    }
+    if (numnber % 3 == 0) {
+        return 'Fizz';
+    }
+    if (numnber % 5 == 0) {
+        return 'Buzz';
+    }
+    
+    return number.toString();
+}
+```
+</details>
+        </li>
+        <li>
+            <details>
+                <summary style="list-style: none;"><strong>Finished Tests</strong></summary>
+
+```javascript
+const fizzBuzz = require('./fizzbuzz');
+
+test('returns Fizz for multiples of 3', () => {
+    expect(fizzBuzz(9)).toBe('Fizz');
+});
+
+test('returns Buzz for multiples of 5', () => {
+    expect(fizzBuzz(10)).toBe('Buzz');
+});
+
+test('returns FizzBuzz for multiples of 3 and 5', () => {
+    expect(fizzBuzz(15)).toBe('FizzBuzz');
+});
+
+test('returns the number if not divisible by 3 or 5', () => {
+    expect(fizzBuzz(7)).toBe('7');
+});
+```
+</details>
+        </li>
+    </ul>
+</details>
+<br />
+<details>
+    <summary><h2 style="display: inline-flex; margin-top: 10px; padding-left: 5px;">Example 4: Greeting Generator</h2></summary>
+    <ul>
+        <li><p>Write a function that gets a greeting for a user based on the time of day.</p></li>
+        <ul style="margin-top: 0px">
+            <li style="list-style-type: circle;">If it's currently before 12 PM, return "Good Morning"</li>
+            <li style="list-style-type: circle;">If it's between 12 and 6PM return "Good Afternoon"</li>
+            <li style="list-style-type: circle;">Otherwise, return "Good Evening"</li>
+        </ul>
+        <li>
+            <details>
+                <summary style="list-style: none;"><strong>Finished Function</strong></summary>
+
+```javascript
+function generateGreeting() {
+    const currentHour = new Date().getHours();
+
+    if (currentHour < 12) {
+        return 'Good morning!';
+    }
+    else if (currentHour < 18) {
+        return 'Good afternoon!';
+    }
+    else {
+        return 'Good evening!';
+    }
+}
+```
+</details>
+        </li>
+        <li>
+            <details>
+                <summary style="list-style: none;"><strong>Testable Function</strong></summary>
+
+```javascript
+// Function to get the current hour
+function getCurrentHour() {
+    return new Date().getHours();
+}
+
+// Function to generate the greeting based on the hour
+function getGreetingMessage(hour) {
+    if (hour < 12) {
+        return 'Good morning!';
+    }
+    else if (hour < 18) {
+        return 'Good afternoon!';
+    }
+    else {
+        return 'Good evening!';
+    }
+}
+
+```
+</details>
+        </li>
+        <li>
+            <details>
+                <summary style="list-style: none;"><strong>Finished Tests</strong></summary>
+
+```javascript
+const { getGreetingMessage } = require('./greeting');
+
+// Test greeting message based on different times of day
+test('returns "Good morning!" for hours less than 12', () => {
+    expect(getGreetingMessage(9)).toBe('Good morning!');
+});
+
+test('returns "Good afternoon!" for hours between 12 and 17', () => {
+    expect(getGreetingMessage(15)).toBe('Good afternoon!');
+});
+
+test('returns "Good evening!" for hours greater than or equal to 18', () => {
+    expect(getGreetingMessage(20)).toBe('Good evening!');
+});
+```
+</details>
+        </li>
+    </ul>
+</details>
