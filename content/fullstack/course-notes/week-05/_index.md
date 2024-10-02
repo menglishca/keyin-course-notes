@@ -1,5 +1,5 @@
 ---
-title: 05 - Setting up a web server with express; server side rendering
+title: 05 - Express.js and Server Side Rendering
 cascade:
   type: docs
 ---

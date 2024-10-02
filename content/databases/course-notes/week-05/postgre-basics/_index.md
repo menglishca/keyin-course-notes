@@ -1,5 +1,5 @@
 ---
-title: 4. Postgre SQL basics
+title: 1. Postgre SQL basics
 ---
 
 # Basics of PostgreSQL
