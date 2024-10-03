@@ -7,7 +7,8 @@ The goal of the following examples is to introduce the concepts of Express and .
 
 ## Example 1: Todo List App
 ### Ask
-Create an Express application that displays a todo list
+- Create an Express application that displays a todo list
+- A base repository can be found [here](https://github.com/menglishca/todo-list-base.git)
 
 ### Features
 - Display the current todo list
@@ -23,7 +24,8 @@ Create an Express application that displays a todo list
 
 ## Example 2: Simple Greeting App
 ### Ask
-Create an Express application that displays a greeting to the user
+- Create an Express application that displays a greeting to the user
+- A base repository can be found [here]https://github.com/menglishca/simple-greeting-base.git)
 
 ### Features
 - Display a random greeting on each page visit
@@ -37,7 +39,8 @@ Create an Express application that displays a greeting to the user
 
 ## Example 3: Random Quotes App
 ### Ask
-Create an Express application to display and store user quotes
+- Create an Express application to display and store user quotes
+- A base repository can be found [here]https://github.com/menglishca/random-quotes-base.git)
 
 ### Features
 - Display a list of current quotes

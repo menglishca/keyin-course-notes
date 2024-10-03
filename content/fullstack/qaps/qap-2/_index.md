@@ -12,13 +12,13 @@ Complete the provided Express application to practice simple math questions. Use
 - To help you get started, a base repository has been provided for you to work from. Clone the repository using the following command:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/menglishca/math-competition-base.git
 ```
 
 - Once cloned, navigate to the project folder and install the dependencies:
 
 ```bash
-cd <project-folder>
+cd math-competition-base
 npm install
 ```
 
