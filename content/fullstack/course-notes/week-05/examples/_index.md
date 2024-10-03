@@ -25,7 +25,7 @@ The goal of the following examples is to introduce the concepts of Express and .
 ## Example 2: Simple Greeting App
 ### Ask
 - Create an Express application that displays a greeting to the user
-- A base repository can be found [here]https://github.com/menglishca/simple-greeting-base.git)
+- A base repository can be found [here](https://github.com/menglishca/simple-greeting-base.git)
 
 ### Features
 - Display a random greeting on each page visit
@@ -40,7 +40,7 @@ The goal of the following examples is to introduce the concepts of Express and .
 ## Example 3: Random Quotes App
 ### Ask
 - Create an Express application to display and store user quotes
-- A base repository can be found [here]https://github.com/menglishca/random-quotes-base.git)
+- A base repository can be found [here](https://github.com/menglishca/random-quotes-base.git)
 
 ### Features
 - Display a list of current quotes

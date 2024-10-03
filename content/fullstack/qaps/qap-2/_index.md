@@ -6,7 +6,7 @@ cascade:
 
 ## Objective
 Complete the provided Express application to practice simple math questions. Users will be presented with a question, and their streak of correct answers will be tracked.  
-**Due date: October 10th, 2024 at 11:59PM**
+**Due date: October 15th, 2024 at 11:59PM**
 
 ### Getting Started
 - To help you get started, a base repository has been provided for you to work from. Clone the repository using the following command:
