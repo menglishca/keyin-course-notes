@@ -5,7 +5,22 @@ title: 5. Examples
 ## Objective
 The goal of the following examples is to introduce the concepts of Express and .ejs, and reinforce some existing concepts of unit testing
 
-## Example 1: Todo List App
+## Example 1: Simple Greeting App
+### Ask
+- Create an Express application that displays a greeting to the user
+- A base repository can be found [here](https://github.com/menglishca/simple-greeting-base.git)
+
+### Features
+- Display a random greeting on each page visit
+- Show the current date after the greeting
+
+### Tasks
+- Create the greeting function
+- Implement unit tests for the greeting function
+- Setup the Express server
+- Design the .ejs template
+
+## Example 2: Todo List App
 ### Ask
 - Create an Express application that displays a todo list
 - A base repository can be found [here](https://github.com/menglishca/todo-list-base.git)
@@ -21,21 +36,6 @@ The goal of the following examples is to introduce the concepts of Express and .
 - Setup adding new todo list items
 - Design the .ejs template to display the current items
 - Ensure the data persists to some degree
-
-## Example 2: Simple Greeting App
-### Ask
-- Create an Express application that displays a greeting to the user
-- A base repository can be found [here](https://github.com/menglishca/simple-greeting-base.git)
-
-### Features
-- Display a random greeting on each page visit
-- Show the current date after the greeting
-
-### Tasks
-- Create the greeting function
-- Implement unit tests for the greeting function
-- Setup the Express server
-- Design the .ejs template
 
 ## Example 3: Random Quotes App
 ### Ask
