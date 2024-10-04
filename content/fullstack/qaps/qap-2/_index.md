@@ -67,7 +67,7 @@ npm test
 
 - **Functionality**:
   - Create a function to check the correctness of a question.
-  - Create a function to generate a new question.
+  - Create a function to generate a new multiplication, division, addition or subtraction question
 
 - **Unit Tests**:
   - Write unit tests to verify:
