@@ -47,8 +47,8 @@ Create a Command-Line Interface (CLI) application in Node.js that generates pass
 - Your submission should **only** include a link to your github repository which contains the code for this QAP
 - Submitting your assignment incorrectly may result in a loss of marks.
 
-## Pass with Distinction Criteria
-To achieve a pass with distinction, you **must**:
+## Pass Outstanding Criteria
+To achieve a pass outstanding, you **must**:
   - Meet all other requirements outlined above
   - Implement **all three** customizable features instead of just one.
     - One feature **must** still be completed on a separated branch and merged via a Github pull request

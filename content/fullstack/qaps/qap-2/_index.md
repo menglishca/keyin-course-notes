@@ -75,7 +75,7 @@ npm test
     - A correct answer is detected.
     - An incorrect answer is detected.
 
-## Pass with Distinction Criteria
+## Pass Outstanding Criteria
 - Achieve a grade of 85% or above
 
 ## Submission Guidelines

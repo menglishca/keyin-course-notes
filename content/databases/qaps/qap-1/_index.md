@@ -39,7 +39,7 @@ Imagine you are designing a database for a small online bookstore. The bookstore
   - An explanation of the relationships between tables and how they are represented in your design
   - An explanation of the benefits of using a database for this data.
 
-## Pass with Distinction Criteria
+## Pass Outstanding Criteria
 - Achieve a grade of 85% or above on the QAP.
 
 ## Grading Rubric
