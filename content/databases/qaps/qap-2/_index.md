@@ -15,43 +15,43 @@ You're tasked with developing a system to manage university students, professors
 
 ### Requirements
 1. **Create Tables**:
-  - **students**: Store the following columns:
-    - `id` (auto-incrementing primary key)
-    - `first_name` (first name of the student)
-    - `last_name` (last name of the student)
-    - `email` (student email)
-    - `enrollment_date` (the date when the student enrolled)
-  - **professors**: Store the following columns:
-    - `id` (auto-incrementing primary key)
-    - `first_name` (first name of the professor)
-    - `last_name` (last name of the professor)
-    - `department` (professor's department)
-  - **courses**: Store the following columns:
-    - `id` (auto-incrementing primary key)
-    - `course_name` (name of the course)
-    - `course_description` (brief description of the course)
-    - `professor_id` (foreign key referencing `professors(id)`)
-  - **enrollments**: Store the following columns:
-    - `student_id` (foreign key referencing `students(id)`)
-    - `course_id` (foreign key referencing `courses(id)`)
-    - `enrollment_date` (the date of enrollment)
-    - Make `student_id` and `course_id` a composite primary key.
+    - **students**: Store the following columns:
+      - `id` (auto-incrementing primary key)
+      - `first_name` (first name of the student)
+      - `last_name` (last name of the student)
+      - `email` (student email)
+      - `enrollment_date` (the date when the student enrolled)
+    - **professors**: Store the following columns:
+      - `id` (auto-incrementing primary key)
+      - `first_name` (first name of the professor)
+      - `last_name` (last name of the professor)
+      - `department` (professor's department)
+    - **courses**: Store the following columns:
+      - `id` (auto-incrementing primary key)
+      - `course_name` (name of the course)
+      - `course_description` (brief description of the course)
+      - `professor_id` (foreign key referencing `professors(id)`)
+    - **enrollments**: Store the following columns:
+      - `student_id` (foreign key referencing `students(id)`)
+      - `course_id` (foreign key referencing `courses(id)`)
+      - `enrollment_date` (the date of enrollment)
+      - Make `student_id` and `course_id` a composite primary key.
 
 2. **Insert Data**:
-  - Insert at least **5 students**, **4 professors**, and **3 courses**.
-  - Enroll multiple students in different courses, making sure there are at least 5 enrollments in total.
+    - Insert at least **5 students**, **4 professors**, and **3 courses**.
+    - Enroll multiple students in different courses, making sure there are at least 5 enrollments in total.
 
 ### Tasks
 1. **Write SQL Queries**:
-  - Retrieve the **full names** (by full name we mean the first name and last name joined into one column, separated by a space) of all students enrolled in "Physics 101".
-  - Retrieve a list of all courses along with the **professor's full name** who teaches each course.
-  - Retrieve all courses that have enrollments for students.
+    - Retrieve the **full names** (by full name we mean the first name and last name joined into one column, separated by a space) of all students enrolled in "Physics 101".
+    - Retrieve a list of all courses along with the **professor's full name** who teaches each course.
+    - Retrieve all courses that have enrollments for students.
    
 2. **Update Data**:
-- Update one of the student's emails.
+    - Update one of the student's emails.
 
 3. **Delete Data**:
-  - Remove a student from one of their courses.
+    - Remove a student from one of their courses.
 
 ## Problem 2: Online Store Inventory and Orders System
 
@@ -60,40 +60,40 @@ You are developing a system to manage products, customers, and their orders in a
 
 ### Requirements
 1. **Create Tables**:
-  - **products**: Store the following columns:
-    - `id` (auto-incrementing primary key)
-    - `product_name` (name of the product)
-    - `price` (price of the product)
-    - `stock_quantity` (current stock level of the product)
-  - **customers**: Store the following columns:
-    - `id` (auto-incrementing primary key)
-    - `first_name` (customer's first name)
-    - `last_name` (customer's last name)
-    - `email` (customer's email)
-  - **orders**: Store the following columns:
-    - `id` (auto-incrementing primary key)
-    - `customer_id` (foreign key referencing `customers(id)`)
-    - `order_date` (date when the order was placed)
-  - **order_items**: Store the following columns:
-    - `order_id` (foreign key referencing `orders(id)`)
-    - `product_id` (foreign key referencing `products(id)`)
-    - `quantity` (quantity of the product in the order)
-    - Make `order_id` and `product_id` a composite primary key.
+    - **products**: Store the following columns:
+      - `id` (auto-incrementing primary key)
+      - `product_name` (name of the product)
+      - `price` (price of the product)
+      - `stock_quantity` (current stock level of the product)
+    - **customers**: Store the following columns:
+      - `id` (auto-incrementing primary key)
+      - `first_name` (customer's first name)
+      - `last_name` (customer's last name)
+      - `email` (customer's email)
+    - **orders**: Store the following columns:
+      - `id` (auto-incrementing primary key)
+      - `customer_id` (foreign key referencing `customers(id)`)
+      - `order_date` (date when the order was placed)
+    - **order_items**: Store the following columns:
+      - `order_id` (foreign key referencing `orders(id)`)
+      - `product_id` (foreign key referencing `products(id)`)
+      - `quantity` (quantity of the product in the order)
+      - Make `order_id` and `product_id` a composite primary key.
 
 2. **Insert Data**:
   - Insert at least **5 products**, **4 customers**, and **5 orders** (each order should have at least two items ordered)
 
 ### Tasks
 1. **Write SQL Queries**:
-  - Retrieve the **names** and **stock quantities** of all products.
-  - Retrieve the product names and quantities for one of the orders placed.
-  - Retrieve all orders placed by a specific customer (including product details).
+    - Retrieve the **names** and **stock quantities** of all products.
+    - Retrieve the product names and quantities for one of the orders placed.
+    - Retrieve all orders placed by a specific customer (including product details).
    
 2. **Update Data**:
-  - After a customer places an order, **reduce the stock quantity** of each product ordered by the quantity purchased.
+    - After a customer places an order, **reduce the stock quantity** of each product ordered by the quantity purchased.
 
 3. **Delete Data**:
-  - Remove one of the orders and all associated order items from the system.
+    - Remove one of the orders and all associated order items from the system.
 
 ## Pass Outstanding Criteria
 - Achieve a grade of 85% or above
