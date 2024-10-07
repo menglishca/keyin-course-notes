@@ -355,10 +355,10 @@ CREATE TABLE departments (
 );
 
 CREATE TABLE salaries (
-    salary_id SERIAL PRIMARY KEY,
     employee_id INT REFERENCES employees(employee_id),
     department_id INT REFERENCES departments(department_id),
-    salary DECIMAL(10, 2)
+    salary DECIMAL(10, 2),
+    PRIMARY KEY (employee_id, department_id)  -- Composite primary key
 );
 ```
 
@@ -402,10 +402,11 @@ SELECT first_name || ' ' || last_name AS full_name FROM employees;
             </li>
             <li>
                 <details>
-                    <summary>Retrieve the <strong>department names</strong> where the salary is above $70,000</summary>
+                    <summary>Retrieve the <strong>department names</strong> which have an employee with a salary greated than $70,000</summary>
 
 ```sql
-SELECT department_name FROM departments
+SELECT DISTINCT department_name
+FROM departments
 JOIN salaries ON departments.department_id = salaries.department_id
 WHERE salary > 70000;
 ```
