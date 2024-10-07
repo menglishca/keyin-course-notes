@@ -37,7 +37,19 @@ The goal of the following examples is to introduce the concepts of Express and .
 - Design the .ejs template to display the current items
 - Ensure the data persists to some degree
 
-## Example 3: Random Quotes App
+## Example 3: Weather Report App
+### Ask
+- Create an express application to display a random (fake) report of the current weather in a selected city
+    - Users should be able to select a city from a dropdown and view the weather in that city
+- A base repository can be found [here](https://github.com/menglishca/weather-report-base.git)
+
+### Features
+- Display a homepage which lets a user pick which city they want the weather for
+- A page to display the weather report
+- A function to generate the fake weather report
+- Unit tests to verify the weather report function works
+
+## Example 4: Random Quotes App
 ### Ask
 - Create an Express application to display and store user quotes
 - A base repository can be found [here](https://github.com/menglishca/random-quotes-base.git)
