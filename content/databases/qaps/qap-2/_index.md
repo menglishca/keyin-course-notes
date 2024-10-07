@@ -2,7 +2,9 @@
 title: QAP 2 - SQL and PostgreSQL Mastery
 ---
 
-# Assignment: SQL and PostgreSQL Mastery
+## Objective
+Complete both provided problems below, make sure to include all SQL to create the tables, insert the data and perform all queries.  
+**Due date: October 14th, 2024 at 11:59PM**
 
 ## Problem 1: University Course Enrollment System
 
@@ -45,7 +47,7 @@ You're tasked with developing a system to manage university students, professors
 1. **Write SQL Queries**:
     - Retrieve the **full names** (by full name we mean the first name and last name joined into one column, separated by a space) of all students enrolled in "Physics 101".
     - Retrieve a list of all courses along with the **professor's full name** who teaches each course.
-    - Retrieve all courses that have enrollments for students.
+    - Retrieve all courses that have students enrolled in them.
    
 2. **Update Data**:
     - Update one of the student's emails.
@@ -87,10 +89,10 @@ You are developing a system to manage products, customers, and their orders in a
 1. **Write SQL Queries**:
     - Retrieve the **names** and **stock quantities** of all products.
     - Retrieve the product names and quantities for one of the orders placed.
-    - Retrieve all orders placed by a specific customer (including product details).
+    - Retrieve all orders placed by a specific customer (including the ID's of what was ordered and the quantities).
    
 2. **Update Data**:
-    - After a customer places an order, **reduce the stock quantity** of each product ordered by the quantity purchased.
+    - Perform an update to simulate the reducing of stock quantities of items after a customer places an order. Please describe or indicate which order you are simulating the reducton for
 
 3. **Delete Data**:
     - Remove one of the orders and all associated order items from the system.
@@ -99,15 +101,16 @@ You are developing a system to manage products, customers, and their orders in a
 - Achieve a grade of 85% or above
 
 ## Submission Guidelines
-- Submit SQL scripts that perform all the tasks listed above for both problems. One script per problem is fine
-  - You can test your queries and manipulations on pgAdmin using your own sample data.
+- Submit the SQL scripts/queries that perform:
+  - The creation of all required tables
+  - The insertion of all required data
+  - All the tasks listed above for both problems
+- One script/file per problem is fine, or feel free to break it into multiple scripts if you'd prefer
+- It is recommended to test your queries and manipulations on pgAdmin to ensure things work correctly
 - Submissions should be made on Teams under the appropriate assignment
 - Submissions should **only** include a link to your github repository which contains the complete code for your QAP
 - Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstasckJavascript-S3Sept.2024-Dec.2024912/EYwpucIvncpDoR94yNj3fOkB0CsE4c0IZ53Kqov0BumSAA?e=7N9ZfR)
   - If an extension is needed, please reach out to me directly before the assignment due date.
-
-## Grading Criteria
-Here’s a grading rubric for your new SQL and PostgreSQL assignment:
 
 ## Grading Rubric
 
