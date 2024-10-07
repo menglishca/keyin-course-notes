@@ -9,31 +9,38 @@ Complete the provided Express application to practice simple math questions. Use
 **Due date: October 15th, 2024 at 11:59PM**
 
 ### Getting Started
-- To help you get started, a base repository has been provided for you to work from. Clone the repository using the following command:
+- To help you get started, a [base repository](https://github.com/menglishca/math-competition-base) has been provided for you to work from. The repository is set up as a **GitHub template** to help you quickly get started.
 
-```bash
-git clone https://github.com/menglishca/math-competition-base.git
-```
+### Steps to Create Your Own Repository
 
-- Once cloned, navigate to the project folder and install the dependencies:
+1. **Click the "Use this template" button** at the top of the repository page on GitHub.
+   
+1. **Name your new repository** and choose its visibility (public or private).
 
-```bash
-cd math-competition-base
-npm install
-```
+1. Once your repository is created, **clone your new repo** to your local machine:
+    ```bash
+    git clone <your-new-repo-url>
+    ```
 
-- You can start the application using:
+1. Navigate into the project directory and install the necessary dependencies:
+    ```bash
+    cd <your-new-repo-name>
+    npm install
+    ```
+  
+1. **Run the app:**
+    ```bash
+    npm start
+    ```
+    This will start the server at `http://localhost:3000/`.
 
-```bash
-npm start
-```
+1. **Run tests:**
+    ```bash
+    npm test
+    ```
+    This will run the unit tests for the application.
 
-- Run the tests using:
-
-```bash
-npm test
-```
-
+- By using this template, you'll have the project structure and initial setup ready to go, so you can focus on building the functionality!
 - **Note:** This code has been provided as a **starting point** for you to work from. It is by no means a completed QAP.
 
 ## Requirements
