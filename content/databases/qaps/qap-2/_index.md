@@ -22,7 +22,7 @@ You're tasked with developing a system to manage university students, professors
       - `first_name` (first name of the student)
       - `last_name` (last name of the student)
       - `email` (student email)
-      - `enrollment_date` (the date when the student enrolled)
+      - `school_enrollment_date` (the date when the student enrolled in school)
     - **professors**: Store the following columns:
       - `id` (auto-incrementing primary key)
       - `first_name` (first name of the professor)
@@ -36,7 +36,7 @@ You're tasked with developing a system to manage university students, professors
     - **enrollments**: Store the following columns:
       - `student_id` (foreign key referencing `students(id)`)
       - `course_id` (foreign key referencing `courses(id)`)
-      - `enrollment_date` (the date of enrollment)
+      - `enrollment_date` (the date of enrollment in the course)
       - Make `student_id` and `course_id` a composite primary key.
 
 2. **Insert Data**:
