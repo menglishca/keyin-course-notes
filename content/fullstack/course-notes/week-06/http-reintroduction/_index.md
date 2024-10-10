@@ -2,6 +2,14 @@
 title: 1. Re-Introduction to HTTP
 ---
 
+## A Quick Aside, Our Example
+- I think it's a little easier to learn things when we have something concrete to tie it to
+- Throughout this topic, consider the following example:
+  - Suppose we want to create a REST API for a **library system** 
+  - Our system needs to manage both **books** and **users**
+  - We must be able to get a list of all books/users, add new books/users, update existing books/users and remove books/users
+- As we discuss new pieces of REST APIs we'll be relating them back to how they might apply to our library
+
 ## What is HTTP?
 - **HTTP** (or Hypertext Transfer Protocol)  is the protocol that the web, as we know it, is built upon
 - It's a protocol used to transfer information between clients (such as web browsers) and servers (like the one's we've written with Express)
