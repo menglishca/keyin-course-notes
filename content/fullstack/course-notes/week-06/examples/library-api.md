@@ -3,6 +3,7 @@ title: 5.1. Library API
 ---
 ## Creating the Library API
 - For practice, lets take a look at how we might actually create the REST API for our library
+- A base repository can be found [here](https://github.com/menglishca/rest-api-examples/tree/main)
 
 ### Identify Resources in the Library System
 
