@@ -126,7 +126,7 @@ Complete the provided Express application **with your team** to view data about 
     - The recommendations should be picked by the server on each page load
     - So if you look at multiple horror movies you might not always get the same recommendations
 
-- **Top Rated Movies Page**
+- **Upcoming Movies Page**
   - Display 5 upcoming movies in the system
   - Each movie should have the following displayed:
     - Title
