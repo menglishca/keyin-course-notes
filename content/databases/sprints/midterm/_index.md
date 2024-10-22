@@ -3,112 +3,112 @@ title: 1. Midterm Sprint - Individual
 ---
 
 ## Objective
-- Individually design a database and the tables within it, verify the tables are in 3NF, perform queries on the database and implement a CLI application to interact with it.
+- Individually design a database and its tables, verify tables are in 3NF, perform queries on the database and implement a CLI application to interact with it
 - Due date: **November 3rd, 2024 @ 11:59PM NDT**
 
 ### Problem Statement
 
-You are tasked with creating a database for a movie rental system that keeps track of movies, customers, and the rentals made by customers. You'll need to make sure your database can store the following data:
+Create a database for a movie rental system that keeps track of movies, customers, and movie rentals. Your database needs to be able to store the following:
 - **Movies**:
-  - The title of the movie
+  - The movie title
   - The year the movie was released
   - The genre of the movie (each movie only has one genre)
   - The name of the director of the movie (each movie only has one director)
 - **Customers**:
-  - The first name of the customer
-  - The last name of the customer
+  - The customer's first name
+  - The customer's last name
   - The customer's email address
   - The customer's phone number
 - **Rentals**:
   - Who rented the movie
-  - The movie that was rented
-  - The date on which the movie was rented
-  - The date on which the movie was/should be returned
+  - What movie was rented
+  - The date the movie was rented
+  - The date the movie was/should be returned
 
 #### Hints/Notes
 - You *shouldn't* need more than three tables
-- Phone numbers should be stored as text
+- Store phone numbers as text
 
 ## Requirements
 
 1. **PostgreSQL Queries**
     - Provide PostgreSQL queries to create the tables
     - Provide queries to insert sample data into the tables.
-      - You should insert **at least**:
+      - Insert **at least**:
         - 5 movies
         - 5 customers
         - 10 rentals
-    - Provide the PostgreSQL queries to solve the following problems:  
+    - Provide PostgreSQL queries to solve the following:  
       1. Find all movies rented by a specific customer, given their email.
-      1. List all customers who have rented a specific movie, provided the movie title.
+      1. Given a movie title, List all customers who have rented the movie
       1. Get the rental history for a specific movie title.
       1. For a specific movie director:
-          - Find the name of the customer, the date of the rental and title of the movie for each time a movie by that director was rented
-      1. List all movies that are currently rented out (i.e., who's return dates have not yet been met).
+          - Find the name of the customer, the date of the rental and title of the movie each time a movie by that director was rented
+      1. List all currently rented out movies (movies who's return dates haven't been met)
 
 1. **Normalization**
-    - Write a description/note explaining how the tables (created using the queries from the previous step) are all in 3NF
+    - Explain how the tables (created using the previous queries) are each in 3NF
 
 1. **CLI Application**
-    - [Template repository here](https://github.com/menglishca/database-midterm-base)
-      - This repository has been setup as a template, it is **strongly recommended** you use it as a place to start your work.
-      - Please follow the instructions in the README to create your own version of the application
-    - Create a simple CLI application using the [template repository provided](https://github.com/menglishca/database-midterm-base) to interact with the movie rentals database
-    - The app should include the following functionality:
-      - Create all required tables, if they do not already exist
-      - Have support for an argument which can print all movies the system has
-      - Have support for an argument allowing a user to update a customer's email address
-      - Have support for an argument to add a new mobie to the database
-      - Have support for an argument to remove a customer from the database
-        - This should also remove any rental history for the customer
+    - [Template repository](https://github.com/menglishca/database-midterm-base)
+      - This repository has been setup as a template, it is **strongly recommended** you use it as starting point.
+      - Please follow the instructions in the README to create your own version of the repository
+    - Create a CLI application using the [template repository provided](https://github.com/menglishca/database-midterm-base) to interact with the movie rentals database
+    - The app should do the following:
+      - Create all required tables, if they do not exist
+      - Support an argument which can print all movies the system has
+      - Support an argument allowing a user to update a customer's email address
+      - Support an argument to add a new mobie to the database
+      - Support an argument to remove a customer from the database
+        - This should also remove rental history for the customer
 
 ## Pass Outstanding Criteria
 - Achieve a grade of 85% or above
 
 ## Submission Guidelines
 - The link to your github repository containing:
-  - File(s) containing all required PostgreSQL queries outlined above
-    - One file with all the queries is fine, or feel free to break the queries up into individual files if you'd prefer
+  - File(s) containing all PostgreSQL queries outlined above
+    - One file with all the queries is fine, or feel free to break the queries into individual files if you'd prefer
     - Just ensure all queries are in the repository
   - The code for your CLI application
   - The file/writeup describing how the tables all meet 3NF
-- It is recommended to test your queries on pgAdmin to ensure things work correctly
-- Submissions should be made on Teams under the appropriate assignment
-- Submissions should **only** include a link to your github repository which contains the complete code for your Midterm
+- It is recommended to test your queries on pgAdmin before submission
+- Submissions should be made on Teams via the appropriate assignment
+- Submissions should **only** include your github repository link, which has the code for your sprint
 - Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstasckJavascript-S3Sept.2024-Dec.2024912/EYwpucIvncpDoR94yNj3fOkB0CsE4c0IZ53Kqov0BumSAA?e=7N9ZfR)
-  - If an extension is needed, please reach out to me directly before the mid-term due date.
+  - If an extension is needed please reach out before the due date
 
-## Notes/Questions
-- You can find the code for all examples we've worked on in class [here](https://github.com/menglishca/keyin-code-samples) (they might be of help for the CLI portion). Remember you may need to modify the `pool` connection details to match your PostgreSQL install
-- If you have any questions about the midterm, if things aren't clear or you need a hand please do reach out on Teams or send an email
-- Additionally, there are support sessions during every lecture slot during the break and support sessions are also still being offered by the TA for Semester 3
-- This is to be done individually, and not in groups
+## Notes
+- Code for all examples we've worked on in class can be found [here](https://github.com/menglishca/keyin-code-samples) (may help for the CLI app). Remember you may need to modify the `pool` details to match your PostgreSQL setup
+- If you have any questions about the midterm, need clarification or just need a hand please reach out on Teams or via email
+- Support sessions in offered each lecture slot during the break and the TA's support sessions are still being offered for Semester 3
+- The sprint must be completed individually, not in groups
 
 ## Grading Rubric
 
 | **Category**                  | **Criteria**                                                                                                                              | **Points** |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|------------|
-| **Functionality**             | **Table Creation**: CLI app creates the tables if they don't already exist.                                                               | 5          |
-|                               | **Insert Command**: Movies are inserted correctly using the `insert` command.                                                             | 5          |
-|                               | **Show Command**: Movies are displayed correctly using the `show` command.                                                                | 5          |
-|                               | **Update Command**: Customer's email is updated using the `update` command.                                                               | 5          |
-|                               | **Remove Command**: Customers are removed correctly, including rental history, using the `remove` command.                                | 5          |
+| **Functionality**             | **Table Creation**: CLI creates the tables if not present                                                               | 5          |
+|                               | **Insert Command**: Movies inserted correctly (`insert`)                                                             | 5          |
+|                               | **Show Command**: Movies displayed correctly (`show`)                                                                | 5          |
+|                               | **Update Command**: Email updated correctly (`update`)                                                               | 5          |
+|                               | **Remove Command**: Customer removed with rental history                                | 5          |
 |                               | **Functionality Total**:                                                                                                                  | **25**     |
-| **PostgreSQL Queries**        | **Table Creation Queries**: Queries to create all tables are correct (Movies, Customers, Rentals).                                        | 5          |
-|                               | **Sample Data Insertion**: Sample data insertion queries are correct for Movies, Customers, and Rentals.                                  | 5          |
-|                               | **Find Rented Movies by Customer**: Query to find all movies rented by a specific customer (given their email) works correctly.           | 5          |
-|                               | **Find Customers by Movie**: Query to list all customers who rented a specific movie (given movie title) works correctly.                 | 5          |
-|                               | **Rental History Query**: Query to get rental history for a specific movie title works correctly.                                         | 5          |
-|                               | **Movies Rented by Director**: Query to list all movies rented by customers, including customer names, rental dates, and movie title (for a specific director) works. | 5          |
-|                               | **Currently Rented Movies**: Query to list all currently rented movies (i.e., those without a return date) works correctly.               | 5          |
+| **PostgreSQL Queries**        | **Table Creation Queries**: Correct table creation queries (Movies, Customers, Rentals)                                        | 5          |
+|                               | **Sample Data Insertion**: Correct sample data insertion (Movies, Customers, Rentals)                                  | 5          |
+|                               | **Find Rented Movies by Customer**: Find movies by customer query works           | 5          |
+|                               | **Find Customers by Movie**: Find customers by movie query works                 | 5          |
+|                               | **Rental History Query**: Rental history query works                                         | 5          |
+|                               | **Movies Rented by Director**: Movies rented by director query works | 5          |
+|                               | **Currently Rented Movies**: Currently rented movies query works               | 5          |
 |                               | **PostgreSQL Queries Total**:                                                                                                             | **35**     |
-| **Normalization Explanation** | **3NF Explanation**: Correctly explains how each table is in 3NF (explains functional dependencies, partial dependencies, transitive dependencies, etc.).  | 10         |
-| **Code Quality**              | **Code Cleanliness**: Code is clean, well-structured, and easy to understand.                                                             | 10         |
-|                               | **No Redundancy**: No redundant or unused code.                                                                                           | 5          |
+| **Normalization Explanation** | **3NF Explanation**: Correct 3NF explanation for all tables  | 10         |
+| **Code Quality**              | **Code Cleanliness**: Clean, structured, understandable code                                                             | 10         |
+|                               | **No Redundancy**: No redundant/unused code                                                                                           | 5          |
 |                               | **Code Quality Total**:                                                                                                                   | **15**     |
-| **CLI App Usability**         | **User Instructions**: User instructions are clear, and help command provides accurate information.                                       | 5          |
-|                               | **Error Handling**: App handles invalid inputs gracefully (e.g., missing arguments, non-existent customer/movie IDs).                     | 5          |
+| **CLI App Usability**         | **User Instructions**: Clear user instructions and help command                                       | 5          |
+|                               | **Error Handling**: Handles invalid inputs gracefully                     | 5          |
 |                               | **CLI App Usability Total**:                                                                                                              | **10**     |
-| **Git Hygiene**               | **Commit Frequency**: Regular, well-documented commits made throughout development.                                                       | 10         |
+| **Git Hygiene**               | **Commit Frequency**: Regular, well-documented commits                                                       | 10         |
 |                               | **Git Hygiene Total**:                                                                                                                    | **10**     |
 | **Total Points**              |                                                                                                                                           | **100**    |
