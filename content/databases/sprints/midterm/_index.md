@@ -102,7 +102,7 @@ Create a database for a movie rental system that keeps track of movies, customer
 |                               | **Movies Rented by Director**: Movies rented by director query works | 5          |
 |                               | **Currently Rented Movies**: Currently rented movies query works               | 5          |
 |                               | **PostgreSQL Queries Total**:                                                                                                             | **35**     |
-| **Normalization Explanation** | **3NF Explanation**: Correct 3NF explanation for all tables  | 10         |
+| **Normalization Explanation** | **3NF Explanation**: Correct 3NF explanation for all tables  | 5         |
 | **Code Quality**              | **Code Cleanliness**: Clean, structured, understandable code                                                             | 10         |
 |                               | **No Redundancy**: No redundant/unused code                                                                                           | 5          |
 |                               | **Code Quality Total**:                                                                                                                   | **15**     |
