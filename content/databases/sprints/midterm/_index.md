@@ -84,4 +84,30 @@ You are tasked with creating a database for a movie rental system that keeps tra
 - Additionally, there are support sessions during every lecture slot during the break and support sessions are also still being offered by the TA for Semester 3
 
 ## Grading Rubric
-- To be finialized, and added by Monday
+
+| **Category**                  | **Criteria**                                                                                                                              | **Points** |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| **Functionality**             | **Table Creation**: CLI app creates the tables if they don't already exist.                                                               | 5          |
+|                               | **Insert Command**: Movies are inserted correctly using the `insert` command.                                                             | 5          |
+|                               | **Show Command**: Movies are displayed correctly using the `show` command.                                                                | 5          |
+|                               | **Update Command**: Customer's email is updated using the `update` command.                                                               | 5          |
+|                               | **Remove Command**: Customers are removed correctly, including rental history, using the `remove` command.                                | 5          |
+|                               | **Functionality Total**:                                                                                                                  | **25**     |
+| **PostgreSQL Queries**        | **Table Creation Queries**: Queries to create all tables are correct (Movies, Customers, Rentals).                                        | 5          |
+|                               | **Sample Data Insertion**: Sample data insertion queries are correct for Movies, Customers, and Rentals.                                  | 5          |
+|                               | **Find Rented Movies by Customer**: Query to find all movies rented by a specific customer (given their email) works correctly.           | 5          |
+|                               | **Find Customers by Movie**: Query to list all customers who rented a specific movie (given movie title) works correctly.                 | 5          |
+|                               | **Rental History Query**: Query to get rental history for a specific movie title works correctly.                                         | 5          |
+|                               | **Movies Rented by Director**: Query to list all movies rented by customers, including customer names, rental dates, and movie title (for a specific director) works. | 5          |
+|                               | **Currently Rented Movies**: Query to list all currently rented movies (i.e., those without a return date) works correctly.               | 5          |
+|                               | **PostgreSQL Queries Total**:                                                                                                             | **35**     |
+| **Normalization Explanation** | **3NF Explanation**: Correctly explains how each table is in 3NF (explains functional dependencies, partial dependencies, transitive dependencies, etc.).  | 10         |
+| **Code Quality**              | **Code Cleanliness**: Code is clean, well-structured, and easy to understand.                                                             | 10         |
+|                               | **No Redundancy**: No redundant or unused code.                                                                                           | 5          |
+|                               | **Code Quality Total**:                                                                                                                   | **15**     |
+| **CLI App Usability**         | **User Instructions**: User instructions are clear, and help command provides accurate information.                                       | 5          |
+|                               | **Error Handling**: App handles invalid inputs gracefully (e.g., missing arguments, non-existent customer/movie IDs).                     | 5          |
+|                               | **CLI App Usability Total**:                                                                                                              | **10**     |
+| **Git Hygiene**               | **Commit Frequency**: Regular, well-documented commits made throughout development.                                                       | 10         |
+|                               | **Git Hygiene Total**:                                                                                                                    | **10**     |
+| **Total Points**              |                                                                                                                                           | **100**    |
