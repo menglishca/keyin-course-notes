@@ -1,9 +1,9 @@
 ---
-title: 1. Midterm Sprint
+title: 1. Midterm Sprint - Individual
 ---
 
 ## Objective
-- Design a database and the tables within it, verify the tables are in 3NF, perform queries on the database and implement a CLI application to interact with it.
+- Individually design a database and the tables within it, verify the tables are in 3NF, perform queries on the database and implement a CLI application to interact with it.
 - Due date: **November 3rd, 2024 @ 11:59PM NDT**
 
 ### Problem Statement
@@ -82,6 +82,7 @@ You are tasked with creating a database for a movie rental system that keeps tra
 - You can find the code for all examples we've worked on in class [here](https://github.com/menglishca/keyin-code-samples) (they might be of help for the CLI portion). Remember you may need to modify the `pool` connection details to match your PostgreSQL install
 - If you have any questions about the midterm, if things aren't clear or you need a hand please do reach out on Teams or send an email
 - Additionally, there are support sessions during every lecture slot during the break and support sessions are also still being offered by the TA for Semester 3
+- This is to be done individually, and not in groups
 
 ## Grading Rubric
 
