@@ -73,7 +73,6 @@ Complete the provided Express application **with your team** to view data about 
   - Get `x` movies, by genre
     - Specifying a genre will successfully return `x` movies from that genre
     - If the genre has no movies, then an appropriate response is returned
-    - The proper number of movies is return
   - Get the `x` top rated movies, ordered by rating:
     - The right number of movies are returned and they're properly ordered
   - Get the details of a movie by it's id
@@ -86,7 +85,7 @@ Complete the provided Express application **with your team** to view data about 
 ### Required Pages
 - **Common Header/Footer**
   - A common header (or footer if you'd prefer) should be added to each page
-  - The common header/footer should be implemented via a ejs partial
+  - The common header/footer should be implemented via an ejs partial
   - The header should contain links to allow users to navigate between the site's pages.
   - The header should include (at least) links to:
     - Home page
@@ -124,7 +123,7 @@ Complete the provided Express application **with your team** to view data about 
   - Include a recommendations section of three other movies for the user based on the genre
     - i.e. If the movie page is for a horror movie display three other horror movies the user might like
     - The recommendations should be picked by the server on each page load
-    - So if you look at multiple horror movies you might not always get the same recommendations
+      - So if you look at multiple horror movies you might not always get the same recommendations
 
 - **Upcoming Movies Page**
   - Display 5 upcoming movies in the system
@@ -152,4 +151,25 @@ Complete the provided Express application **with your team** to view data about 
 - Additionally, there are support sessions during every lecture slot during the break and support sessions are also still being offered by the TA for Semester 3
 
 ## Grading Rubric
-- To be finialized, and added by Monday
+
+| **Category**                 | **Criteria**                                                                                                                                                       | **Points** |
+|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| **Site Functionality**       | **Home Page**: Displays 9 random movies with correct title, release year, and rating. Clicking a movie directs to its details page.                                | 10         |
+|                              | **Top Rated Movies Page**: Displays 15 top-rated movies, ordered correctly, with the required information. Clicking a movie directs to its details page.           | 10         |
+|                              | **Movie Detail Page**: Displays the required information (title, year, director, description, rating, genre). Includes 3 genre-based recommendations.              | 10         |
+|                              | **Upcoming Movies Page**: Displays 5 upcoming movies with correct information. Clicking a movie directs to its details page.                                       | 10         |
+|                              | **Movie Navigation**: Header includes working links to the home page, top-rated movies page, random movie page, and upcoming movies page.                          | 10         |
+|                              | **Random Movie Feature**: Clicking the random movie link shows the details of a randomly selected movie.                                                           | 5          |
+| **Site Functionality Total** |                                                                                                                                                                    | **55**     |
+| **Functions**                | **Genre Function**: Correctly returns the specified number of movies for a given genre, or properly handles a genre having no movies, with appropriate unit tests. | 5          |
+|                              | **Top Rated Movies Function**: Correctly returns the top-rated movies, ordered by rating, with appropriate unit tests.                                             | 5          |
+|                              | **Movie Details Function**: Correctly returns movie details for valid IDs and properly handles invalid IDs, with appropriate unit tests.                           | 5          |
+|                              | **Random Movie Function**: Selects and returns a random movie with valid data, with appropriate unit tests.                                                        | 5          |
+| **Functions Total**          |                                                                                                                                                                    | **20**     |
+| **Code Quality**             | **Structure and Readability**: Code is well-organized, readable, and follows best practices (i.e. naming conventions, no unused or repeated code)                  | 10         |
+| **Code Quality Total**       |                                                                                                                                                                    | **10**     |
+| **Git Hygiene**              | **Commit Quality**: Commits are frequent, meaningful, well-documented, and clearly describe changes made.                                                          | 10         |
+| **Git Hygiene Total**        |                                                                                                                                                                    | **10**     |
+| **User Experience (UX)**     | **Design and Layout**: Pages are visually clear, user-friendly, and easy to navigate. Appropriate use of EJS partials for common elements (header/footer).         | 5          |
+| **User Experience Total**    |                                                                                                                                                                    | **5**      |
+| **Total Points**             |                                                                                                                                                                    | **100**    |
