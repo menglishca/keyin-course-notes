@@ -70,7 +70,7 @@ Complete the provided Express application **independently** to view fictional re
 - **Functionality**:
   - At minimum, create functions to complete the following:
     - Generate a random menu item, with a desired cuisine, for a restaurant
-      - A menu itme should have:
+      - A menu item should have:
         - A name
         - A description
         - A price

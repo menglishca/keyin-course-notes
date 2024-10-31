@@ -58,7 +58,7 @@ Create a database for a movie rental system that keeps track of movies, customer
       - Create all required tables, if they do not exist
       - Support an argument which can print all movies the system has
       - Support an argument allowing a user to update a customer's email address
-      - Support an argument to add a new mobie to the database
+      - Support an argument to insert a new movie to the database
       - Support an argument to remove a customer from the database
         - This should also remove rental history for the customer
 
