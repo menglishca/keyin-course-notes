@@ -7,11 +7,11 @@ title: 1. Using pg
 - Allows you to:
     - Connect to a PostgreSQL database
     - Run SQL queries
-    - Manage resules
+    - Manage results
 
 ## Example of using `pg` to connect to a database:
 - Connecting to a database with `pg` is really simple
-- Just import the `pg` library, then use it to create a `Client` or connection `Pool`
+- Import the `pg` library, then use it to create a `Client` or connection `Pool`
 - Pass the `Client` or `Pool` and object containing the required details to connect to your database and you're done!
 
 ```javascript
@@ -44,7 +44,7 @@ connectionPool.query('SELECT * FROM users', (error, results) => {
   - Allows one query to run at a time
   - Each query uses the same connection
 - **Pool**
-  - Creates a set of resuable connections and distributes them amongst incoming queries
+  - Creates a set of resuable connections and distributes the incoming queries amongst the connections
   - Allows for multiple queries to be handled simultaneously
-  - Avoids the overhead of trying to start and stop multiple clients to handle multiple requests
-- For a web backend, you might be dealing with many, many requests at once. Making the `pg` pool the ideal solution
+  - Avoids the overhead of trying to start and stop multiple connections to handle multiple requests
+- For a web backend, you might be dealing with many, many requests at once. Making the `Pool` the ideal solution

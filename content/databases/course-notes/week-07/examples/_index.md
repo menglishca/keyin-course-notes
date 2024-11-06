@@ -26,7 +26,7 @@ Base repos for all the following examples can be found [here](https://github.com
     2. `POST /users`: Adds a new user with the provided name and email.
     3. `PUT /users/:id`: Updates the user information for the specified ID.
     4. `GET /users/:id`: Retrieves user information for the specified ID.
-
+ 
   <details>
     <summary><h3 style="display: inline-flex; margin-top: 10px;">Detailed Breakdown</h3></summary>
 
