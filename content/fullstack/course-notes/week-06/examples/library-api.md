@@ -25,7 +25,6 @@ title: 5.1. Library API
      - `borrowedBooks` (list of books borrowed by the user)
 
 ### Operations on Resources
-
 1. **Books Resource (`/books`)**
    - `GET /books`: Retrieve all books in the library.
      - Response: List of all books with details like title, author, availability, etc.
@@ -50,10 +49,7 @@ title: 5.1. Library API
    - `DELETE /users/:id/books/:bookId`: Let a user return a book.
      - Response: Updates the book's availability and removes it from the user's borrowedBooks list.
 
----
-
 ### Example Endpoints
-
 1. **`GET /books`**:
    - Retrieves the entire collection of books available in the library.
    - Sample Response:
