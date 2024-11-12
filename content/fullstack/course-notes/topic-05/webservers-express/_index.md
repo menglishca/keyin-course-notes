@@ -24,7 +24,7 @@ title: 1. Webservers and Express.js
 - Express.js aims to be a rather minimal framework by default, allowing users to bring in extra functionality through the use of plugins
   - i.e. You could find a plugin to handle user authentication in an Express.js server, so you don't have to write all that code yourself
 
-## 1.3 Why Express.js?
+## Why Express.js?
 - Express.js allows you to easily write your backend web server in the same language as your front end
 - Makes it easy to add custom **middleware** to handle incoming requests
   - **Middleware**: Functions that go between the incoming requests and the logic used to process a specific request
