@@ -19,7 +19,7 @@ This repository houses the source for my Keyin Course Notes website built using 
 
 ## Site Structure
 
-- All course notes are stored in `content/` in Markdown format, organized by week and topic.
+- All course notes are stored in `content/` in Markdown format, organized by topic and course.
 - Static assets (images, CSS, etc.) are located in the `static/` folder.
 - Custom Hugo configurations can be found in the `config.toml` file.
 
