@@ -1,5 +1,5 @@
 ---
-title: 11 - MongoDB and management with the MongoDB shell
+title: 09 - MongoDB and management with the MongoDB shell
 cascade:
   type: docs
 ---
