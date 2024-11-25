@@ -4,13 +4,13 @@ cascade:
   type: docs
 ---
 
-## **1. Download and Install Node.js**
+## 1. Download and Install Node.js
 - Go to the official Node.js website: **[nodejs.org](https://nodejs.org)**
 - We'll be using Node.js version 22 for this course, as that's the current LTS build
   - LTS stands for long term support, meaning that it will be getting security updates for a longer period of time
   - This is preferred for production environments as it (generally) brings stability
 
-## **2. Verify Installation**
+## 2. Verify Installation
 - After installation, open your terminal and run the following commands to ensure Node.js is installed correctly:
   - Check Node.js version: 
     ```bash

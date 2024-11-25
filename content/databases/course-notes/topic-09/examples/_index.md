@@ -1,5 +1,5 @@
 ---
-title: 2. Examples
+title: 1. Examples
 ---
 
 ## Example 1: Library Book Collection

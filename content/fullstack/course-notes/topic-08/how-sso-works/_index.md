@@ -41,7 +41,7 @@ title: 3. How does SSO Work?
       - **Secure**: Can’t be modified without breaking the signature.  
       - **Portable**: Works across different applications and systems.
 
-### **Analogy**: A JWT as a Movie Ticket  
+### Analogy: A JWT as a Movie Ticket  
 - When you buy a movie ticket, the ticket has your seat and showtime written on it (this is like the **payload**).  
 - The theater’s stamp on the ticket ensures it’s genuine (this is the **signature**).  
 - You show the ticket to enter the theater.  

@@ -90,7 +90,7 @@ Data modeling in NoSQL differs significantly from relational databases. Instead 
 | `p124`   | Phone     | Samsung  |
 | `p125`   | TV        | NULL     |
 
-#### **Implications of Varying Columns**
+#### Implications of Varying Columns
 
 1. **Strength: Flexibility**
    - The model can handle missing fields (`NULL`) without requiring schema updates. For instance, `p125` does not have a brand, but the system stores the data seamlessly.
