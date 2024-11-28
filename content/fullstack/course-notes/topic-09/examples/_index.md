@@ -56,7 +56,7 @@ title: 5. Examples
   You are tasked with building a **Real-Time Notification System** that pushes notifications to users in real-time using WebSockets. The system should support both broadcasting notifications to all users and sending notifications to specific users.
 
   ### Example Repository
-  - A base repository will be provided to help get started. You can find it [here](https://github.com/menglishca/socket-notification-system-base.git).
+  - A base repository will be provided to help get started. You can find it [here](https://github.com/menglishca/socket-real-time-notifications-template.git).
 
   ### Functional Requirements:
 
