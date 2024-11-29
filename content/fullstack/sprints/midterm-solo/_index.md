@@ -1,7 +1,5 @@
 ---
 title: 1. Mid Term Sprint - Independent
-cascade:
-  type: docs
 ---
 
 ## Objective
