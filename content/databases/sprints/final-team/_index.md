@@ -1,5 +1,5 @@
 ---
-title: 4. Final Sprint - Team
+title: 3. Final Sprint - Team
 ---
 
 ## Final Sprint - Team Project - Real-Time Chat Application  

@@ -1,5 +1,5 @@
 ---
-title: 3. Final Sprint - Individual
+title: 2. Final Sprint - Individual
 ---
 
 ## Voting App  
