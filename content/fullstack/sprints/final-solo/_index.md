@@ -60,7 +60,7 @@ To help you get started, a [base repository](https://github.com/menglishca/combi
 - New users must be able to register.
 - Display the number of polls currently active
 
-### Poll Dashboard
+#### Poll Dashboard
   - Only visible to logged in users
   - Shows all currently active polls
     - If no polls are available, display a message and prompt the user to create a poll
@@ -102,3 +102,21 @@ To help you get started, a [base repository](https://github.com/menglishca/combi
 - You can find the code for any examples worked on during class [here](https://github.com/menglishca/keyin-code-samples).
 - If you have any questions or need clarification, reach out on Teams or via email.  
 - Support sessions are available during lecture slots and through TA sessions.  
+
+## Grading Rubric
+
+| **Category**                         | **Criteria**                                                                                                                                                                                                | **Points** |
+|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| **Site Functionality**               | **Home Page**: Displays a landing page with login/signup prompt. Users can see the number of active polls.                                                                                                  | 5          |
+|                                      | **Registration**: New users can successfully register, with meaningful error messages if the signup fails. User data (username, hashed password, and role) is stored in MongoDB.                            | 10         |
+|                                      | **Poll Creation**: Users can create a new poll, including the poll question and at least two options. Poll data is stored in MongoDB.                                                                       | 15         |
+|                                      | **Voting**: Users can vote on polls, with votes counted correctly and displayed in real-time. Each user can vote only once per poll. Voting data is correctly stored in MongoDB.                            | 20         |
+|                                      | **Results**: Users can view live results for the poll, showing the number of votes per option. Results are fetched from MongoDB and can be shown either before or after voting.                             | 15         |
+|                                      | **Profiles**: Each user has a profile page displaying their username and the number of polls they have voted in. Profiles are not accessible without logging in.                                            | 10         |
+| **Site Functionality Total**         |                                                                                                                                                                                                             | **75**     |
+| **Design & User Experience**         | **Design & Layout**: Site is visually clear, user-friendly, and aesthetically pleasing with appropriate styling. Basic design like black text on white background is insufficient.                          | 10         |
+| **Design & User Experience Total**   |                                                                                                                                                                                                             | **10**     |
+| **Development Best Practices**       | **Code Quality & Best Practices**: Code is well-organized, follows best practices (e.g., meaningful variable names, DRY principles), and is modular. Commits are frequent, well-documented, and meaningful. | 10         |
+|                                      | **Storage Best Practices**: All data (user records, poll data, votes) is stored in MongoDB. Passwords are hashed using bcrypt. MongoDB collections are structured appropriately for the project.            | 5          |
+| **Development Best Practices Total** |                                                                                                                                                                                                             | **15**     |
+| **Total Points**                     |                                                                                                                                                                                                             | **100**    |
