@@ -1,5 +1,5 @@
 ---
-title: 4. Final Sprint - Team
+title: 3. Final Sprint - Team
 ---
 
 ## Final Sprint - Team Project - Real-Time Chat Application  
@@ -39,14 +39,6 @@ To help you get started, a [base repository](https://github.com/menglishca/combi
 
     This will start the server at `http://localhost:3000/`.
 
-6. Run tests (if provided):
-
-    ```bash
-    npm test
-    ```
-
-    This will run any pre-set unit tests for the application.
-
 By using this template, you’ll have the project structure and initial setup ready to go, so you can focus on getting started on your app!
 
 ## Requirements
@@ -55,7 +47,6 @@ By using this template, you’ll have the project structure and initial setup re
 - The backend must be implemented using Node.js with Express.
 - All pages must be created using EJS templates.
 - Use WebSockets via `express-ws` for real-time communication.
-- **At least 3 total unit tests must be present for some function in your application**
 
 ### Storage Requirements
 - Use MongoDB for all persistent data storage.
@@ -121,7 +112,7 @@ By using this template, you’ll have the project structure and initial setup re
   - Remove or ban users from the site.
 
 ## Submission Guidelines
-1. Ensure the application runs correctly using the `npm start` command, and all tests pass with the `npm test` command
+1. Ensure the application runs correctly using the `npm start` command
 1. Verify that all implemented features meet the requirements specified.
 1. Submit your project by uploading your code to a GitHub repository and sharing the link on Teams under the appropriate assignment.
 1. Submissions are subject to the **[Keyin late assessment policy](https://keyincollege289.sharepoint.com/:b:/s/FullstasckJavascript-S3Sept.2024-Dec.2024912/EYwpucIvncpDoR94yNj3fOkB0CsE4c0IZ53Kqov0BumSAA?e=7N9ZfR)**. If you need an extension, reach out before the due date. Extensions are difficult to give with final projects due to the tight timelines for grades.
@@ -141,13 +132,11 @@ Here's the updated rubric with the admin panel included, Git and code quality co
 |                                      | **Registration**: New users can successfully register, with meaningful error messages if the signup fails.                                                                                                      | 10         |
 |                                      | **Chat**: The chat is locked behind a login panel and functions properly with messages sent and received in real-time. Messages show the sender's name and timestamp. Users see messages sent after logging in. | 20         |
 |                                      | **Profiles**: Each user can view their own profile (username, join date) and the profiles of others. Profiles are not accessible without being logged in.                                                       | 10         |
-|                                      | **Site Header**: Includes navigation options for logging out, accessing the profile, and entering the chat. The header is functional and properly displayed.                                                    | 5          |
-|                                      | **Admin Panel**: Administrators can view all registered users and remove/ban users from the site.                                                                                                               | 10         |
-| **Site Functionality Total**         |                                                                                                                                                                                                                 | **65**     |
+|                                      | **Site Header**: Includes navigation options for logging out, accessing the profile, and entering the chat. The header is functional and properly displayed.                                                    | 10         |
+|                                      | **Admin Panel**: Administrators can view all registered users and remove/ban users from the site.                                                                                                               | 15         |
+| **Site Functionality Total**         |                                                                                                                                                                                                                 | **75**     |
 | **Design & User Experience**         | **Design & User Experience**: Site is visually clear and user-friendly, with appropriate styling. Some attention has been paid to the design to make the site astheticly pleasing                               | 10         |
 | **Design & User Experience Total**   |                                                                                                                                                                                                                 | **10**     |
 | **Development Best Practices**       | **Development Best Practices**: Code is well-organized, follows best practices (e.g., meaningful variable names, DRY principles), and is modular. Commits are frequent, well-documented, and meaningful.        | 15         |
 | **Development Best Practices Total** |                                                                                                                                                                                                                 | **15**     |
-| **Testing**                          | **Unit Tests**: At least 3 unit tests are present and cover key functionality. Tests are well-written and correctly validate the application logic.                                                             | 5          |
-| **Testing Total**                    |                                                                                                                                                                                                                 | **5**      |
 | **Total Points**                     |                                                                                                                                                                                                                 | **100**    |
