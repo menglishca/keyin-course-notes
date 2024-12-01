@@ -1,5 +1,5 @@
 ---
-title: 2. Final Sprint - Individual
+title: 3. Final Sprint - Individual
 ---
 
 ## Voting App  
@@ -58,18 +58,16 @@ To help you get started, a [base repository](https://github.com/menglishca/combi
 #### Home Page  
 - New users are presented with a landing page prompting them to log in or sign up.  
 - New users must be able to register.
-- Display the number of polls currently active
+- Display the number of polls
 
 #### Poll Dashboard
   - Only visible to logged in users
-  - Shows all currently active polls
+  - Shows all polls
     - If no polls are available, display a message and prompt the user to create a poll
   - Allows a user to create a new poll
-  - For active polls:
+  - For each poll:
     - Users should be able to vote via websockets
-      - Users should only be able to choose one option
     - Users should be able to see the results of the poll, and watch them change via the websocket updates
-      - The results can be visible before or after a user votes, but either way they should update in real-time as votes are cast
   - All voting actions, including sending votes and updating results, should be communicated via WebSockets to ensure real-time updates for all users viewing the poll
 
 #### Poll Creation  
@@ -107,11 +105,11 @@ To help you get started, a [base repository](https://github.com/menglishca/combi
 
 | **Category**                         | **Criteria**                                                                                                                                                                                                | **Points** |
 |--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
-| **Site Functionality**               | **Home Page**: Displays a landing page with login/signup prompt. Users can see the number of active polls.                                                                                                  | 5          |
+| **Site Functionality**               | **Home Page**: Displays a landing page with login/signup prompt. Users can see the number of polls.                                                                                                        | 5          |
 |                                      | **Registration**: New users can successfully register, with meaningful error messages if the signup fails. User data (username, hashed password, and role) is stored in MongoDB.                            | 10         |
 |                                      | **Poll Creation**: Users can create a new poll, including the poll question and at least two options. Poll data is stored in MongoDB.                                                                       | 15         |
-|                                      | **Voting**: Users can vote on polls, with votes counted correctly and displayed in real-time. Each user can vote only once per poll. Voting data is correctly stored in MongoDB.                            | 20         |
-|                                      | **Results**: Users can view live results for the poll, showing the number of votes per option. Results are fetched from MongoDB and can be shown either before or after voting.                             | 15         |
+|                                      | **Voting**: Users can vote on polls, with votes counted correctly and displayed in real-time. Voting data is correctly stored in MongoDB.                                                                  | 20         |
+|                                      | **Results**: Users can view live results for the poll, showing the number of votes per option. Results are fetched from MongoDB                                                                             | 15         |
 |                                      | **Profiles**: Each user has a profile page displaying their username and the number of polls they have voted in. Profiles are not accessible without logging in.                                            | 10         |
 | **Site Functionality Total**         |                                                                                                                                                                                                             | **75**     |
 | **Design & User Experience**         | **Design & Layout**: Site is visually clear, user-friendly, and aesthetically pleasing with appropriate styling. Basic design like black text on white background is insufficient.                          | 10         |
