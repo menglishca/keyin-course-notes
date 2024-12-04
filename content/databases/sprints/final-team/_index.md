@@ -98,7 +98,7 @@ By using this template, you’ll have the project structure and initial setup re
 - Profiles must not be visible without being logged in.
 
 #### Site Header
-- Implement a site header using an EJS partial template.
+- Implement a site header on all logged in pages using an EJS partial template.
 - The header should include navigation options for:
   - Logging out.
     - Upon logging a user out, they should be redirected to the homepage and have their session cleared
