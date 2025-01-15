@@ -1,110 +1,75 @@
 ---
-title: QAP 1 - Password Generator
-cascade:
-  type: docs
+title: QAP 1 - Password Generator  
+cascade:  
+  type: docs  
 ---
 
-## Objective
-Create a Command-Line Interface (CLI) application in Node.js that generates passwords for users based on arguments they provide via flags  
-**Due Date: September 19th, 2024 at 11:59PM**
+## Objective  
+Create a Command-Line Interface (CLI) application in Node.js that generates passwords for users based on arguments they provide via flags.  
+**Due Date: January 23rd, 2024, at 11:59 PM**  
 
-## Requirements
-1. **Basic Functionality:**
-   - Your CLI application should generate passwords of lowercase letters with the following features:
-     - A help message, informing a user how to use the application and it's flags, which can be displayed using a standard help flag.
-     - A flag to specify the length of the password.
-     - If length flag is **not** provided, 8 should be used as the default password length
-     - Proper handling of invalid input, with informative error messages if inputs are missing or incorrect.
+## Requirements  
 
-2. **Customizable Features:**
-    - At least **one** of the following customizable features must be implemented to provide a user with more control over the generated password:
-      - A flag specifying that **numbers** should be eligible to be included in the password
-      - A flag specifying that **capital letters** should be eligible to be included in the password
-      - A flag specifying that **symbols** should be eligible to be included in the password
-   - The customizable feature should be created on a separate branch, then merged into the main branch via a GitHub pull request
+### Functionality  
+- **Basic Features**:
+  - Generate passwords consisting of lowercase letters.
+  - Display a help message explaining how to use the application and its flags.
+  - Allow users to specify the length of the password using a flag.
+  - Default to a password length of 8 if no length is specified.
+  - Handle invalid input gracefully, displaying informative error messages.
 
-3. **Git/Code Hygiene:**
-   - Use proper git hygiene throughout the project. This includes:
-     - Regularly committing changes with meaningful commit messages.
-     - Ensuring your email address and name are set in your git configuration.
-     - Avoiding the inclusion of unnecessary files such as `.DS_Store` on macOS.
-   - Ensure that code is easily readable, consistently styled and includes header comments to describe any functions you create.
+- **Customizable Features**:
+  - Implement at least one of the following features:
+    - Include numbers in the password.
+    - Include capital letters in the password.
+    - Include symbols in the password.
+  - Develop the feature on a separate branch and merge it into the main branch using a GitHub pull request.
 
-4. **Package.json:**
-   - Your `package.json` file must atleast include:
-     - Your name.
-     - The name of the app.
-     - The name of the `main` file.
-     - A working `bin` command to execute the application.
+### Code Quality  
+- Maintain clear and consistent code style.
+- Include comments to describe functions and any non-obvious logic.
+- Ensure proper error handling.
 
-5. **README:**
-   - Include a `README.md` file that provides:
-     - The name of the app.
-     - A brief description of what the app does.
+### Git Hygiene  
+- Regularly commit changes with meaningful messages.
+- Avoid committing unnecessary files such as `.DS_Store`.
 
-## Submission Guidelines
-- Submissions should be made on Teams under the appropriate assignment
-- Your submission should **only** include a link to your github repository which contains the code for this QAP
-- Submitting your assignment incorrectly may result in a loss of marks.
+### Extra Files
+- Your project must include:
+  - `package.json` file with accurate information.
+  - `README.md` explaining:
+    - The purpose of the application.
+    - How to use it.
 
-## Pass Outstanding Criteria
-To achieve a pass outstanding, you **must**:
-  - Meet all other requirements outlined above
-  - Implement **all three** customizable features instead of just one.
-    - One feature **must** still be completed on a separated branch and merged via a Github pull request
-    - The other two features _can_ be committed directly to the main branch if you'd prefer, but proper git hygiene should be maintained
+### Notes  
+- Using npm packages is allowed but not required.
+- If using npm packages, ensure `node_modules` is not added to your github repository
 
-## Notes
-  - Use of npm packages is allowed but not required. If you use any npm packages, please make sure that the `node_modules` directory is not tracked by Git and the proper package files are tracked.
+## Grading Rubric  
 
-## Grading Rubric
-1. **Basic Functionality (55 points)**
-   - **Help Message (10 points)**
-     - **10 points:** Help message is correctly implemented, has complete and helpful information, and is displayed using the standard help flag.
-     - **5-9 points:** Help message is present but does not use the standard flag or has issues with the information provided.
-     - **0-4 points:** Help message is missing or incorrectly implemented.
-   - **Password Length Flag (10 points)**
-     - **10 points:** User can specify password length via a flag, and the length is correctly applied.
-     - **5-9 points:** Password length flag is present but has issues or does not fully work.
-     - **0-4 points:** Password length functionality is missing.
-   - **Default Length Behavior (5 points)**
-     - **5 points:** Default length of 8 is correctly assumed if no length argument is provided.
-     - **3-4 points:** Default length is assumed but with minor issues.
-     - **0-2 points:** Default length is not correctly implemented or missing.
-   - **Invalid Input Handling (10 points)**
-     - **10 points:** Invalid inputs are handled gracefully with informative error messages.
-     - **5-9 points:** Basic invalid input handling is present but could be improved.
-     - **0-4 points:** Invalid input handling is inadequate or missing.
-   - **Customizable Features (20 points)**
-     - **20 points:** Implements at least one of the following features: numbers, capital letters, or symbols.
-     - **10-19 points:** Implements one feature but with minor issues or limited functionality.
-     - **0-9 points:** Does not implement any customizable features or is incomplete.
+| Category                        | Criteria                                                                           | Points |
+|---------------------------------|------------------------------------------------------------------------------------|--------|
+| **Functionality**               | **/45**                                                                            |        |
+| - Help Message                  | Help message correctly implemented and uses a standard flag.                       | 10     |
+| - Password Length Flag          | Allows user to specify password length and applies it correctly.                   | 10     |
+| - Default Length Behavior       | Defaults to 8 when no length is provided.                                          | 5      |
+| - Invalid Input Handling        | Handles invalid inputs with informative error messages.                            | 5      |
+| - Customizable Features         | Implements at least one feature: numbers, capitals, or symbols.                    | 15     |
+| **Git Hygiene**                 | **/25**                                                                            |        |
+| - Branching and Pull Requests   | Customizable feature implemented on a separate branch and merged via pull request. | 10     | 
+| - Commit Frequency and Quality  | Regular commits with clear, descriptive commit messages and meaningful progress.   | 10     |
+| - Git Name/Email                | Your github name and email are set correctly                                       | 5      |
+| **Code Quality**                | **/20**                                                                            |        |
+| - Readability                   | Code is well-organized, styled, and includes necessary comments.                   | 10     |
+| - Error Handling                | Includes proper error handling and avoids crashes.                                 | 10     |
+| **Project Structure**           | **/10**                                                                            |        |
+| - Package.json                  | Includes your name, app name and main file                                         | 5      |
+| - README.md                     | Includes app name and a clear description.                                         | 5      |
 
-2. **Branching and Pull Requests (10 points)**
-   - **10 points:** Customizable feature implemented on a separate branch and correctly merged via GitHub pull request.
-   - **5-9 points:** Customizable feature was not on a separate branch, or the merge was done incorrectly.
-   - **0-4 points:** Customizable feature was not on a separate branch and the merge was done incorrectly.
+## Submission Guidelines  
+- Ensure all code runs correctly and meets the requirements.
+- Submissions should be made on Teams under the appropriate assignment.  
+- Submissions should **only** include a link to your GitHub repository containing the completed code for your QAP.  
+- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/DatabaseProgramming-SD14Jan.2025-Apr.2025/ERhPYAhTYw5LncPYJt1qjfABVmfRwDZvyAWrtZGZmzgjBA?e=vqGUKb) 
+- If an extension is required, please contact me directly before the due date.  
 
-3. **Code Quality and Comments (10 points)**
-   - **10 points:** Code is well-styled, consistently formatted, and includes header comments for functions.
-   - **5-9 points:** Code has minor styling issues or incomplete comments.
-   - **0-4 points:** Code lacks consistency, style, or comments.
-
-4. **Git Hygiene (10 points)**
-   - **10 points:** Proper git hygiene is followed (e.g., meaningful commits, email and name set, no unnecessary files committed).
-   - **5-9 points:** Minor git hygiene issues are present.
-   - **0-4 points:** Significant git hygiene issues are present.
-
-5. **Package.json (10 points)**
-   - **10 points:** `package.json` includes all required information: student’s name, app name, main file, and bin command.
-   - **5-9 points:** `package.json` is missing some required elements or some are implemented incorrectly
-   - **0-4 points:** `package.json` is missing all required elements and all are implemented incorrectly
-
-6. **README (5 points)**
-   - **5 points:** `README.md` file includes the name of the app and a clear description of its functionality.
-   - **3-4 points:** `README.md` is present but lacks detail or clarity.
-   - **0-2 points:** `README.md` is missing or not informative.
-
-**Total: 100 Points**
-
-Good luck, and happy coding! If you have any questions, please don't hesitiate to ask!
