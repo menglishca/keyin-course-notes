@@ -16,13 +16,13 @@ title: 5. Examples of Normalization
   <li>
     <details>
       <summary style="list-style: none;">
-        <h2 style="display: inline-flex; margin-top: 10px; padding-left: 5px;">Example 1: Tennis Tournament Winners</h2>
+        <h2 style="display: inline-flex; margin-top: 10px; padding-left: 5px;">Example 1: Annual Tennis Tournament Winners</h2>
       </summary>
       <ul>
         <li>
           <strong>Original Table</strong>
           <table>
-            <caption style="caption-side: top;">Tournament Winners Table (Composite Key)</caption>
+            <caption style="caption-side: top;">Annual Tournament Winners Table (Composite Key)</caption>
             <thead>
               <tr>
                 <th>tournament_name</th>
@@ -45,7 +45,7 @@ title: 5. Examples of Normalization
                 <td>May 1, 1987</td>
               </tr>
               <tr>
-                <td>Ottawa Masters</td>
+                <td>St. John's Invitational</td>
                 <td>2011</td>
                 <td>Tiffany Masterson</td>
                 <td>November 19, 1988</td>
@@ -107,24 +107,29 @@ title: 5. Examples of Normalization
                                   <caption style="caption-side: top;">Winners Table</caption>
                                   <thead>
                                     <tr>
+                                      <th>winner_id</th>
                                       <th>winner</th>
                                       <th>winner_dob</th>
                                     </tr>
                                   </thead>
                                   <tbody>
                                     <tr>
+                                      <td>1</td>
                                       <td>Maxwell House</td>
                                       <td>July 21, 1990</td>
                                     </tr>
                                     <tr>
+                                      <td>2</td>
                                       <td>George Albertson</td>
                                       <td>May 1, 1987</td>
                                     </tr>
                                     <tr>
+                                      <td>3</td>
                                       <td>Tiffany Masterson</td>
                                       <td>November 19, 1988</td>
                                     </tr>
                                     <tr>
+                                      <td>4</td>
                                       <td>Steve Miller</td>
                                       <td>January 30, 1980</td>
                                     </tr>
@@ -134,7 +139,7 @@ title: 5. Examples of Normalization
                               <li><strong>Update the original table to use a foreign key:</strong></li>
                               <li>
                                 <table style="margin-top: 0.5rem;">
-                                  <caption style="caption-side: top;">Updated Tournament Winners Table</caption>
+                                  <caption style="caption-side: top;">Updated Annual Tournament Winners Table</caption>
                                   <thead>
                                     <tr>
                                       <th>tournament_name</th>
@@ -154,7 +159,7 @@ title: 5. Examples of Normalization
                                       <td>George Albertson</td>
                                     </tr>
                                     <tr>
-                                      <td>Ottawa Masters</td>
+                                      <td>St. John's Invitational</td>
                                       <td>2011</td>
                                       <td>Tiffany Masterson</td>
                                     </tr>

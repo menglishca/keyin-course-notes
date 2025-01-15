@@ -12,14 +12,13 @@ Imagine you are designing a database for a small online bookstore. The bookstore
 ## Requirements
 1. **Design Tables:**
 - Create a set of tables that meet the following requirements:
-  - **Books**: Each book has a title, ISBN (all numbers), publication year, price, and author. Each book can belong to multiple genres.
+  - **Books**: Each book has a title, ISBN (all numbers), publication year, price, and author. Each book can belong to multiple genres. Each book can have only one author.
   - **Authors**: Each author has a unique ID, name, and birthplace.
   - **Genres**: Each genre has a unique ID and name.
   - **Customers**: Each customer has a unique ID, name, email, and address.
   - **Orders**: Each order is placed by a customer and contains one or more books. Each order has a unique ID, a date, and a status (e.g., shipped, delivered). Multiple copies of the same book can be present in an order.
 - Draw a diagram showing the tables, ensure the diagram shows:
   - Column names
-  - Data types
   - Primary keys
   - Foreign keys, and what table that foreign key relates to
 
@@ -44,9 +43,13 @@ Imagine you are designing a database for a small online bookstore. The bookstore
   - An explanation of the relationships between tables and how they are represented in your design
   - An explanation of the benefits of using a database for this data.
 - Diagrams do not have to be any standard form, as long as the data is present.  A tool like: [https://dbdiagram.io](https://dbdiagram.io) may help, but is not required.
+- Submissions should be made on Teams via the appropriate assignment
+- Submissions should **only** include your PDF file
+- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/DatabaseProgramming-SD14Jan.2025-Apr.2025/ERhPYAhTYw5LncPYJt1qjfABVmfRwDZvyAWrtZGZmzgjBA?e=vqGUKb)
+  - If an extension is needed please reach out before the due date
 
 ## Pass Outstanding Criteria
-- Achieve a grade of 85% or above on the QAP.
+- Achieve a grade of 80% or above on the QAP.
 
 ## Grading Rubric
 
@@ -56,13 +59,12 @@ Imagine you are designing a database for a small online bookstore. The bookstore
 |                                    | **Authors Table**: Includes all required fields and establishes relationships to other tables as needed.   | 10         |
 |                                    | **Genres Table**: Includes all required fields and establishes relationships to other tables as needed.    | 10         |
 |                                    | **Customers Table**: Includes all required fields and establishes relationships to other tables as needed. | 10         |
-|                                    | **Orders Table**: Includes all required fields and establishes relationships to other tables as needed.    | 5          |
+|                                    | **Orders Table**: Includes all required fields and establishes relationships to other tables as needed.    | 10         |
 | **Normalization**                  | Accurate explanation of how each table meets 1NF, 2NF, and 3NF.                                            | 15         |
 | **Relationships and Foreign Keys** | **Relationships**: All relationships are correctly identified (1:1, 1:M, M:M).                             | 10         |
 |                                    | **Foreign Keys**: Appropriate foreign keys are used to establish relationships between tables.             | 5          |
 | **Benefits of Using a Database**   | Comprehensive explanation of why a database is beneficial for managing bookstore data.                     | 10         |
 | **Documentation and Presentation** | **Schema Diagram**: Clear and accurate schema diagram showing tables and their relationships.              | 5          |
-|                                    | **Written Explanations**: Well-organized and thorough written explanations of the database design.         | 5          |
 | **Total Points**                   |                                                                                                            | **100**    |
 
 Good luck! If you have any questions, please don't hesitiate to ask!
