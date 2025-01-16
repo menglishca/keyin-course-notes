@@ -1,144 +1,90 @@
 ---
-title: 4. Creating a basic CLI application
+title: 4. Rock, Paper, Scissors CLI Example
 cascade:
   type: docs
 ---
 
-## 1. Setting up the project
-- Start by creating a new project directory and navigating to it
-  ```shell
-  mkdir simple-cli
-  cd simple-cli
-  ```
-- Next, initialize a git repository to ensure your project is properly tracked
-  ```shell
-  git init
-  ```
-- Next, initialize the new Node.js project
-  - Using `npm init` to initialize the project will help you create the `package.json` file using a series of prompts
-  - Alternatively, you can use the default options and skip the prompts via `npm init -y`
-  <details>
-    <summary><b>What does the package.json file do?</b></summary>
+## Objective
+Create a Command-Line Interface (CLI) application in Node.js where users can play Rock, Paper, Scissors against the computer. The app will start with single-round gameplay and expand to include a "best of three" mode through a feature branch and pull request workflow.
 
-    - **Tracks Project Metadata**: The `package.json` file contains the project's name, version and description
-    - **Dependency Management**: It lists the dependencies and dependency versions your project requires. If someone else clones the project, they can run `npm install` to install all necessary dependencies.
-    - **Bin Field**: Specifies the CLI commands the project exposes. The `bin` field maps a custom command (like `simple-cli`) to a JavaScript file (like `index.js`) that will be executed when the command is run.
-    - **Entry Point**: By specifying the `"main"` field, it tells Node.js which file is the entry point to the application.
-  </details>
+## Requirements
 
-## 2. Setting up the bin command
-- Next, inside the `package.json` file setup your `bin` section
-  - A `bin` section defines all CLI commands you want your project to expose to the user
-  - The `bin` seciton is an `object` in the `package.json` which maps a command name to the javascript file that should be ran when the command is executed.
-  - We'll add the following bin section:
-    ```json
-      {
-        "name": "simple-cli-app",
-        "version": "1.0.0",
-        "bin": {
-          "simplecli": "./index.js"
-        }
-      }
-    ```
+### Functionality
+- Single-Round Gameplay:
+  - Allow the user to choose rock, paper, or scissors via command-line arguments.
+  - Generate a random choice for the computer.
+  - Determine and display the winner of the round.
+  - Handle invalid input gracefully with an informative error message.
 
-## 3. Creating the CLI script
-- Note: For reference, the Node.js default library documentation can be [found here](https://nodejs.org/docs/latest-v22.x/api/)
-1. **Create the index.js file**
-  - Inside your project's root directory, create a new file called `index.js`, this is where we'll write our CLI script
-    - `index.js` was chosen as the name as that's what we set when we created the `bin` command
-2. **Accessing script arguments**
-  - Inside our `index.js` file we'll need a way to access the arguments passed to the script, we can grab this from the `process.argv` field 
-    ```javascript
-    #!/usr/bin/env node
+- Best of Three Mode:
+  - Add a feature to play a "best of three" match.
+  - Track and display the score for the user and computer over three rounds.
+  - Display the winner of the match after three rounds.
+  - Ensure proper error handling for invalid input within the loop.
 
-    import process from 'node:process';
+## Implementation Steps
 
-    const arguments = process.argv;
-    console.log(arguments);
-    ```
-  - We can test our script by running `npx simplecli` and notice we get an array printed to the console!
-  - By default, the `process.argv` array contains two standard arguments:
-    - The first is the path to the `node` executable which is running the script
-    - The second is the path to the JavaScript file being executed
-  - For our purposes, we won't need those arguments so we can `slice` them out
-    ```javascript
-    #!/usr/bin/env node
+### Part 1: Single-Round Gameplay
+1. Set Up the Project:
+   - Initialize a new git repository with `git init`.
+   - Create a new Node.js project using `npm init`.
+   - Create a new JavaScript file, `rps.js`.
+   - Ensure it can be run with Node.js.
 
-    import process from 'node:process';
+2. Implement User Input:
+   - Use `process.argv` to capture the user's choice (rock, paper, or scissors).
+   - Validate the input to ensure it is one of the three valid options.
 
-    const arguments = process.argv.slice(2);
-    console.log(arguments);
-    ```
-  - Running our script with `npx simplecli testarg` now just prints the array with only the `testarg` element
-3. **Adding a greet argument**
-  - To add a little interactivity to our script, let's add a `--greet` argument
-  - If the argument is passed we'll print "Hello World!" to the console
-    ```javascript
-    #!/usr/bin/env node
+3. Generate a Random Choice for the Computer:
+   - Create an array of choices: `rock`, `paper`, `scissors`.
+   - Randomly select one for the computer.
 
-    import process from 'node:process';
+4. Determine the Winner:
+   - Compare the user's choice with the computer's choice.
+   - Implement the logic for deciding the outcome (win, lose, tie).
 
-    const arguments = process.argv;
+5. Output the Results:
+   - Print the user's choice, the computer's choice, and the result.
 
-    if (arguments.includes('--greet')) {
-      console.log('Hello, World!');
-    }
-    ```
-4. **Add a help argument**
-  - Apps, especially CLI apps, should always have a `help` argument to ensure users unfamiliar with your app can figure out how it works
-  - We'll add a `--help` argument to our script to provide that information to a new user
-    ```javascript
-    #!/usr/bin/env node
+### Part 2: Adding "Best of Three" Mode
+1. Branch Creation:
+   - Create a new branch named `best-of-three`.
 
-    import process from 'node:process';
+2. Update Input Handling:
+   - Add support for a new command: `best-of-3`.
 
-    const arguments = process.argv;
+3. Loop for Three Rounds:
+   - Implement a loop to play three rounds of Rock, Paper, Scissors.
+   - Track the score for both the user and the computer.
 
-    if (arguments.includes('--greet')) {
-      console.log('Hello, World!');
-    }
-    else if (arguments.includes('--help')) {
-      console.log(`
-      Usage: 
-        --greet     Print 'Hello, World!'
-        --help      Show this help message
-      `);
-    }
-    ```
+4. Score Tracking and Output:
+   - Print the result of each round.
+   - At the end, display the final scores and declare the winner of the match.
 
-5. **Check for no valid arguments**
-  - If there are no known arguments provided then a script should display a message of some sort to tell the user that they're not using the application correctly
-  - Alternatively, you could display the help message again, if no known arguments are found
-    ```javascript
-      #!/usr/bin/env node
+5. Handle Errors:
+   - Ensure proper error messages for invalid input within the loop.
 
-    import process from 'node:process';
+### Part 3: PR Workflow
+1. Push the Branch:
+   - Push the `best-of-three` branch to the repository.
 
-    const arguments = process.argv.slice(2);
+2. Create a Pull Request:
+   - Open a PR to merge `best-of-three` into the main branch.
 
-    if (arguments.includes('--greet')) {
-      console.log('Hello, World!');
-    }
-    else if (arguments.includes('--help')) {
-      console.log(`
-      Usage: 
-        --greet     Print 'Hello, World!'
-        --help      Show this help message
-      `);
-    }
-    else {
-      console.log(`
-      No valid arguments provided. Use --help for usage information.
-      `);
-    }
-    ```
-6. **Committing our work**
-  - Now that we're finished with our application, we should commit our changes so git can properly track them
-  - First, stage your changes with `git add .`
-  - Then you can make your commit:
-    ```shell
-    git commit -m "Initial Simple CLI commit
+3. Review the Changes:
+   - Walk through the changes with the students.
+   - Discuss the purpose of the new feature and how it was implemented.
 
-    - Adds support for the \`--greet\` argument to display \"Hello World!\"
-    - Adds support for the \`--help\` argument
-    - Handles displaying some help messaging if no valid arguments are provided"
+4. Merge the PR:
+   - Merge the branch and pull the changes into the local environment.
+
+### Part 4: Demonstration and Expansion
+1. Test the Final App:
+   - Show how to use the single-round mode and "best of three" mode.
+
+2. Discuss Potential Improvements:
+   - Ideas for future development (e.g., customizable match lengths, user names, advanced statistics).
+
+### Additional Requirements
+- Ensure the project has a `package.json` file.
+- Use git for version control and demonstrate proper branching and pull request workflows.  
