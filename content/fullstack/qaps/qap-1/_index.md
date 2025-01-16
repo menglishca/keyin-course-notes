@@ -14,12 +14,13 @@ Create a Command-Line Interface (CLI) application in Node.js that generates pass
 - **Basic Features**:
   - Generate passwords consisting of lowercase letters.
   - Display a help message explaining how to use the application and its flags.
+    - Flags are any of those `--help` or `--length` arguments your application supports
   - Allow users to specify the length of the password using a flag.
   - Default to a password length of 8 if no length is specified.
   - Handle invalid input gracefully, displaying informative error messages.
 
 - **Customizable Features**:
-  - Implement at least one of the following features:
+  - Implement at least **one** of the following features, with an appropriate flag (such as `--uppercase` for capital letters):
     - Include numbers in the password.
     - Include capital letters in the password.
     - Include symbols in the password.
