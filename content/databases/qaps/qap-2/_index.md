@@ -4,7 +4,7 @@ title: QAP 2 - SQL and PostgreSQL Mastery
 
 ## Objective
 Complete both provided problems below, make sure to include all SQL to create the tables, insert the data and perform all queries.  
-**Due date: February 9th, 2024 at 11:59PM**
+**Due date: February 10th, 2024 at 11:59PM**
 
 ## Problem 1: University Course Enrollment System
 
@@ -114,24 +114,21 @@ You are developing a system to manage products, customers, and their orders in a
 
 ## Grading Rubric
 
-| Category              | Description                                                                                           | Points  |
-|-----------------------|-------------------------------------------------------------------------------------------------------|---------|
-| **Functionality**     | **Table Creation**: Creates all required tables with appropriate data types, keys, and relationships. | 10      |
-|                       | **Data Insertion**: Successfully inserts all required data into the tables.                           | 5       |
-|                       | **Data Querying**: Executes all required SELECT queries and retrieves correct data.                   | 15      |
-|                       | **Functionality Total**:                                                                              | **25**  |
-| **Correctness**       | **Full Name Query**: Correctly retrieves full names of students enrolled in "Physics 101."            | 10      |
-|                       | **Course and Professor Query**: Retrieves courses with corresponding professor names.                 | 10      |
-|                       | **Student Count per Course**: Retrieves correct number of students enrolled in each course.           | 10      |
-|                       | **Product and Quantity Query**: Retrieves all product names and quantities for a given order.         | 10      |
-|                       | **Correctness Total**:                                                                                | **40**  |
-| **Code Quality**      | **SQL Syntax**: Queries and commands are written with clear, correct SQL syntax.                      | 5       |
-|                       | **Naming Conventions**: Tables, columns, and variables follow meaningful naming conventions.          | 5       |
-|                       | **Code Quality Total**:                                                                               | **10**  |
-| **Git Hygiene**       | **Commit Frequency**: Regular commits reflecting meaningful progress throughout development.          | 5       |
-|                       | **Commit Quality**: Commit messages are clear, concise, and descriptive.                              | 5       |
-|                       | **Git Hygiene Total**:                                                                                | **10**  |
-| **Data Manipulation** | **Update Query**: Updates student email or stock quantity correctly.                                  | 5       |
-|                       | **Delete Query**: Correctly removes a student from a course or an order from the system.              | 5       |
-|                       | **Data Manipulation Total**:                                                                          | **10**  |
-| **Total Points**      |                                                                                                       | **100** |
+| **Category**          | **Criteria**                                                                                          | **Points** |
+|-----------------------|-------------------------------------------------------------------------------------------------------|------------|
+| **Functionality**     | **Table Creation**: Creates all required tables with appropriate data types, keys, and relationships. | 10         |
+|                       | **Data Insertion**: Successfully inserts all required data into the tables.                           | 5          |
+|                       | **Data Querying**: Executes all required SELECT queries and retrieves correct data.                   | 15         |
+| **Correctness**       | **Full Name Query**: Correctly retrieves full names of students enrolled in "Physics 101."            | 10         |
+|                       | **Course and Professor Query**: Retrieves courses with corresponding professor names.                 | 10         |
+|                       | **Student Count per Course**: Retrieves correct number of students enrolled in each course.           | 10         |
+|                       | **Product and Quantity Query**: Retrieves all product names and quantities for a given order.         | 10         |
+| **Code Quality**      | **SQL Syntax**: Queries and commands are written with clear, correct SQL syntax.                      | 5          |
+|                       | **Naming Conventions**: Tables, columns, and variables follow meaningful naming conventions.          | 5          |
+| **Git Hygiene**       | **Commit Frequency**: Regular commits reflecting meaningful progress throughout development.          | 5          |
+|                       | **Commit Quality**: Commit messages are clear, concise, and descriptive.                              | 5          |
+| **Data Manipulation** | **Update Query**: Updates student email or stock quantity correctly.                                  | 5          |
+|                       | **Delete Query**: Correctly removes a student from a course or an order from the system.              | 5          |
+| **Total Points**      |                                                                                                       | **100**    |
+
+Good luck! If you have any questions, please don't hesitiate to ask!
