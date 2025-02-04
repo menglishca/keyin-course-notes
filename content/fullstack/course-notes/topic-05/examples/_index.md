@@ -8,7 +8,7 @@ The goal of the following examples is to introduce the concepts of Express and .
 ## Example 1: Simple Greeting App
 ### Ask
 - Create an Express application that displays a greeting to the user
-- A base repository can be found [here](https://github.com/menglishca/simple-greeting-base.git)
+- A base repository can be found [here](https://github.com/Keyin-SD14-S3/simple-greeting-base.git)
 
 ### Features
 - Display a random greeting on each page visit
@@ -23,7 +23,7 @@ The goal of the following examples is to introduce the concepts of Express and .
 ## Example 2: Todo List App
 ### Ask
 - Create an Express application that displays a todo list
-- A base repository can be found [here](https://github.com/menglishca/todo-list-base.git)
+- A base repository can be found [here](https://github.com/Keyin-SD14-S3/todo-list-base.git)
 
 ### Features
 - Display the current todo list
@@ -41,7 +41,7 @@ The goal of the following examples is to introduce the concepts of Express and .
 ### Ask
 - Create an express application to display a random (fake) report of the current weather in a selected city
     - Users should be able to select a city from a dropdown and view the weather in that city
-- A base repository can be found [here](https://github.com/menglishca/weather-report-base.git)
+- A base repository can be found [here](https://github.com/Keyin-SD14-S3/weather-report-base.git)
 
 ### Features
 - Display a homepage which lets a user pick which city they want the weather for
@@ -52,7 +52,7 @@ The goal of the following examples is to introduce the concepts of Express and .
 ## Example 4: Random Quotes App
 ### Ask
 - Create an Express application to display and store user quotes
-- A base repository can be found [here](https://github.com/menglishca/random-quotes-base.git)
+- A base repository can be found [here](https://github.com/Keyin-SD14-S3/random-quotes-base.git)
 
 ### Features
 - Display a list of current quotes
