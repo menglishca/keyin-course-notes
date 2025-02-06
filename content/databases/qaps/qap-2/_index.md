@@ -121,7 +121,7 @@ You are developing a system to manage products, customers, and their orders in a
 |                       | **Data Querying**: Executes all required SELECT queries and retrieves correct data.                   | 15         |
 | **Correctness**       | **Full Name Query**: Correctly retrieves full names of students enrolled in "Physics 101."            | 10         |
 |                       | **Course and Professor Query**: Retrieves courses with corresponding professor names.                 | 10         |
-|                       | **Student Count per Course**: Retrieves correct number of students enrolled in each course.           | 10         |
+|                       | **Courses with Students**: Retrieves the courses which have students enrolled.           | 10         |
 |                       | **Product and Quantity Query**: Retrieves all product names and quantities for a given order.         | 10         |
 | **Code Quality**      | **SQL Syntax**: Queries and commands are written with clear, correct SQL syntax.                      | 5          |
 |                       | **Naming Conventions**: Tables, columns, and variables follow meaningful naming conventions.          | 5          |
