@@ -2,7 +2,7 @@
 title: 4. Examples
 ---
 
-Base repos for all the following examples can be found [here](https://github.com/menglishca/express-postgres-examples)
+Base repos for all the following examples can be found [here](https://github.com/Keyin-SD14-S3/express-postgres-examples)
 
 <details>
   <summary><h2 style="display: inline-flex; margin-top: 10px; padding-left: 5px;">Example: User Management System</h2></summary>
