@@ -53,7 +53,6 @@ Complete the provided Express application to practice simple math questions. Use
 - **Home Page**: 
   - Provided as boilerplate.
   - Allows users to start a new quiz.
-  - Allows users to view the leaderboards.
   - Displays the last recorded streak or a message indicating there was no streak.
 
 - **Quiz Question Page**:
@@ -65,17 +64,13 @@ Complete the provided Express application to practice simple math questions. Use
   - Present users with their current streak.
   - Provide options to start a new quiz or return to the home page.
 
-- **Leaderboards Page**:
-  - Display the top 10 streaks.
-  - Show the number of questions answered correctly and when the streaks were obtained.
-
 ### Functional Requirements
 - **Data Storage**:
   - All data should be stored in memory (using variables in the code). No persistence between server runs is required. For the sake of this project, assume only one user will be accessing the site at a time
 
 - **Functionality**:
   - Create a function to check the correctness of a question.
-  - Create a function to generate a new multiplication, division, addition or subtraction question
+  - Create a function to generate a new random multiplication, division, addition or subtraction question. The question's operator and operands should be randomly picked when the function is called.
 
 - **Unit Tests**:
   - Write unit tests to verify:
@@ -98,11 +93,10 @@ Complete the provided Express application to practice simple math questions. Use
 
 | **Category**        | **Criteria**                                                                                                            | **Points** |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------|------------|
-| **Functionality**   | **Home Page**: Displays options to start a quiz, view leaderboards, and shows the last recorded streak.                 | 10         |
-|                     | **Quiz Question Page**: Displays the current question and allows user to submit an answer.                              | 10         |
-|                     | **Quiz Completion Page**: Displays the streak and options to start a new quiz or return to home page.                   | 10         |
-|                     | **Leaderboards Page**: Displays the top 10 streaks with number of correct answers and date.                             | 10         |
-| **Correctness**     | **Question Generation Function**: Correctly generates a math question based on requirements.                            | 5          |
+| **Functionality**   | **Home Page**: Displays options to start a quiz, and shows the last recorded streak or a relevant message if there is no streak.                 | 10         |
+|                     | **Quiz Question Page**: Displays the current question and allows user to submit an answer.                              | 15         |
+|                     | **Quiz Completion Page**: Displays the streak and options to start a new quiz or return to home page.                   | 15         |
+| **Correctness**     | **Question Generation Function**: Correctly generates a random math question based on requirements.                     | 5          |
 |                     | **Answer Checking Function**: Correctly checks if a given answer is correct or incorrect.                               | 5          |
 |                     | **In-memory Data Management**: Streaks and scores are stored and retrieved correctly while the user is on the site.     | 10         |
 | **Code Quality**    | **Readability**: Code is well-organized and easy to read (proper indentation, clear variable/function names).           | 10         |
