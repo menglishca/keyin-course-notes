@@ -6,7 +6,7 @@ cascade:
 
 ## Objective
 Complete the provided Express application to practice simple math questions. Users will be presented with a question, and their streak of correct answers will be tracked.  
-**Due date: February 13th, 2025 at 11:59PM**
+**Due date: February 14th, 2025 at 11:59PM**
 
 ### Getting Started
 - To help you get started, a [base repository](https://classroom.github.com/a/Tw9ktGPW) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
