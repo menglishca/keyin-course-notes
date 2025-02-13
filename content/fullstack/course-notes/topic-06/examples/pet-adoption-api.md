@@ -4,7 +4,7 @@ title: 5.2. Pet Adoption API
 
 ## Creating the Pet Adoption API
 - This example demonstrates building a REST API for managing pets available for adoption.
-- A base repository can be found [here](https://github.com/menglishca/rest-api-examples/tree/main)
+- A base repository can be found [here](https://github.com/Keyin-SD14-S3/rest-api-examples)
 
 ### Identify Resources in the Pet Adoption System
 
