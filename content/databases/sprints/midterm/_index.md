@@ -32,11 +32,11 @@ Create a database for a **conference event management system** that keeps track 
 - Consider how to handle **many-to-many relationships** (e.g., an attendee can register for multiple sessions)
 
 ## Repository Setup
-To help you get started, a **GitHub Classroom repository** has been provided for this assignment.
+- To help you get started, a [base repository](https://classroom.github.com/a/fhikS8LO) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
 
 ### Setting Up Your Repository
-1. **Accept the GitHub Assignment** (link provided in the project sheet).
-2. **Clone Your Repository:**
+1. Click the link above, and select your name on the list that appears, if you haven't already
+2. Clone Your Repository:
    ```bash
    git clone <your-new-repo-url>
    cd <your-new-repo-name>

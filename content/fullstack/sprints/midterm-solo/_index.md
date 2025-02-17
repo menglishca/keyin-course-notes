@@ -7,7 +7,7 @@ Complete the provided Express application **independently** to generate fictiona
 **Due date: March 2nd, 2025, at 11:59 PM**
 
 ### Getting Started
-- To help you get started, a [base repository]() has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/1mGXNgcp) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
 
 ### Steps to Create Your Own Repository
 

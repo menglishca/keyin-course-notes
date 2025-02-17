@@ -7,7 +7,7 @@ Complete the provided Express application **with your team** to view data about 
 **Due date: March 2nd, 2025 at 11:59PM**
 
 ## Getting Started
-- To help you get started, a [base repository]() has been provided for you to work from. The repository is set up as a **GitHub Classroom Assignment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/ab3tzsY3) has been provided for you to work from. The repository is set up as a **GitHub Classroom Assignment** to help you quickly get started.
 
 ### Steps to Create Your Own Repository
 
