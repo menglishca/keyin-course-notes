@@ -81,7 +81,8 @@ You are responsible for determining the **specific test cases** needed to verify
   - The header should contain navigation links to:
     - Home page
     - Top-rated games page
-    - Random game page
+    - A random game's page
+      - A link the user can click, and when they click it they are brought to the "Game Page" (see below) for a random game
     - Upcoming games page
     - Hidden Gems page
 
@@ -149,7 +150,7 @@ You are responsible for determining the **specific test cases** needed to verify
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
 | **Site Functionality**       | **Home Page**: Displays 9 random games, clicking a game directs to its details page.                                                                                        | 10         |
 |                              | **Top Rated Games Page**: Displays 15 top-rated games, ordered correctly, with required info. Clicking a game directs to details page.                                      | 5          |
-|                              | **Game Details Page**: Displays all required details, includes genre-based recommendations.                                                                                 | 10         |
+|                              | **Game Page**: Displays all required details, includes genre-based recommendations.                                                                                 | 10         |
 |                              | **Upcoming Games Page**: Displays 5 upcoming games with correct information. Clicking a game directs to details page.                                                       | 5          |
 |                              | **Hidden Gems Page**: Displays "Hidden Gems" based on the team's chosen criteria, linking to details pages.                                                                 | 5          |
 |                              | **Navigation**: Header/footer, is implemented with an ejs template and includes working links to all pages.                                                                 | 10         |
