@@ -451,3 +451,213 @@ db.enrollments.deleteOne({
     </li>
 </ol>
 </details>
+
+## Example 4: Car Rental System
+You're tasked with creating a **Car Rental System** to manage rental cars, customers, and their rental records. Using MongoDB and a GUI like MongoDB Compass or the Mongo Shell, build the system step-by-step.
+
+<details>
+<summary>Requirements and Tasks</summary>
+
+### Requirements
+Your database must store the following **car data**:
+
+| Car Model      | Brand     | Year | Type    | Price Per Day |
+|---------------|----------|------|---------|--------------|
+| Civic         | Honda    | 2020 | Sedan   | 40           |
+| Camry         | Toyota   | 2019 | Sedan   | 45           |
+| Model 3       | Tesla    | 2022 | Electric | 100         |
+
+Your database must store the following **customer data**:
+
+| First Name | Last Name | Email                      | License Number |
+|------------|----------|---------------------------|---------------|
+| John       | Doe      | john.doe@example.com      | D123456       |
+| Sarah      | Lee      | sarah.lee@example.com     | S654321       |
+| Michael    | Smith    | michael.smith@example.com | M789012       |
+
+Your database must store the following **rental records**:
+
+| Customer Name | Car Model | Rental Start Date | Rental End Date |
+|--------------|----------|------------------|----------------|
+| John Doe     | Civic    | 2024-03-01       | 2024-03-05    |
+| Sarah Lee    | Model 3  | 2024-03-10       | 2024-03-12    |
+| Michael Smith| Camry    | 2024-03-15       | 2024-03-20    |
+
+### Tasks
+<ol>
+    <li>
+        <details>
+            <summary>Create the collections to store all of this data</summary>
+
+```javascript
+// Create a collection for cars
+db.cars.insertMany([
+    { model: "Civic", brand: "Honda", year: 2020, type: "Sedan", pricePerDay: 40 },
+    { model: "Camry", brand: "Toyota", year: 2019, type: "Sedan", pricePerDay: 45 },
+    { model: "Model 3", brand: "Tesla", year: 2022, type: "Electric", pricePerDay: 100 }
+]);
+
+// Create a collection for customers
+db.customers.insertMany([
+    { firstName: "John", lastName: "Doe", email: "john.doe@example.com", licenseNumber: "D123456" },
+    { firstName: "Sarah", lastName: "Lee", email: "sarah.lee@example.com", licenseNumber: "S654321" },
+    { firstName: "Michael", lastName: "Smith", email: "michael.smith@example.com", licenseNumber: "M789012" }
+]);
+
+// Create a collection for rental records
+db.rentals.insertMany([
+    { customerName: "John Doe", carModel: "Civic", rentalStart: new Date("2024-03-01"), rentalEnd: new Date("2024-03-05") },
+    { customerName: "Sarah Lee", carModel: "Model 3", rentalStart: new Date("2024-03-10"), rentalEnd: new Date("2024-03-12") },
+    { customerName: "Michael Smith", carModel: "Camry", rentalStart: new Date("2024-03-15"), rentalEnd: new Date("2024-03-20") }
+]);
+```
+
+</details>
+    </li>
+    <li>
+        <p>Write MongoDB queries to do the following:</p>
+        <ul>
+            <li>
+                <details>
+                    <summary>Retrieve all <strong>available cars</strong> (cars that are not currently rented)</summary>
+
+```javascript
+db.cars.find({
+    model: { $nin: db.rentals.distinct("carModel") }
+});
+```
+
+**Explanation:**
+- `db.rentals.distinct("carModel")`: Gets all rented car models.
+- `$nin`: Finds cars whose models are **not** in the rented list.
+
+</details>
+            </li>
+            <li>
+                <details>
+                    <summary>Retrieve the <strong>full names</strong> of all customers</summary>
+
+```javascript
+db.customers.aggregate([
+    {
+        $project: {
+            _id: 0,
+            fullName: { $concat: ["$firstName", " ", "$lastName"] }
+        }
+    }
+]);
+```
+
+</details>
+            </li>
+            <li>
+                <details>
+                    <summary>Find the total rental days for each customer</summary>
+
+```javascript
+db.rentals.aggregate([
+    {
+        $project: {
+            customerName: 1,
+            totalDays: { 
+                $dateDiff: { 
+                    startDate: "$rentalStart", 
+                    endDate: "$rentalEnd", 
+                    unit: "day" 
+                }
+            }
+        }
+    }
+]);
+```
+
+**Explanation:**
+- `$dateDiff`: Computes the difference between `rentalStart` and `rentalEnd` in **days**.
+
+</details>
+            </li>
+            <li>
+                <details>
+                    <summary>Find the total earnings for each car model</summary>
+
+```javascript
+db.rentals.aggregate([
+    {
+        $lookup: {
+            from: "cars",
+            localField: "carModel",
+            foreignField: "model",
+            as: "carDetails"
+        }
+    },
+    { $unwind: "$carDetails" },
+    {
+        $project: {
+            carModel: 1,
+            totalRevenue: {
+                $multiply: [
+                    { 
+                        $dateDiff: { 
+                            startDate: "$rentalStart", 
+                            endDate: "$rentalEnd", 
+                            unit: "day" 
+                        }
+                    },
+                    "$carDetails.pricePerDay"
+                ]
+            }
+        }
+    },
+    { $group: { _id: "$carModel", totalEarnings: { $sum: "$totalRevenue" } } }
+]);
+```
+
+**Explanation:**
+- `$lookup`: Joins rentals with the `cars` collection.
+- `$unwind`: Flattens the array from `$lookup`.
+- `$multiply`: Multiplies the number of rental days by `pricePerDay`.
+- `$group`: Sums up total earnings per car.
+
+</details>
+            </li>
+            <li>
+                <details>
+                    <summary>Retrieve all rental records for "John Doe"</summary>
+
+```javascript
+db.rentals.find(
+    { customerName: "John Doe" }
+);
+```
+
+</details>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <details>
+            <summary>Change "Sarah Lee"'s email to <code>s.lee@example.com</code></summary>
+
+```javascript
+db.customers.updateOne(
+    { firstName: "Sarah", lastName: "Lee" },
+    { $set: { email: "s.lee@example.com" } }
+);
+```
+
+</details>
+    </li>
+    <li>
+        <details>
+            <summary>Remove "Michael Smith"'s rental record</summary>
+
+```javascript
+db.rentals.deleteOne({
+    customerName: "Michael Smith"
+});
+```
+
+</details>
+    </li>
+</ol>
+</details>
