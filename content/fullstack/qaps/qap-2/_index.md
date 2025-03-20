@@ -91,21 +91,21 @@ Complete the provided Express application to practice simple math questions. Use
 
 ## Grading Rubric
 
-| **Category**        | **Criteria**                                                                                                            | **Points** |
-|---------------------|-------------------------------------------------------------------------------------------------------------------------|------------|
-| **Functionality**   | **Home Page**: Displays options to start a quiz, and shows the last recorded streak or a relevant message if there is no streak.                 | 10         |
-|                     | **Quiz Question Page**: Displays the current question and allows user to submit an answer.                              | 15         |
-|                     | **Quiz Completion Page**: Displays the streak and options to start a new quiz or return to home page.                   | 15         |
-| **Correctness**     | **Question Generation Function**: Correctly generates a random math question based on requirements.                     | 5          |
-|                     | **Answer Checking Function**: Correctly checks if a given answer is correct or incorrect.                               | 5          |
-|                     | **In-memory Data Management**: Streaks and scores are stored and retrieved correctly while the user is on the site.     | 10         |
-| **Code Quality**    | **Readability**: Code is well-organized and easy to read (proper indentation, clear variable/function names).           | 10         |
-|                     | **Modularity**: Functions are properly modularized (e.g., quiz logic and routing separated from app structure).         | 5          |
-| **Git Hygiene**     | **Commit Frequency**: Regular commits reflecting meaningful progress throughout development.                            | 5          |
-|                     | **Commit Quality**: Commit messages are clear, concise, and descriptive.                                                | 5          |
-| **Testing**         | **Unit Tests for Functions**: Unit tests for question generation and answer checking functions are written and passing. | 5          |
-|                     | **Comprehensive Test Coverage**: Tests cover multiple cases (correct, incorrect, edge cases).                           | 5          |
-| **User Experience** | **UI/UX**: The app is easy to use, well-structured, and aesthetically consistent.                                       | 5          |
-| **Total Points**    |                                                                                                                         | **100**    |
+| **Category**        | **Criteria**                                                                                                                     | **Points** |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------|------------|
+| **Functionality**   | **Home Page**: Displays options to start a quiz, and shows the last recorded streak or a relevant message if there is no streak. | 10         |
+|                     | **Quiz Question Page**: Displays the current question and allows user to submit an answer.                                       | 15         |
+|                     | **Quiz Completion Page**: Displays the streak and options to start a new quiz or return to home page.                            | 15         |
+| **Correctness**     | **Question Generation Function**: Correctly generates a random math question based on requirements.                              | 5          |
+|                     | **Answer Checking Function**: Correctly checks if a given answer is correct or incorrect.                                        | 5          |
+|                     | **In-memory Data Management**: Streaks and scores are stored and retrieved correctly while the user is on the site.              | 10         |
+| **Code Quality**    | **Readability**: Code is well-organized and easy to read (proper indentation, clear variable/function names).                    | 10         |
+|                     | **Modularity**: Functions are properly modularized (e.g., quiz logic and routing separated from app structure).                  | 5          |
+| **Git Hygiene**     | **Commit Frequency**: Regular commits reflecting meaningful progress throughout development.                                     | 5          |
+|                     | **Commit Quality**: Commit messages are clear, concise, and descriptive.                                                         | 5          |
+| **Testing**         | **Unit Tests for Functions**: Unit tests for question generation and answer checking functions are written and passing.          | 5          |
+|                     | **Comprehensive Test Coverage**: Tests cover multiple cases (correct, incorrect, edge cases).                                    | 5          |
+| **User Experience** | **UI/UX**: The app is easy to use, well-structured, and aesthetically consistent.                                                | 5          |
+| **Total Points**    |                                                                                                                                  | **100**    |
 
 Good luck! If you have any questions, please don't hesitiate to ask!
