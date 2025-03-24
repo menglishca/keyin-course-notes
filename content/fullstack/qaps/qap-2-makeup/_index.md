@@ -1,0 +1,97 @@
+---
+title: QAP 2 - Makeup - Daily Mood Tracker
+excludeSearch: true
+sidebar:
+  exclude: true
+cascade:
+  type: docs
+---
+
+### Objective  
+Complete the provided Express application that allows users to log how they’re feeling each day. The app tracks the current streak of positive days and displays recent mood history.  
+**Due Date: March 31st, 2025 at 11:59PM**
+
+### Getting Started
+- To help you get started, a [base repository](https://classroom.github.com/a/OQTQaAW9) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
+
+### Steps to Create Your Own Repository
+1. Click the link and choose your name.
+2. Click **“Accept this assignment.”**
+3. Clone your newly created repository:
+   ```bash
+   git clone <your-new-repo-url>
+   ```
+4. Navigate to the folder and install dependencies:
+   ```bash
+   cd <your-new-repo-name>
+   npm install
+   ```
+5. Start the app:
+   ```bash
+   npm start
+   ```
+6. Run the tests:
+   ```bash
+   npm test
+   ```
+
+## Requirements
+### Technology Requirements
+- You are allowed to use **additional npm packages** to enhance your application. However, ensure that any extra packages are relevant and add value to your project.
+- Usage of any session packages are not required for this project
+- All data can be stored **in-memory** using variables, assume only **one user** uses the site at a time
+- All pages must be created using **EJS templates**. Do not use other templating engines (e.g., Handlebars, Pug) or frameworks such as React.
+- Your application must run on **Node.js** using **Express** for the backend.
+
+### Required Pages
+- **Home Page**
+  - Shows a welcome message
+  - Displays current positive streak or a message like “No entries yet.”
+  - Button to add a new mood entry
+
+- **Mood Entry Page**
+  - User selects how they’re feeling today (e.g., Happy, Sad, Okay, Stressed, Excited)
+  - Submit button to record entry
+
+- **Mood Summary Page**
+  - Displays the user's positive streak (number of consecutive “Happy” or “Excited” days)
+  - Shows the last 5 days of mood entries
+  - Button to return to home
+
+### Functional Requirements
+- **Mood Submission Logic**
+  - Store each day’s mood entry in an array
+  - A day is considered “positive” if mood is “Happy” or “Excited”
+- **Streak Calculation**
+  - A function should calculate how many **positive days in a row** the user has logged (starting from most recent and going backward)
+- **Utility Functions**
+  - `getStreak()` – returns the current positive streak
+- **Unit Testing**:
+  - Write tests to verify:
+    - Streak calculation returns correct result
+
+## Submission
+- Ensure:
+  - App works with `npm start`
+  - All tests pass using `npm test`
+- Submissions should be made with a link to your github classroom repository under on Teams under the appropriate assignment
+- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/DatabaseProgramming-SD14Jan.2025-Apr.2025/ERhPYAhTYw5LncPYJt1qjfABVmfRwDZvyAWrtZGZmzgjBA?e=vqGUKb) 
+  - If an extension is needed, please reach out to me directly before the assignment due date.
+
+## Grading Rubric
+
+| **Category**        | **Criteria**                                                           | **Points** |
+|---------------------|------------------------------------------------------------------------|------------|
+| **Functionality**   | Home Page: Displays welcome message, start option, and streak          | 10         |
+|                     | Mood Entry Page: User can select and submit today’s mood               | 15         |
+|                     | Summary Page: Shows current streak and recent moods                    | 15         |
+| **Correctness**     | `getStreak()` function correctly calculates positive streaks           | 10         |
+|                     | In-memory tracking of mood data works throughout the session           | 10         |
+| **Code Quality**    | Code is clean, readable, and logically organized                       | 10         |
+|                     | Functions are modular and separated from app/router logic              | 5          |
+| **Git Hygiene**     | Frequent, meaningful commits                                           | 5          |
+|                     | Clear and descriptive commit messages                                  | 5          |
+| **Testing**         | Unit tests for core logic (mood logging, streaks) are implemented      | 5          |
+|                     | Test coverage includes different moods, edge cases, and invalid values | 5          |
+| **User Experience** | Simple and intuitive interface using EJS templates                     | 5          |
+| **Total**           |                                                                        | **100**    |
