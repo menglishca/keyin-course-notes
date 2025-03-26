@@ -8,7 +8,6 @@ For our eleventh topic in fullstack we'll be covering how to connect something l
 1. What is frontend development?
 1. A brief React review
 1. How do React apps work?
-1. Express and React
 1. Monolithic vs Split Server Architecture
 1. Examples
 

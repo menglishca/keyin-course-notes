@@ -1,5 +1,5 @@
 ---
-title: 6. Examples
+title: 5. Examples
 ---
 
 Awesome! Here's the final section: **Examples**

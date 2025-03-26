@@ -1,13 +1,20 @@
 ---
-title: 5. Monolithic vs Split Server Architecture
+title: 4. Monolithic vs Split Server Architecture
 ---
+
 ## Monolithic vs Split Server Architecture
+- When it comes to building a fullstack web app, how we break it down can be confusing
+- Nowadays, we commonly split it into two pieces, the frontend and the backend but that doesn't always translate well to real life
+  - As an example, when we work with server side rendering (like `ejs`), there isn't really a frontend, at least not a separate frontend as the "frontend" is just integrated directly into the backend
+- In addition, there's also the question of how we split up the backend
+- Technically speaking, given the way things work, we can split up the backend in any number of ways
+  - All the data is sent over HTTP requests, so it doesn't matter where those requests really go, as long as they send back the right data
+- However, for the purposes of this, we're going to focus on two ways of splitting up the backend: a monolith and a split server architecture
+  - These aren't really industry standard terms, but I thought they illustrated the point well
+- **Note**: When using client-side rendering (like React) the primary purpose of your backend is to serve static files and handle API requests. There's no rendering happening on the server, like we've been doing so far with our server side rendering with `ejs`.
 
-When building a fullstack app with React and Express, you have two main ways to structure your project:
-
-### 🧱 Monolithic Architecture
-
-In a monolithic setup, both the **frontend and backend are served from the same Express server**.
+### Monolithic Architecture
+- In a monolithic setup, both the backend handles serving the static files required for the frontend and it handles the API requests
 
 #### How It Works
 - You run Express on a single port (e.g., `localhost:3000`).
@@ -23,7 +30,6 @@ In a monolithic setup, both the **frontend and backend are served from the same 
 #### Benefits
 - Easy deployment: one server handles everything.
 - No CORS issues since frontend and backend share the same origin.
-- Simpler hosting: upload to services like Heroku, Render, or Fly.io.
 
 #### Downsides
 - Slightly more setup in Express to serve static files.
@@ -41,9 +47,8 @@ app.get('*', (req, res) => {
 });
 ```
 
-### 🧩 Split Server Architecture (Two Server Setup)
-
-In a split architecture, you run **React and Express as separate servers during development**.
+### Split Server Architecture
+- In a split architecture the React static files (or really any frontend files) are sent from one server and the API is handled by another
 
 #### How It Works
 - React runs on one port (e.g., `localhost:5173` using Vite).
