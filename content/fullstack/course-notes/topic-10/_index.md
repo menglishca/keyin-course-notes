@@ -4,7 +4,7 @@ cascade:
   type: docs
 ---
 
-For our eleventh topic in fullstack we'll be covering how to connect something like a React frontend to an express backend. In particular, we'll cover:
+For our tenth topic in fullstack we'll be covering how to connect something like a React frontend to an express backend. In particular, we'll cover:
 1. What is frontend development?
 1. A brief React review
 1. How do React apps work?
