@@ -7,7 +7,7 @@ title: 4. Final Sprint - Team
 Build a feature-complete real-time chat application in groups of up to four members. This project will demonstrate your ability to integrate Express.js, MongoDB, EJS templates, and WebSockets.
 
 **Due Date**  
-April 19th, 2024, at 11:59 PM
+April 19th, 2025, at 11:59 PM
 
 **Note**  
 This is the combined final sprint for both Databases and Fullstack development. You will only complete this one final, and the grade will be applied to both courses.
