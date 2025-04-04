@@ -91,21 +91,27 @@ Complete the provided Express application to practice simple math questions. Use
 
 ## Grading Rubric
 
-| **Category**        | **Criteria**                                                                                                                     | **Points** |
-|---------------------|----------------------------------------------------------------------------------------------------------------------------------|------------|
-| **Functionality**   | **Home Page**: Displays options to start a quiz, and shows the last recorded streak or a relevant message if there is no streak. | 10         |
-|                     | **Quiz Question Page**: Displays the current question and allows user to submit an answer.                                       | 15         |
-|                     | **Quiz Completion Page**: Displays the streak and options to start a new quiz or return to home page.                            | 15         |
-| **Correctness**     | **Question Generation Function**: Correctly generates a random math question based on requirements.                              | 5          |
-|                     | **Answer Checking Function**: Correctly checks if a given answer is correct or incorrect.                                        | 5          |
-|                     | **In-memory Data Management**: Streaks and scores are stored and retrieved correctly while the user is on the site.              | 10         |
-| **Code Quality**    | **Readability**: Code is well-organized and easy to read (proper indentation, clear variable/function names).                    | 10         |
-|                     | **Modularity**: Functions are properly modularized (e.g., quiz logic and routing separated from app structure).                  | 5          |
-| **Git Hygiene**     | **Commit Frequency**: Regular commits reflecting meaningful progress throughout development.                                     | 5          |
-|                     | **Commit Quality**: Commit messages are clear, concise, and descriptive.                                                         | 5          |
-| **Testing**         | **Unit Tests for Functions**: Unit tests for question generation and answer checking functions are written and passing.          | 5          |
-|                     | **Comprehensive Test Coverage**: Tests cover multiple cases (correct, incorrect, edge cases).                                    | 5          |
-| **User Experience** | **UI/UX**: The app is easy to use, well-structured, and aesthetically consistent.                                                | 5          |
-| **Total Points**    |                                                                                                                                  | **100**    |
+| Category                                             | Criteria                                                                                  | Points  |
+|------------------------------------------------------|-------------------------------------------------------------------------------------------|---------|
+| **Functionality**                                    |                                                                                           | **40**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Home Page                    | Displays options to start a quiz and shows the last recorded streak or a message if none. | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Quiz Question Page           | Displays the current question and allows user to submit an answer.                        | 15      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Quiz Completion Page         | Displays the streak and options to start a new quiz or return to the home page.           | 15      |
+| **Correctness**                                      |                                                                                           | **20**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Question Generation Function | Correctly generates a random math question based on requirements.                         | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;Answer Checking Function     | Correctly checks if a given answer is correct or incorrect.                               | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;In-memory Data Management    | Streaks and scores are stored and retrieved correctly while the user is on the site.      | 10      |
+| **Code Quality**                                     |                                                                                           | **15**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Readability                  | Code is well-organized and easy to read (indentation, clear naming).                      | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Modularity                   | Functions are modularized properly (e.g., quiz logic separated from routing).             | 5       |
+| **Git Hygiene**                                      |                                                                                           | **10**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Commit Frequency             | Regular commits reflecting meaningful progress.                                           | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;Commit Quality               | Commit messages are clear, concise, and descriptive.                                      | 5       |
+| **Testing**                                          |                                                                                           | **10**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Unit Tests for Functions     | Unit tests written and passing for question generation and answer checking.               | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;Comprehensive Test Coverage  | Tests cover multiple cases (correct, incorrect, edge cases).                              | 5       |
+| **User Experience**                                  |                                                                                           | **5**   |
+| &nbsp;&nbsp;&nbsp;&nbsp;UI/UX                        | The app is easy to use, well-structured, and aesthetically consistent.                    | 5       |
+| **Total Points**                                     |                                                                                           | **100** |
 
 Good luck! If you have any questions, please don't hesitiate to ask!

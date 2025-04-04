@@ -28,7 +28,7 @@ Build a user management system using Express and EJS. Allow new users to registe
     npm install
     ```  
 
-1. **Run the app:**  
+1. Run the app:
     ```bash
     npm start
     ```  
@@ -90,19 +90,24 @@ Build a user management system using Express and EJS. Allow new users to registe
 
 ## Grading Rubric  
 
-| Category            | Criteria                                                                                                        | **Points** |
-|---------------------|-----------------------------------------------------------------------------------------------------------------|------------|
-| **Functionality**   | **Registration**: Allows users to register with username, email, and password. Registration rules are enforced  | 20         |
-|                     | **Login** Authenticates users with email and hashed password comparison.                                        | 10         |
-|                     | **Role-Based Access**: Unauthorized users see the homepage, users see their landing page, admins see all users. | 15         |
-|                     | **Logout**: Ends session and redirects to the home page.                                                        | 5          |
-|                     | **Password Hashing**: Passwords are securely hashed using bcrypt.                                               | 5          |
-|                     | **Error Handling**: Errors are displayed to the user in a secure, visible way. Error states are accounted for.  | 10         |
-| **Code Quality**    | **Readability**: Code is well-organized and easy to read (proper indentation, clear variable/function names).   | 10         |
-|                     | **Modularity**: Functions are properly modularized (e.g., quiz logic and routing separated from app structure). | 5          |
-| **Git Hygiene**     | **Commit Frequency**: Regular commits reflecting meaningful progress throughout development.                    | 5          |
-|                     | **Commit Quality**: Commit messages are clear, concise, and descriptive.                                        | 5          |
-| **User Experience** | **UI/UX**: The app is easy to use, well-structured, and aesthetically consistent.                               | 10         |
-| **Total Points**    |                                                                                                                 | **100**    |
+| Category                                  | Criteria                                                                                 | Points  |
+|-------------------------------------------|------------------------------------------------------------------------------------------|---------|
+| **Functionality**                         |                                                                                          | **65**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Registration      | Allows users to register with username, email, and password. Enforces validation rules.  | 20      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Login             | Authenticates users with email and hashed password comparison.                           | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Role-Based Access | Unauthorized users see the homepage, users see their landing page, admins see all users. | 15      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Logout            | Ends session and redirects to the home page.                                             | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;Password Hashing  | Passwords are securely hashed using bcrypt.                                              | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;Error Handling    | Errors are shown in a secure, visible way; error states are handled gracefully.          | 10      |
+| **Code Quality**                          |                                                                                          | **15**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Readability       | Code is well-organized and easy to read (indentation, naming, structure).                | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Modularity        | Functions are modular and separated from routing and app setup.                          | 5       |
+| **Git Hygiene**                           |                                                                                          | **10**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Commit Frequency  | Regular commits reflecting meaningful progress.                                          | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;Commit Quality    | Commit messages are clear, concise, and descriptive.                                     | 5       |
+| **User Experience**                       |                                                                                          | **10**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;UI/UX             | The app is easy to use, well-structured, and visually consistent.                        | 10      |
+| **Total Points**                          |                                                                                          | **100** |
+
 
 Good luck! If you have any questions, please don't hesitiate to ask!

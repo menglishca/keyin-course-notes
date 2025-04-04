@@ -80,18 +80,25 @@ Complete the provided Express application that allows users to log how they’re
 
 ## Grading Rubric
 
-| **Category**        | **Criteria**                                                           | **Points** |
-|---------------------|------------------------------------------------------------------------|------------|
-| **Functionality**   | Home Page: Displays welcome message, start option, and streak          | 10         |
-|                     | Mood Entry Page: User can select and submit today’s mood               | 15         |
-|                     | Summary Page: Shows current streak and recent moods                    | 15         |
-| **Correctness**     | `getStreak()` function correctly calculates positive streaks           | 10         |
-|                     | In-memory tracking of mood data works throughout the session           | 10         |
-| **Code Quality**    | Code is clean, readable, and logically organized                       | 10         |
-|                     | Functions are modular and separated from app/router logic              | 5          |
-| **Git Hygiene**     | Frequent, meaningful commits                                           | 5          |
-|                     | Clear and descriptive commit messages                                  | 5          |
-| **Testing**         | Unit tests for core logic (mood logging, streaks) are implemented      | 5          |
-|                     | Test coverage includes different moods, edge cases, and invalid values | 5          |
-| **User Experience** | Simple and intuitive interface using EJS templates                     | 5          |
-| **Total**           |                                                                        | **100**    |
+| Category                                            | Criteria                                                        | Points  |
+|-----------------------------------------------------|-----------------------------------------------------------------|---------|
+| **Functionality**                                   |                                                                 | **40**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Home Page                   | Displays welcome message, start option, and current streak.     | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Mood Entry Page             | User can select and submit today’s mood.                        | 15      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Summary Page                | Shows current streak and recent moods.                          | 15      |
+| **Correctness**                                     |                                                                 | **20**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;`getStreak()` Function      | Correctly calculates positive mood streaks.                     | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;In-Memory Mood Tracking     | Tracks mood data accurately throughout the session.             | 10      |
+| **Code Quality**                                    |                                                                 | **15**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Readability                 | Code is clean, readable, and logically organized.               | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Modularity                  | Functions are modular and separated from app/router logic.      | 5       |
+| **Git Hygiene**                                     |                                                                 | **10**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Commit Frequency            | Frequent, meaningful commits.                                   | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;Commit Quality              | Commit messages are clear and descriptive.                      | 5       |
+| **Testing**                                         |                                                                 | **10**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Core Logic Unit Tests       | Unit tests implemented for mood logging and streak calculation. | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;Comprehensive Test Coverage | Tests include different moods, edge cases, and invalid inputs.  | 5       |
+| **User Experience**                                 |                                                                 | **5**   |
+| &nbsp;&nbsp;&nbsp;&nbsp;UI/UX                       | Simple and intuitive interface using EJS templates.             | 5       |
+| **Total Points**                                    |                                                                 | **100** |
+

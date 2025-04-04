@@ -48,24 +48,25 @@ Create a Command-Line Interface (CLI) application in Node.js that generates pass
 
 ## Grading Rubric  
 
-| Category                        | Criteria                                                                           | Points |
-|---------------------------------|------------------------------------------------------------------------------------|--------|
-| **Functionality**               | **/45**                                                                            |        |
-| - Help Message                  | Help message correctly implemented and uses a standard flag.                       | 10     |
-| - Password Length Flag          | Allows user to specify password length and applies it correctly.                   | 10     |
-| - Default Length Behavior       | Defaults to 8 when no length is provided.                                          | 5      |
-| - Invalid Input Handling        | Handles invalid inputs with informative error messages.                            | 5      |
-| - Customizable Features         | Implements at least one feature: numbers, capitals, or symbols.                    | 15     |
-| **Git Hygiene**                 | **/25**                                                                            |        |
-| - Branching and Pull Requests   | Customizable feature implemented on a separate branch and merged via pull request. | 10     | 
-| - Commit Frequency and Quality  | Regular commits with clear, descriptive commit messages and meaningful progress.   | 10     |
-| - Git Name/Email                | Your github name and email are set correctly                                       | 5      |
-| **Code Quality**                | **/20**                                                                            |        |
-| - Readability                   | Code is well-organized, styled, and includes necessary comments.                   | 10     |
-| - Error Handling                | Includes proper error handling and avoids crashes.                                 | 10     |
-| **Project Structure**           | **/10**                                                                            |        |
-| - Package.json                  | Includes your name, app name and main file                                         | 5      |
-| - README.md                     | Includes app name and a clear description.                                         | 5      |
+| Category                                             | Criteria                                                                           | Points  |
+|------------------------------------------------------|------------------------------------------------------------------------------------|---------|
+| **Functionality**                                    |                                                                                    | **45**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Help Message                 | Help message correctly implemented and uses a standard flag.                       | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Password Length Flag         | Allows user to specify password length and applies it correctly.                   | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Default Length Behavior      | Defaults to 8 when no length is provided.                                          | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;Invalid Input Handling       | Handles invalid inputs with informative error messages.                            | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;Customizable Features        | Implements at least one feature: numbers, capitals, or symbols.                    | 15      |
+| **Git Hygiene**                                      |                                                                                    | **25**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Branching and Pull Requests  | Customizable feature implemented on a separate branch and merged via pull request. | 10      | 
+| &nbsp;&nbsp;&nbsp;&nbsp;Commit Frequency and Quality | Regular commits with clear, descriptive commit messages and meaningful progress.   | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Git Name/Email               | Your github name and email are set correctly                                       | 5       |
+| **Code Quality**                                     |                                                                                    | **20**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Readability                  | Code is well-organized, styled, and includes necessary comments.                   | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Error Handling               | Includes proper error handling and avoids crashes.                                 | 10      |
+| **Project Structure**                                |                                                                                    | **10**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Package.json                 | Includes your name, app name and main file                                         | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;README.md                    | Includes app name and a clear description.                                         | 5       |
+| **Total Points**                                     |                                                                                    | **100** |
 
 ## Submission Guidelines  
 - Ensure all code runs correctly and meets the requirements.

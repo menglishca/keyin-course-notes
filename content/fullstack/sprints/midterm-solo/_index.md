@@ -1,5 +1,5 @@
 ---
-title: 1. Mid Term Sprint - Independent
+title: 1. Mid Term Sprint - Solo
 ---
 
 ## Objective
