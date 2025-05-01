@@ -1,5 +1,5 @@
 ---
-title: 3. Types of relatiomships
+title: 3. Types of relationships
 ---
 
 - The relationships used when linking data across tables can be broken down into three main types:

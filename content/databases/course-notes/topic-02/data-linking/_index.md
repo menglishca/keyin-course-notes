@@ -119,7 +119,7 @@ A company wants to track which orders are placed by which customers. We need to 
 </details>
 
 <details>
-  <summary>Example 3: Library Book Loans</summary>
+  <summary>Example 2: Library Book Loans</summary>
 
 ### Problem:
 A library needs to track which books are checked out by which members.
@@ -193,7 +193,7 @@ A library needs to track which books are checked out by which members.
 </details>
 
 <details>
-  <summary>Example 2: Employee Assignments to Projects</summary>
+  <summary>Example 3: Employee Assignments to Projects</summary>
 
 ### Problem:
 A company needs to track which employees are assigned to which projects. We need to link employee assignments to specific projects.
