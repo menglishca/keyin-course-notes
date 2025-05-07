@@ -1,7 +1,10 @@
 ---
-title: QAP 3 - User Management System  
-cascade:  
-  type: docs  
+title: QAP 3 - User Management System
+excludeSearch: true
+sidebar:
+  exclude: true
+cascade:
+  type: docs
 ---
 
 ## Objective  

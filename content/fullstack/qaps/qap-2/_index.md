@@ -1,5 +1,8 @@
 ---
 title: QAP 2 - Math Competition App
+excludeSearch: true
+sidebar:
+  exclude: true
 cascade:
   type: docs
 ---

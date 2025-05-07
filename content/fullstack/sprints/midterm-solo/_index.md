@@ -1,5 +1,10 @@
 ---
 title: 1. Mid Term Sprint - Solo
+excludeSearch: true
+sidebar:
+  exclude: true
+cascade:
+  type: docs
 ---
 
 ## Objective

@@ -1,5 +1,10 @@
 ---
 title: QAP 2 - SQL and PostgreSQL Mastery
+excludeSearch: true
+sidebar:
+  exclude: true
+cascade:  
+  type: docs
 ---
 
 ## Objective

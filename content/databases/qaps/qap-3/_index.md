@@ -1,5 +1,10 @@
 ---
 title: QAP 3 - Database and Backend Integration
+excludeSearch: true
+sidebar:
+  exclude: true
+cascade:  
+  type: docs  
 ---
 
 ## Objective

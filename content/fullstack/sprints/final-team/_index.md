@@ -1,5 +1,10 @@
 ---
 title: 4. Final Sprint - Team
+excludeSearch: true
+sidebar:
+  exclude: true
+cascade:
+  type: docs
 ---
 
 ## Preface

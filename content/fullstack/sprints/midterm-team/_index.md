@@ -1,5 +1,10 @@
 ---
 title: 2. Mid Term Sprint - Team
+excludeSearch: true
+sidebar:
+  exclude: true
+cascade:
+  type: docs
 ---
 
 ## Objective

@@ -1,5 +1,10 @@
 ---
 title: 1. Mid Term Sprint - Independent
+excludeSearch: true
+sidebar:
+  exclude: true
+cascade:
+  type: docs
 ---
 
 ## Objective 

@@ -1,5 +1,10 @@
 ---
 title: 3. Final Sprint - Solo
+excludeSearch: true
+sidebar:
+  exclude: true
+cascade:
+  type: docs
 ---
 
 ## Preface
