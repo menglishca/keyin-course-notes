@@ -86,7 +86,7 @@ Complete the provided Express application to practice simple math questions. Use
 - Ensure all tests pass when ran with the pre-setup `npm test` command
 - Submissions should be made on Teams under the appropriate assignment
 - Submissions should **only** include a link to your github repository which contains the complete code for your QAP
-- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/DatabaseProgramming-SD14Jan.2025-Apr.2025/ERhPYAhTYw5LncPYJt1qjfABVmfRwDZvyAWrtZGZmzgjBA?e=vqGUKb) 
+- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD13May.2025-Aug.2025/EQsdYpI0N1RPsETRsktEqmkBTDvs1QzdvJT5cmDCQoSHWw?e=ZT4ph9) 
   - If an extension is needed, please reach out to me directly before the assignment due date.
 
 ## Grading Rubric

@@ -89,7 +89,7 @@ This variety of records is designed to help you test features like filtering by 
 - Submit a link to the repository on Teams under the appropriate assignment
 - Use a tool like Thunder Client, Postman, or curl to test your endpoints
 - Reach out before the deadline if you need an extension
-- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/DatabaseProgramming-SD14Jan.2025-Apr.2025/ERhPYAhTYw5LncPYJt1qjfABVmfRwDZvyAWrtZGZmzgjBA?e=vqGUKb)
+- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD13May.2025-Aug.2025/EQsdYpI0N1RPsETRsktEqmkBTDvs1QzdvJT5cmDCQoSHWw?e=ZT4ph9)
 
 ## Grading Rubric  
 

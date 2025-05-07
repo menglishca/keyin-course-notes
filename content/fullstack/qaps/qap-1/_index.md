@@ -72,6 +72,6 @@ Create a Command-Line Interface (CLI) application in Node.js that generates pass
 - Ensure all code runs correctly and meets the requirements.
 - Submissions should be made on Teams under the appropriate assignment.  
 - Submissions should **only** include a link to your GitHub repository containing the completed code for your QAP.  
-- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/DatabaseProgramming-SD14Jan.2025-Apr.2025/ERhPYAhTYw5LncPYJt1qjfABVmfRwDZvyAWrtZGZmzgjBA?e=vqGUKb) 
+- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD13May.2025-Aug.2025/EQsdYpI0N1RPsETRsktEqmkBTDvs1QzdvJT5cmDCQoSHWw?e=ZT4ph9) 
 - If an extension is required, please contact me directly before the due date.  
 

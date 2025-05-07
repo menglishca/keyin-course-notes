@@ -45,7 +45,7 @@ Imagine you are designing a database for a small online bookstore. The bookstore
 - Diagrams do not have to be any standard form, as long as the data is present.  A tool like: [https://dbdiagram.io](https://dbdiagram.io) may help, but is not required.
 - Submissions should be made on Teams via the appropriate assignment
 - Submissions should **only** include your PDF file
-- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/DatabaseProgramming-SD14Jan.2025-Apr.2025/ERhPYAhTYw5LncPYJt1qjfABVmfRwDZvyAWrtZGZmzgjBA?e=vqGUKb)
+- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD13May.2025-Aug.2025/EQsdYpI0N1RPsETRsktEqmkBTDvs1QzdvJT5cmDCQoSHWw?e=ZT4ph9)
   - If an extension is needed please reach out before the due date
 
 ## Pass Outstanding Criteria

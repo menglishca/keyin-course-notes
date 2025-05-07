@@ -116,7 +116,7 @@ You are responsible for determining the **specific test cases** needed to verify
 - Ensure the application runs correctly using `npm start`, and all features are implemented as specified.
 - Ensure all tests pass using `npm test`.
 - Submit your GitHub repository **link** on Teams under the appropriate assignment.
-- **Late submissions** will follow [Keyin's late assessment policy](https://keyincollege289.sharepoint.com/:b:/s/DatabaseProgramming-SD14Jan.2025-Apr.2025/ERhPYAhTYw5LncPYJt1qjfABVmfRwDZvyAWrtZGZmzgjBA?e=vqGUKb).
+- **Late submissions** will follow [Keyin's late assessment policy](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD13May.2025-Aug.2025/EQsdYpI0N1RPsETRsktEqmkBTDvs1QzdvJT5cmDCQoSHWw?e=ZT4ph9).
 - If an extension is needed, please reach out before the due date.
 
 ## Notes/Questions
