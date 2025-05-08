@@ -11,8 +11,8 @@ title: Course Outline
 - Week 1: VSCode, Git and GitHub
 - Week 2: Building CLI applications with Node.js
 - **QAP 1**
-- Week 3: Reading and writing files; the event loop
-- Week 4: NPM Packages; testing with Jest
+- Week 3: NPM Packages; testing with Jest
+- Week 4: Reading and writing files; the event loop
 - Week 5: Setting up a web server with express; server side rendering
 - **QAP 2**
 - Week 6: HTTP Methods and RESTful APIs
