@@ -4,7 +4,7 @@ title: 1. Webservers and Express.js
 
 ## What is a Web Server?
 - A piece of software that listens on a specific port for HTTP requests from clients
-    - Typically port `80` for HTTP requessts and `443` for HTTPS requeests
+    - Typically port `80` for HTTP requests and `443` for HTTPS requests
 - When a request is made, the web server sends back the client a response (such as a HTML or JSON file)
 - Common responsibilities include:
   - Serving static files (HTML, CSS, JS)

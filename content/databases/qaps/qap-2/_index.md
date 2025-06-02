@@ -1,15 +1,40 @@
 ---
 title: QAP 2 - SQL and PostgreSQL Mastery
-excludeSearch: true
-sidebar:
-  exclude: true
 cascade:  
   type: docs
 ---
 
 ## Objective
 Complete both provided problems below, make sure to include all SQL to create the tables, insert the data and perform all queries.  
-**Due date: February 10th, 2024 at 11:59PM**
+**Due date: June 9th, 2024 at 11:59PM**
+
+## Getting Started
+- To help you get started, a [base repository](https://classroom.github.com/a/8X6eUF66) has been provided for you to work from. The repository is set up as a **GitHub Assignment** to help you quickly get started.
+
+### Steps to Create Your Own Repository  
+
+1. Click the link above, and select your name on the list that appears, if you haven't already
+   
+1. Click the "Accept this assignment" button
+
+1. Once your repository is created, **clone your new repo** to your local machine:  
+   ```bash
+   git clone <your-repo-url>
+   ```
+
+1. The repo will contain a basic folder structure like this:
+
+```
+README.md
+problem-1/
+  queries.sql
+problem-2/
+  queries.sql
+```
+
+- You **may use this structure** if you'd like, or feel free to organize your SQL queries differently. As long as they're organized in some fashion and in the repo, it's perfect!  
+
+**Note:** When you're done writing and testing your queries in pgAdmin, it's strongly reccommended to **copy and paste** the working SQL into the `.sql` files in your GitHub repo.  The export/save option in pgAdmin, often produces broken or hard-to-read output that can make grading challengeing.
 
 ## Problem 1: University Course Enrollment System
 
