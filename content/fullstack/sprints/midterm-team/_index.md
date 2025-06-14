@@ -1,18 +1,15 @@
 ---
 title: 2. Mid Term Sprint - Team
-excludeSearch: true
-sidebar:
-  exclude: true
 cascade:
   type: docs
 ---
 
 ## Objective
 Complete the provided Express application **with your team** to view data about a collection of games.
-**Due date: March 2nd, 2025 at 11:59PM**
+**Due date: June 29th, 2025 at 11:59PM**
 
 ## Getting Started
-- To help you get started, a [base repository](https://classroom.github.com/a/ab3tzsY3) has been provided for you to work from. The repository is set up as a **GitHub Classroom Assignment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/e4V8Dx-W) has been provided for you to work from. The repository is set up as a **GitHub Classroom Assignment** to help you quickly get started.
 
 ### Steps to Create Your Own Repository
 
@@ -144,6 +141,7 @@ You are responsible for determining the **specific test cases** needed to verify
 - Submit a **GitHub repository link** on Teams (only one team member needs to submit).
 - Late submissions follow the Keyin late assessment policy [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD13May.2025-Aug.2025/EQsdYpI0N1RPsETRsktEqmkBTDvs1QzdvJT5cmDCQoSHWw?e=ZT4ph9).
 - If an extension is needed, please reach out before the due date.
+- **Teams can be a maximum of 3 members**
 
 ## Notes/Questions
 - Code samples from class are available [here](https://github.com/menglishca/keyin-code-samples).

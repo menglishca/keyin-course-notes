@@ -1,18 +1,15 @@
 ---
 title: 1. Mid Term Sprint - Solo
-excludeSearch: true
-sidebar:
-  exclude: true
 cascade:
   type: docs
 ---
 
 ## Objective
 Complete the provided Express application **independently** to generate fictional travel itineraries.
-**Due date: March 2nd, 2025, at 11:59 PM**
+**Due date: June 29th, 2025, at 11:59 PM**
 
 ### Getting Started
-- To help you get started, a [base repository](https://classroom.github.com/a/1mGXNgcp) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/ZlTRMAbF) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
 
 ### Steps to Create Your Own Repository
 
