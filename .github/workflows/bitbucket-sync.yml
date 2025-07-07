@@ -1,0 +1,26 @@
+name: Sync to Bitbucket
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Push to Bitbucket
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git remote add bitbucket https://${BITBUCKET_USERNAME}:${BITBUCKET_APP_PASSWORD}@bitbucket.org/menglishca/keyin-course-notes.git
+          git push --mirror bitbucket
+        env:
+          BITBUCKET_USERNAME: ${{ secrets.BITBUCKET_USERNAME }}
+          BITBUCKET_APP_PASSWORD: ${{ secrets.BITBUCKET_APP_PASSWORD }}
