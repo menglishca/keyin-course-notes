@@ -1,116 +1,102 @@
 ---
-title: QAP 3 - User Management System
-excludeSearch: true
-sidebar:
-  exclude: true
+title: QAP 3 - Event RSVP Portal
 cascade:
   type: docs
 ---
 
-## Objective  
-Build a user management system using Express and EJS. Allow new users to register, existing users to sign in, admins to see all registered users and let users logout.
-**Due date: March 27th, 2024, at 11:59 PM**
+### Objective
+Create an RSVP system for a single private event. Users must be able to sign up, log in, RSVP, and see event info. Admins can view a list of who’s attending.
 
 ### Getting Started
-- To help you get started, a [base repository](https://classroom.github.com/a/O5JWjEqM) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/qnroT32v) has been provided for you to work from. The repository is set up as a **GitHub Assignment** to help you quickly get started.
 
-### Steps to Create Your Own Repository  
+### Steps to Create Your Own Repository
+1. Click the link and choose your name.
+2. Click **“Accept this assignment.”**
+3. Clone your newly created repository:
+   ```bash
+   git clone <your-new-repo-url>
+   ```
+4. Navigate to the folder and install dependencies:
+   ```bash
+   cd <your-new-repo-name>
+   npm install
+   ```
+5. Start the app:
+   ```bash
+   npm start
+   ```
 
-1. Click the link above, and select your name on the list that appears, if you haven't already
-   
-1. Click the "Accept this assignment" button
+## Requirements
+### Technology Requirements
+- You are allowed to use **additional npm packages** to enhance your application. However, ensure that any extra packages are relevant and add value to your project.
+- You must use **express-session** for login persistence.
+- You must use **bcrypt** to hash user passwords.
+- All data must be stored **in-memory** using variables; no database is required.
+- All pages must be created using **EJS templates**. Do not use other templating engines (e.g., Handlebars, Pug) or frameworks such as React.
+- Your application must run on **Node.js** using **Express** for the backend.
 
-1. Once your repository is created, **clone your new repo** to your local machine:  
-    ```bash
-    git clone <your-new-repo-url>
-    ```  
-
-1. Navigate into the project directory and install the necessary dependencies:  
-    ```bash
-    cd <your-new-repo-name>
-    npm install
-    ```  
-
-1. Run the app:
-    ```bash
-    npm start
-    ```  
-    This will start the server at `http://localhost:3000/`.  
-
-- By using this template, you'll have the project structure and initial setup ready to go, allowing you to focus on building the required functionality.
-
-## Requirements  
-
-### Technology Requirements  
-- **Node.js** must be used with **Express** for the backend.  
-- All templates must use **EJS** for rendering. Other templating engines or frameworks (e.g., Handlebars, React) are not permitted.  
-- Implement authentication and role-based access using `express-session`.  
-
-### Required Pages  
-- **Home Page**:
-  - Provided as boilerplate.
-  - Displays buttons for "Login" and "Sign Up."  
-- **Registration Page**:
+### Required Pages
+- **Home Page**
+  - Displays a welcome message and a brief description of the event.
+  - Shows login and registration buttons.
+  - If logged in, also shows a personalized welcome and a link to the Event Page.
+- **Registration Page**
   - Allows users to register with a username, email, and password.
   - Usernames and email addresses must be unique.
   - Passwords must be at least 8 characters in length
   - Hash passwords using `bcrypt` before storing them.
-- **Login Page**:
-  - Allows users to log in with their email and password.
-  - Compare hashed passwords during authentication.
-- **Landing Page**:
-  - Redirect users here after login.  
-  - For **users**, display a simple dashboard with their username.  
-  - For **admins**, display all registered users with their email and role.
-- **Logout**:
-  - Provide a logout button on the landing page to log users out and destroy their session.
+- **Login Page**
+  - Users can log in using email and password.
+  - Authenticates using bcrypt password comparison.
+  - Redirects to the Event Page after login.
+- **Event Page (Protected)**
+  - All logged-in users can view event details (name, date, description).
+  - Users can RSVP if they haven’t already; if already RSVP’d, show a message.
+  - Admin users also see a full RSVP list including names and timestamps.
+- **Logout**
+  - Ends the user’s session and redirects to the Home Page.
 
-### Functional Requirements  
+### Functional Requirements
+
 - **Authentication**:
-  - Use sessions to authenticate users and persist their login state.  
+  - Use `express-session` to authenticate users and persist their login state across requests.
+  - Ensure only logged-in users can access protected pages like the Event Page.
 - **Role-Based Access**:
-  - Admin users should be able to view all registered users.
-  - Regular users should only have access to their dashboard.
+  - Admin users should be able to view a list of all users who have RSVP’d.
+  - Regular users should only be able to RSVP and view their own RSVP status.
 - **Error Handling**:
-  - Display errors on login or signup pages when applicable, ensure errors are in line with the security practices discussed in class
+  - Display appropriate error messages on the login and registration pages if authentication or validation fails.
+  - Follow best practices: avoid revealing whether it was the email or password that was incorrect.
 - **Security**:
-  - Hash passwords with `bcrypt`.  
-  - Do not store plaintext passwords.
+  - Hash passwords using `bcrypt` before storing them.
+  - Never store plaintext passwords in memory or logs.
 - **Data Storage**:
-  - Store users in memory as an array of objects. (No database required.)
+  - Store users in memory using an array of objects. No database is required for this assignment.
 
-## Pass Outstanding Criteria
-- Achieve a grade of 85% or above
+## Submission
+- Ensure:
+  - App works with `npm start`
+  - All required features are implemented as described above
 
-## Submission Guidelines
-- Ensure the application runs correctly (with the `npm start` command) and all features are implemented as specified.
-- Submissions should be made on Teams under the appropriate assignment
-- Submissions should **only** include a link to your github repository which contains the complete code for the assignment
-    - The repository used should be the private one in the github classroom, public repositories from your personal account should not be submitted.
-- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD13May.2025-Aug.2025/EQsdYpI0N1RPsETRsktEqmkBTDvs1QzdvJT5cmDCQoSHWw?e=ZT4ph9) 
-  - If an extension is needed, please reach out to me directly before the assignment due date.
+## Grading Rubric
 
-
-## Grading Rubric  
-
-| Category                                  | Criteria                                                                                 | Points  |
-|-------------------------------------------|------------------------------------------------------------------------------------------|---------|
-| **Functionality**                         |                                                                                          | **65**  |
-| &nbsp;&nbsp;&nbsp;&nbsp;Registration      | Allows users to register with username, email, and password. Enforces validation rules.  | 20      |
-| &nbsp;&nbsp;&nbsp;&nbsp;Login             | Authenticates users with email and hashed password comparison.                           | 10      |
-| &nbsp;&nbsp;&nbsp;&nbsp;Role-Based Access | Unauthorized users see the homepage, users see their landing page, admins see all users. | 15      |
-| &nbsp;&nbsp;&nbsp;&nbsp;Logout            | Ends session and redirects to the home page.                                             | 5       |
-| &nbsp;&nbsp;&nbsp;&nbsp;Password Hashing  | Passwords are securely hashed using bcrypt.                                              | 5       |
-| &nbsp;&nbsp;&nbsp;&nbsp;Error Handling    | Errors are shown in a secure, visible way; error states are handled gracefully.          | 10      |
-| **Code Quality**                          |                                                                                          | **15**  |
-| &nbsp;&nbsp;&nbsp;&nbsp;Readability       | Code is well-organized and easy to read (indentation, naming, structure).                | 10      |
-| &nbsp;&nbsp;&nbsp;&nbsp;Modularity        | Functions are modular and separated from routing and app setup.                          | 5       |
-| **Git Hygiene**                           |                                                                                          | **10**  |
-| &nbsp;&nbsp;&nbsp;&nbsp;Commit Frequency  | Regular commits reflecting meaningful progress.                                          | 5       |
-| &nbsp;&nbsp;&nbsp;&nbsp;Commit Quality    | Commit messages are clear, concise, and descriptive.                                     | 5       |
-| **User Experience**                       |                                                                                          | **10**  |
-| &nbsp;&nbsp;&nbsp;&nbsp;UI/UX             | The app is easy to use, well-structured, and visually consistent.                        | 10      |
-| **Total Points**                          |                                                                                          | **100** |
-
-
-Good luck! If you have any questions, please don't hesitiate to ask!
+| Category                                 | Criteria                                                          | Points  |
+|------------------------------------------|-------------------------------------------------------------------|---------|
+| **Functionality**                        |                                                                   | **65**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Registration     | Registers new users, enforces validation and hashes passwords     | 15      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Login            | Authenticates users using sessions and bcrypt                     | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;RSVP             | Lets users RSVP and prevents duplicate RSVP                       | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Role Access      | Only admins can view the RSVP list                                | 15      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Logout           | Ends session and redirects to Home Page                           | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;Error Handling   | Displays appropriate error messages for registration, login, RSVP | 10      |
+| **Code Quality**                         |                                                                   | **15**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Readability      | Code is well-organized and easy to follow                         | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Modularity       | Logic is separated into clean, reusable functions                 | 5       |
+| **Git Hygiene**                          |                                                                   | **10**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Commit Frequency | Frequent, meaningful commits                                      | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;Commit Quality   | Commit messages are clear and descriptive                         | 5       |
+| **User Experience**                      |                                                                   | **10**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;UI/UX            | Clean, user-friendly interface and consistent design              | 10      |
+| **Total Points**                         |                                                                   | **100** |
+```
