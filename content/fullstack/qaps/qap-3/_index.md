@@ -6,6 +6,7 @@ cascade:
 
 ### Objective
 Create an RSVP system for a single private event. Users must be able to sign up, log in, RSVP, and see event info. Admins can view a list of who’s attending.
+**Due date: July 15th, 2025, at 11:59 PM**
 
 ### Getting Started
 - To help you get started, a [base repository](https://classroom.github.com/a/qnroT32v) has been provided for you to work from. The repository is set up as a **GitHub Assignment** to help you quickly get started.
