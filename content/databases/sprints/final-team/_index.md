@@ -1,29 +1,26 @@
 ---
 title: 4. Final Sprint - Team
-excludeSearch: true
-sidebar:
-  exclude: true
 cascade:
   type: docs
 ---
 
 ## Preface
-**Objective**  
+**Objective**
 Build a feature-complete real-time chat application in groups of up to four members. This project will demonstrate your ability to integrate Express.js, MongoDB, EJS templates, and WebSockets.
 
-**Due Date**  
-April 19th, 2025, at 11:59 PM
+**Due Date**
+August 15th, 2025, at 11:59 PM
 
-**Note**  
+**Note**
 This is the combined final sprint for both Databases and Fullstack development. You will only complete this one final, and the grade will be applied to both courses.
 
 ## Getting Started
-- To help you get started, a [base repository](https://classroom.github.com/a/2M4tl0xb) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/k6buI59H) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
 
 ### Steps to Create Your Own Repository
 1. Click the link above, and select your name on the list that appears, if you haven't already
 1. Click the "Accept this assignment" button
-1. Once your repository is created, **clone your new repo** to your local machine:  
+1. Once your repository is created, **clone your new repo** to your local machine:
     ```bash
     git clone <your-new-repo-url>
     ```

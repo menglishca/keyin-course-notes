@@ -4,7 +4,7 @@ title: 4. Challenges and Risks of SSO
 
 While Single Sign-On (SSO) offers convenience and improved user experience, it also introduces certain challenges and risks that need to be addressed for secure implementation.  
 
-## 1. Single Point of Failure**
+## 1. Single Point of Failure
 - **What Happens?**  
   If the Identity Provider (IdP) is unavailable due to a server outage, misconfiguration, or cyberattack, users cannot access any of the connected services.  
 - **Example**: If your IdP (e.g., Google) is down, apps like Gmail, YouTube, or Drive will be inaccessible.  
