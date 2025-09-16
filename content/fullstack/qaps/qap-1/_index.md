@@ -89,7 +89,7 @@ Note: This code has been provided as a starting point for you to work from. It i
 - Ensure all code runs correctly and meets the requirements.  
 - Submissions should be made on Teams under the appropriate assignment.  
 - Submissions should **only** include a link to your GitHub repository containing the completed code for your QAP.  
-- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD13May.2025-Aug.2025/EQsdYpI0N1RPsETRsktEqmkBTDvs1QzdvJT5cmDCQoSHWw?e=ZT4ph9)  
+- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD14Sept.2025-Dec.2025/EaNwhyZvUxhIpqLD-N68n64BaOjdRmmLNGNw_u9tarzk4A?e=2i061T)  
 - If an extension is required, please contact me directly before the due date.  
 
 ## Grading Rubric  

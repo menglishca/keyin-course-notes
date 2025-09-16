@@ -139,7 +139,7 @@ You are developing a system to manage products, customers, and their orders in a
 - It is recommended to test your queries and manipulations on pgAdmin to ensure things work correctly
 - Submissions should be made on Teams under the appropriate assignment
 - Submissions should **only** include a link to your github repository which contains the complete code for your QAP
-- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD13May.2025-Aug.2025/EQsdYpI0N1RPsETRsktEqmkBTDvs1QzdvJT5cmDCQoSHWw?e=ZT4ph9)
+- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD14Sept.2025-Dec.2025/EaNwhyZvUxhIpqLD-N68n64BaOjdRmmLNGNw_u9tarzk4A?e=2i061T)
   - If an extension is needed, please reach out to me directly before the assignment due date.
 
 ## Grading Rubric

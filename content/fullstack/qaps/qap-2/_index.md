@@ -72,7 +72,7 @@ Complete the provided Express application that allows users to log how they’re
   - App works with `npm start`
   - All tests pass using `npm test`
 - Submissions should be made with a link to your github classroom repository under on Teams under the appropriate assignment
-- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD13May.2025-Aug.2025/EQsdYpI0N1RPsETRsktEqmkBTDvs1QzdvJT5cmDCQoSHWw?e=ZT4ph9) 
+- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD14Sept.2025-Dec.2025/EaNwhyZvUxhIpqLD-N68n64BaOjdRmmLNGNw_u9tarzk4A?e=2i061T) 
   - If an extension is needed, please reach out to me directly before the assignment due date.
 
 ## Grading Rubric

@@ -6,7 +6,7 @@ title: QAP 1 - Database Design and Normalization
 Design a relational database schema based on a given scenario and demonstrate an understanding of database normalization. Identify and describe the types of relationships between tables. Explain the benefits of using a database for managing the data.
 
 ### Due Date
-**May 14th, 2025 at 11:59PM**
+**Oct 1st, 2025 at 11:59PM**
 
 ## Scenario
 Imagine you are designing a database for a small online bookstore. The bookstore needs to manage information about books, authors, customers, and orders.
@@ -47,7 +47,7 @@ Imagine you are designing a database for a small online bookstore. The bookstore
 - Diagrams do not have to be any standard form, as long as the data is present.  A tool like: [https://dbdiagram.io](https://dbdiagram.io) may help, but is not required. Something as simple as pictures of a hand drawn diagram are totally okay
 - Submissions should be made on Teams via the appropriate assignment
 - Submissions should **only** include your PDF file
-- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD13May.2025-Aug.2025/EQsdYpI0N1RPsETRsktEqmkBTDvs1QzdvJT5cmDCQoSHWw?e=ZT4ph9)
+- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD14Sept.2025-Dec.2025/EaNwhyZvUxhIpqLD-N68n64BaOjdRmmLNGNw_u9tarzk4A?e=2i061T)
   - If an extension is needed please reach out before the due date
 
 ## Pass Outstanding Criteria

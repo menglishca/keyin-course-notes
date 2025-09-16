@@ -139,7 +139,7 @@ You are responsible for determining the **specific test cases** needed to verify
 - Ensure the application runs correctly (`npm start`) and all features are implemented.
 - Ensure all tests pass (`npm test`).
 - Submit a **GitHub repository link** on Teams (only one team member needs to submit).
-- Late submissions follow the Keyin late assessment policy [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD13May.2025-Aug.2025/EQsdYpI0N1RPsETRsktEqmkBTDvs1QzdvJT5cmDCQoSHWw?e=ZT4ph9).
+- Late submissions follow the Keyin late assessment policy [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD14Sept.2025-Dec.2025/EaNwhyZvUxhIpqLD-N68n64BaOjdRmmLNGNw_u9tarzk4A?e=2i061T).
 - If an extension is needed, please reach out before the due date.
 - **Teams can be a maximum of 3 members**
 
