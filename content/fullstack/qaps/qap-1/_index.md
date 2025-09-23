@@ -6,11 +6,11 @@ cascade:
 
 ## Objective  
 Create a Command-Line Interface (CLI) application in Node.js that generates passwords for users based on arguments they provide via flags.  
-**Due Date: May 15th, 2025, at 11:59 PM**  
+**Due Date: September 30th, 2025, at 11:59 PM**  
 
 ## Getting Started  
 
-To help you get started, a [base repository](https://classroom.github.com/a/sNEBZo2N) has been provided for you to work from. The repository is set up as a GitHub Assignment to help you quickly get started.  
+To help you get started, a [base repository](https://classroom.github.com/a/0ssJ0k2Q) has been provided for you to work from. The repository is set up as a GitHub Assignment to help you quickly get started.  
 
 ### Steps to Create Your Own Repository  
 

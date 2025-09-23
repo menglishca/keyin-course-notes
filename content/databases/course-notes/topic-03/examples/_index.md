@@ -46,15 +46,15 @@ title: 5. Examples of Normalization
               </tr>
               <tr>
                 <td>St. John's Invitational</td>
-                <td>2011</td>
+                <td>2010</td>
                 <td>Tiffany Masterson</td>
                 <td>November 19, 1988</td>
               </tr>
               <tr>
                 <td>Vancouver Memorial</td>
                 <td>2003</td>
-                <td>Steve Miller</td>
-                <td>January 30, 1980</td>
+                <td>Maxwell House</td>
+                <td>July 21, 1990</td>
               </tr>
             </tbody>
           </table>
@@ -785,25 +785,25 @@ title: 5. Examples of Normalization
                             <caption style="caption-side: top;">Borrowers Table</caption>
                             <thead>
                               <tr>
-                                <th>Loan_ID</th>
+                                <th>Borrower_ID</th>
                                 <th>Borrower_Name</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <td>2001</td>
+                                <td>3001</td>
                                 <td>Emily Clark</td>
                               </tr>
                               <tr>
-                                <td>2002</td>
+                                <td>3002</td>
                                 <td>John Doe</td>
                               </tr>
                               <tr>
-                                <td>2003</td>
+                                <td>3003</td>
                                 <td>Sophie Adams</td>
                               </tr>
                               <tr>
-                                <td>2004</td>
+                                <td>3004</td>
                                 <td>Michael Lee</td>
                               </tr>
                             </tbody>
@@ -816,6 +816,7 @@ title: 5. Examples of Normalization
                             <thead>
                               <tr>
                                 <th>Loan_ID</th>
+                                <th>Borrower_ID</th>
                                 <th>Book_Title</th>
                                 <th>Loan_Date</th>
                               </tr>
@@ -823,41 +824,49 @@ title: 5. Examples of Normalization
                             <tbody>
                               <tr>
                                 <td>2001</td>
+                                <td>3001</td>
                                 <td>Introduction to Programming</td>
                                 <td>2024-02-01</td>
                               </tr>
                               <tr>
                                 <td>2001</td>
+                                <td>3001</td>
                                 <td>Data Structures</td>
                                 <td>2024-02-01</td>
                               </tr>
                               <tr>
                                 <td>2002</td>
+                                <td>3002</td>
                                 <td>Advanced Algorithms</td>
                                 <td>2024-02-05</td>
                               </tr>
                               <tr>
                                 <td>2002</td>
+                                <td>3002</td>
                                 <td>Computer Networks</td>
                                 <td>2024-02-05</td>
                               </tr>
                               <tr>
                                 <td>2003</td>
+                                <td>3003</td>
                                 <td>Database Systems</td>
                                 <td>2024-02-10</td>
                               </tr>
                               <tr>
                                 <td>2003</td>
+                                <td>3003</td>
                                 <td>Operating Systems</td>
                                 <td>2024-02-10</td>
                               </tr>
                               <tr>
                                 <td>2004</td>
+                                <td>3004</td>
                                 <td>Web Development</td>
                                 <td>2024-02-15</td>
                               </tr>
                               <tr>
                                 <td>2004</td>
+                                <td>3004</td>
                                 <td>Software Engineering</td>
                                 <td>2024-02-15</td>
                               </tr>
