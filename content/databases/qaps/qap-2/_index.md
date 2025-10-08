@@ -6,10 +6,10 @@ cascade:
 
 ## Objective
 Complete both provided problems below, make sure to include all SQL to create the tables, insert the data and perform all queries.  
-**Due date: June 9th, 2024 at 11:59PM**
+**Due date: October 15th, 2025 at 11:59PM**
 
 ## Getting Started
-- To help you get started, a [base repository](https://classroom.github.com/a/8X6eUF66) has been provided for you to work from. The repository is set up as a **GitHub Assignment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/RfCPt8V-) has been provided for you to work from. The repository is set up as a **GitHub Assignment** to help you quickly get started.
 
 ### Steps to Create Your Own Repository  
 
