@@ -6,7 +6,7 @@ cascade:
 
 ## Objective 
 Individually design a database and its tables, verify tables are in **3NF**, perform queries on the database, and implement a **CLI application** to interact with it.
-**Due date: June 29th, 2025, at 11:59 PM**
+**Due date: October 31st, 2025, at 11:59 PM**
 
 ## Problem Statement
 Create a database for a **conference event management system** that keeps track of speakers, attendees, and event sessions. Your database needs to be able to store the following:
@@ -34,7 +34,7 @@ Create a database for a **conference event management system** that keeps track 
 - Consider how to handle **many-to-many relationships** (e.g., an attendee can register for multiple sessions)
 
 ## Repository Setup
-- To help you get started, a [base repository](https://classroom.github.com/a/cms8lS1c) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/-CBdftHq) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
 
 ### Setting Up Your Repository
 1. Click the link above, and select your name on the list that appears, if you haven't already
