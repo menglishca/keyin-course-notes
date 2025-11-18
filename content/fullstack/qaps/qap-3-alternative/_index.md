@@ -1,18 +1,15 @@
 ---
 title: QAP 3 - User Management System
-excludeSearch: true
-sidebar:
-  exclude: true
 cascade:
   type: docs
 ---
 
 ## Objective  
 Build a user management system using Express and EJS. Allow new users to register, existing users to sign in, admins to see all registered users and let users logout.
-**Due date: March 27th, 2024, at 11:59 PM**
+**Due date: November 25th, 2025, at 11:59 PM**
 
 ### Getting Started
-- To help you get started, a [base repository](https://classroom.github.com/a/O5JWjEqM) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/P0d_vKNM) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
 
 ### Steps to Create Your Own Repository  
 

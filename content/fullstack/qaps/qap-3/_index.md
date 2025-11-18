@@ -1,5 +1,8 @@
 ---
 title: QAP 3 - Event RSVP Portal
+excludeSearch: true
+sidebar:
+  exclude: true
 cascade:
   type: docs
 ---
