@@ -8,12 +8,12 @@ cascade:
 - Refactor an existing Express backend to use MongoDB (via Mongoose) to manage a collection of CDs  
 - Replace in-memory storage with MongoDB  
 - Add RESTful API routes to interact with the CD collection  
-- Due date: **July 28th, 2025 @ 11:59 PM NDT**
+- Due date: **December 4th, 2025 @ 11:59 PM NDT**
 
 
 ## Getting Started  
 
-- To help you get started, a [base repository](https://classroom.github.com/a/QvnYcUuw) has been provided for you to work from. The repository is set up as a **GitHub Assignment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/e_vSZ1zL) has been provided for you to work from. The repository is set up as a **GitHub Assignment** to help you quickly get started.
 
 ### Steps to Create Your Own Repository  
 
