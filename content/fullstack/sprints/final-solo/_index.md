@@ -9,13 +9,13 @@ cascade:
 Build a real-time notification application that demonstrates your ability to integrate Express.js, MongoDB, EJS templates, and WebSockets. This project will be completed individually and is your final submission for both the Databases and Fullstack development courses.
 
 **Due Date**
-August 15th, 2025, at 11:59 PM
+December 19th, 2025, at 11:59 PM
 
 **Note**  
 This is the combined final sprint for both Databases and Fullstack development. You will only complete this one final, and the grade will be applied to both courses.
 
 ## Getting Started
-- To help you get started, a [base repository](https://classroom.github.com/a/s_mH88BJ) will be provided.
+- To help you get started, a [base repository](https://classroom.github.com/a/At-K3n8n) will be provided.
 - This repository is set up as a **GitHub Assignment**. Once accepted, you will have your own private repo to complete the assignment.
 
 ### Steps to Create Your Own Repository

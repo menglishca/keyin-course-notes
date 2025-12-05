@@ -8,7 +8,7 @@ cascade:
 - Refactor an existing Express backend to use MongoDB (via Mongoose) to manage a collection of CDs  
 - Replace in-memory storage with MongoDB  
 - Add RESTful API routes to interact with the CD collection  
-- Due date: **December 4th, 2025 @ 11:59 PM NDT**
+- Due date: **December 3rd, 2025 @ 11:59 PM NDT**
 
 
 ## Getting Started  
