@@ -113,7 +113,7 @@ This is the combined final sprint for both Databases and Fullstack development. 
 - Verify that all implemented features meet the requirements specified.
 - Submissions should **only** include a link to your github repository which contains the complete code for the assignment
     - The repository used should be the private repository in the github classroom, public repositories from your personal account should not be submitted.
-- Submissions are subject to the **[Keyin late assessment policy](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD14Sept.2025-Dec.2025/EaNwhyZvUxhIpqLD-N68n64BaOjdRmmLNGNw_u9tarzk4A?e=2i061T)**.
+- Submissions are subject to the **[Keyin late assessment policy](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD15Jan.2026-Apr.20262/IQB27M_3TuM7R4CffHQTsbiYAThObHy9b2Ta1SriDyA45k4?e=npqFCu)**.
   - If you need an extension, reach out before the due date. Extensions are difficult to give with final projects due to the tight timelines for grades.
 
 ## Notes/Questions
