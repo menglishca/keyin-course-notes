@@ -60,7 +60,6 @@ Note: This code has been provided as a starting point for you to work from. It i
     - `--numbers`: include numbers in the password.
   - If no `--length` flag is provided, default the password length to 8.
   - If neither `--lowercase` nor `--numbers` is provided, default to including lowercase letters.
-  - If no character types are selected (for example, if `--lowercase` is explicitly disabled and `--numbers` is not provided), the program should throw an error.
   - The application should handle invalid input gracefully, displaying an informative error message rather than crashing.
 
 ### Testing  
