@@ -6,11 +6,11 @@ cascade:
 
 ## Objective  
 Create a Command-Line Interface (CLI) application in Node.js that generates passwords for users based on arguments they provide via flags.  
-**Due Date: September 30th, 2025, at 11:59 PM**  
+**Due Date: January 29th, 2025, at 11:59 PM**  
 
 ## Getting Started  
 
-To help you get started, a [base repository](https://classroom.github.com/a/0ssJ0k2Q) has been provided for you to work from. The repository is set up as a GitHub Assignment to help you quickly get started.  
+To help you get started, a [base repository](https://classroom.github.com/a/iQ5c4iyI) has been provided for you to work from. The repository is set up as a GitHub Assignment to help you quickly get started.  
 
 ### Steps to Create Your Own Repository  
 
@@ -65,7 +65,6 @@ Note: This code has been provided as a starting point for you to work from. It i
 
 ### Testing  
 - Write a complete set of unit tests for the `generatePassword` function.
-- Tests must be developed on a **separate branch** and merged into the `main` branch using a **GitHub pull request**.
 - Tests must cover different input scenarios and verify that the function behaves as expected.
 - All tests must pass before submission.
 
@@ -102,14 +101,13 @@ Note: This code has been provided as a starting point for you to work from. It i
 | &nbsp;&nbsp;&nbsp;&nbsp;Default Length Behavior      | Defaults to 8 when no length is provided.                                          | 5       |
 | &nbsp;&nbsp;&nbsp;&nbsp;Default Character Behavior   | Defaults to lowercase when no character flags are provided.                        | 5       |
 | &nbsp;&nbsp;&nbsp;&nbsp;Invalid Input Handling       | Handles invalid input with clear error messages.                                   | 5       |
-| &nbsp;&nbsp;&nbsp;&nbsp;Character Flags              | Correctly implements `--lowercase` and `--numbers` flags.                         | 15      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Character Flags              | Correctly implements `--lowercase` and `--numbers` flags.                          | 15      |
 | **Testing**                                          |                                                                                    | **20**  |
 | &nbsp;&nbsp;&nbsp;&nbsp;Test Coverage                | Adequate tests written for `generatePassword` covering different scenarios.        | 15      |
 | &nbsp;&nbsp;&nbsp;&nbsp;All Tests Passing            | All tests pass successfully.                                                       | 5       |
 | **Git Hygiene**                                      |                                                                                    | **15**  |
-| &nbsp;&nbsp;&nbsp;&nbsp;Branching and Pull Request   | Tests developed on a separate branch and merged via pull request.                  | 5       |
-| &nbsp;&nbsp;&nbsp;&nbsp;Commit Frequency and Quality | Regular commits with descriptive messages.                                         | 5       |
-| &nbsp;&nbsp;&nbsp;&nbsp;No Unnecessary Files         | No unnecessary files (e.g., `node_modules`) committed.                            | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;Commit Frequency and Quality | Regular commits with descriptive messages.                                         | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;No Unnecessary Files         | No unnecessary files (e.g., `node_modules`) committed.                             | 5       |
 | **Code Quality**                                     |                                                                                    | **10**  |
 | &nbsp;&nbsp;&nbsp;&nbsp;Readability and Structure    | Code is well-organized, follows a clear structure, and uses appropriate style.     | 10      |
 | **Project Structure**                                |                                                                                    | **5**   |
