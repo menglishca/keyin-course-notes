@@ -151,12 +151,12 @@ You are developing a system to manage products, customers, and their orders in a
 |                       | **Data Querying**: Executes all required SELECT queries and retrieves correct data.                   | 15         |
 | **Correctness**       | **Full Name Query**: Correctly retrieves full names of students enrolled in "Physics 101."            | 10         |
 |                       | **Course and Professor Query**: Retrieves courses with corresponding professor names.                 | 10         |
-|                       | **Courses with Students**: Retrieves the courses which have students enrolled.           | 10         |
-|                       | **Product and Quantity Query**: Retrieves all product names and quantities for a given order.         | 10         |
+|                       | **Courses with Students**: Retrieves the courses which have students enrolled.                        | 10         |
+|                       | **Product and Quantity Query**: Retrieves all product names and quantities for a given order.         | 10         |<!-- collapsed -->
 | **Code Quality**      | **SQL Syntax**: Queries and commands are written with clear, correct SQL syntax.                      | 5          |
-|                       | **Naming Conventions**: Tables, columns, and variables follow meaningful naming conventions.          | 5          |
+|                       | **Naming Conventions**: Tables, columns, and variables follow meaningful naming conventions.          | 5          |<!-- collapsed -->
 | **Git Hygiene**       | **Commit Frequency**: Regular commits reflecting meaningful progress throughout development.          | 5          |
-|                       | **Commit Quality**: Commit messages are clear, concise, and descriptive.                              | 5          |
+|                       | **Commit Quality**: Commit messages are clear, concise, and descriptive.                              | 5          |<!-- collapsed -->
 | **Data Manipulation** | **Update Query**: Updates student email or stock quantity correctly.                                  | 5          |
 |                       | **Delete Query**: Correctly removes a student from a course or an order from the system.              | 5          |
 | **Total Points**      |                                                                                                       | **100**    |

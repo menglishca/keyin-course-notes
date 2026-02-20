@@ -122,10 +122,10 @@ You are free to add additional endpoints (e.g., to get a weekly summary) if you 
 | &nbsp;&nbsp;&nbsp;&nbsp;Status Codes      | Status codes are appropriate, intentional, and well-chosen.                         | 10      |
 | &nbsp;&nbsp;&nbsp;&nbsp;Error Consistency | Error responses are consistent in format across all endpoints.                      | 5       |
 | **Business Logic & Design**               |                                                                                     | **10**  |
-| &nbsp;&nbsp;&nbsp;&nbsp;In-Memory Data    | Habits and check-ins are tracked correctly during runtime.                          | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;In-Memory Data    | Habits and check-ins are tracked correctly during runtime.                          | 10      |<!-- collapsed -->
 | **Code Quality**                          |                                                                                     | **10**  |
 | &nbsp;&nbsp;&nbsp;&nbsp;Readability       | Code is clean, consistent, and logically organized.                                 | 5       |
-| &nbsp;&nbsp;&nbsp;&nbsp;Maintainability   | Sensible naming, small functions, minimal duplication.                              | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;Maintainability   | Sensible naming, small functions, minimal duplication.                              | 5       |<!-- collapsed -->
 | **Git Hygiene**                           |                                                                                     | **15**  |
 | &nbsp;&nbsp;&nbsp;&nbsp;Commit Frequency  | Frequent, meaningful commits throughout development with clear descriptive messages | 15      |
 | **Total Points**                          |                                                                                     | **100** |

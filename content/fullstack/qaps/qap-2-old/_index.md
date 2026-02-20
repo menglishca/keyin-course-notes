@@ -1,5 +1,8 @@
 ---
 title: QAP 2 - Daily Mood Tracker
+excludeSearch: true
+sidebar:
+  exclude: true
 cascade:
   type: docs
 ---
