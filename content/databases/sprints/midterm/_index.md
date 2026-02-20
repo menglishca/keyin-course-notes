@@ -6,7 +6,7 @@ cascade:
 
 ## Objective 
 Individually design a database and its tables, verify tables are in **3NF**, perform queries on the database, and implement a **CLI application** to interact with it.
-**Due date: October 31st, 2025, at 11:59 PM**
+**Due date: March 6th, 2026, at 11:59 PM**
 
 ## Problem Statement
 Create a database for a **conference event management system** that keeps track of speakers, attendees, and event sessions. Your database needs to be able to store the following:
@@ -34,7 +34,7 @@ Create a database for a **conference event management system** that keeps track 
 - Consider how to handle **many-to-many relationships** (e.g., an attendee can register for multiple sessions)
 
 ## Repository Setup
-- To help you get started, a [base repository](https://classroom.github.com/a/-CBdftHq) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/dH7z_KBv) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
 
 ### Setting Up Your Repository
 1. Click the link above, and select your name on the list that appears, if you haven't already
@@ -90,7 +90,7 @@ You must provide PostgreSQL queries to:
 - **Test your queries on pgAdmin before submission**.
 - Submissions must be made on **Teams** under the appropriate assignment.
 - **Only submit your GitHub repository link**—do not attach files separately.
-- Late submissions follow the **Keyin late assessment policy** [found here](https://keyincollege289.sharepoint.com/:b:/s/FullstasckJavascript-S3Sept.2024-Dec.2024912/EYwpucIvncpDoR94yNj3fOkB0CsE4c0IZ53Kqov0BumSAA?e=7N9ZfR).
+- Late submissions follow the **Keyin late assessment policy** [found here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD15Jan.2026-Apr.20262/IQB27M_3TuM7R4CffHQTsbiYAThObHy9b2Ta1SriDyA45k4?e=npqFCu).
 - If an extension is needed, please reach out before the due date.
 
 ## Notes
@@ -101,28 +101,21 @@ You must provide PostgreSQL queries to:
 
 ## Grading Rubric
 
-| **Category**                  | **Criteria**                                                                                                     | **Points** |
-|-------------------------------|------------------------------------------------------------------------------------------------------------------|------------|
-| **Functionality**             | **Table Creation**: CLI creates the tables if not present                                                        | 5          |
-|                               | **Insert Command**: Sessions inserted correctly (`insert`)                                                       | 5          |
-|                               | **Show Command**: Sessions displayed correctly (`show`)                                                          | 5          |
-|                               | **Update Command**: Email updated correctly (`update`)                                                           | 5          |
-|                               | **Remove Command**: Attendee removed with session registrations                                                  | 10         |
-| **Functionality Total**       |                                                                                                                  | **30**     |
-| **PostgreSQL Queries**        | **Table Creation Queries**: Correct table creation queries (Speakers, Attendees, Sessions, Registrations)        | 5          |
-|                               | **Sample Data Insertion**: Correct sample data insertion (Speakers, Attendees, Sessions, Registrations)          | 5          |
-|                               | **Find Sessions by Attendee**: Query retrieves sessions for a given attendee                                     | 5          |
-|                               | **Find Attendees by Session**: Query retrieves attendees registered for a given session                          | 5          |
-|                               | **Speaker Session Schedule Query**: Query retrieves all sessions presented by a specific speaker                 | 10         |
-|                               | **Attendees of a Speaker's Session Query**: Query retrieves attendees of at least one session by a given speaker | 10         |
-|                               | **Find Sessions on a Specific Date**: Query retrieves all sessions happening on a specific date                  | 5          |
-| **PostgreSQL Queries Total**  |                                                                                                                  | **45**     |
-| **Normalization Explanation** | **3NF Explanation**: Correct explanation of how all tables meet 3NF                                              | 5          |
-| **Normalization Total**       |                                                                                                                  | **5**      |
-| **Code Quality**              | **Code Cleanliness**: Clean, structured, and understandable code                                                 | 5          |
-|                               | **No Redundancy**: No redundant or unused code                                                                   | 5          |
-| **Code Quality Total**        |                                                                                                                  | **10**     |
-| **Git Hygiene**               | **Commit Frequency**: Regular commits reflecting meaningful progress throughout development.                     | 5          |
-|                               | **Commit Quality**: Commit messages are clear, concise, and descriptive.                                         | 5          |
-| **Git Hygiene Total**         |                                                                                                                  | **10**     |
-| **Total Points**              |                                                                                                                  | **100**    |
+| Category                                                       | Criteria                                                                                   | Points  |
+|----------------------------------------------------------------|--------------------------------------------------------------------------------------------|---------|
+| **CLI Functionality**                                          |                                                                                            | **30**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;CLI Table Creation                     | CLI creates the tables if not present                                                      | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;CLI Data Management                    | Sessions can be inserted, deleted, updated and displayed                                   | 25      |
+| **PostgreSQL Queries**                                         |                                                                                            | **45**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Database Setup                         | Tables are created and populated correctly with sample data                                | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Find Sessions or Attendees             | Query to retrieve sessions for an attendee, attendees for a session and sessions on a date | 15      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Speaker Session Schedule Query         | Query retrieves all sessions presented by a specific speaker                               | 10      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Attendees of a Speaker's Session Query | Query retrieves attendees of at least one session by a given speaker                       | 10      |
+| **Normalization**                                              |                                                                                            | **5**   |
+| &nbsp;&nbsp;&nbsp;&nbsp;3NF Explanation                        | Correct explanation of how all tables meet 3NF                                             | 5       |<!-- collapsed -->
+| **Code Quality**                                               |                                                                                            | **10**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Readability                            | Code is clean, consistent, logically organized and uses readable naming                    | 5       |
+| &nbsp;&nbsp;&nbsp;&nbsp;SQL Syntax                             | Queries and commands are written with clear, correct SQL syntax.                           | 5       |<!-- collapsed -->
+| **Git Hygiene**                                                |                                                                                            | **10**  |
+| &nbsp;&nbsp;&nbsp;&nbsp;Commit Frequency                       | Frequent, meaningful commits throughout development with clear descriptive messages        | 10      |
+| **Total Points**                                               |                                                                                            | **100** |

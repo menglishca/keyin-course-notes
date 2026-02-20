@@ -5,11 +5,11 @@ cascade:
 ---
 
 ## Objective
-Complete the provided Express application **with your team** to view data about a collection of games.
-**Due date: October 31st, 2025 at 11:59PM**
+Complete the provided Express application with your team to view data about a collection of games. The application must include both a server-rendered frontend **and** a REST API.
+**Due date: March 6th, 2026 at 11:59PM**
 
 ## Getting Started
-- To help you get started, a [base repository](https://classroom.github.com/a/GMoru_bN) has been provided for you to work from. The repository is set up as a **GitHub Classroom Assignment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/G54UQVNz) has been provided for you to work from. The repository is set up as a **GitHub Classroom Assignment** to help you quickly get started.
 
 ### Steps to Create Your Own Repository
 
@@ -61,23 +61,21 @@ Complete the provided Express application **with your team** to view data about 
     - Get `x` games by genre.
     - Get the `y` top-rated games, ordered by rating.
     - Get the details of a game by its id.
-    - Select a random game id.
     - Get a list of "Hidden Gems"
       - Criteria for "Hidden Gems" is up to the team, but a suggestion is games with a high rating but fewer than X reviews.
 
 ## Unit Tests
-Your project must include unit tests to verify that the **five core functions**—genre filtering, top-rated sorting, game details retrieval, random game selection, and hidden gems filtering—produce valid output.
+Your project must include unit tests to verify that the **four core functions**—genre filtering, top-rated sorting, game details retrieval, and hidden gems filtering—produce valid output.
 
 At a minimum, your tests should confirm that:
 - The **genre filtering function** correctly retrieves games.
 - The **top-rated sorting function** correctly orders results.
 - The **game details function** properly retrieves data for valid and invalid IDs.
-- The **random game selection function** returns a valid game.
 - The **hidden gems function** produces results that fit the team-defined criteria.
 
 You are responsible for determining the **specific test cases** needed to verify correct functionality.
 
-### Required Pages
+## Required Pages
 - **Common Header/Footer**:
   - Implemented via an EJS partial.
   - The header should contain navigation links to:
@@ -85,8 +83,8 @@ You are responsible for determining the **specific test cases** needed to verify
     - Top-rated games page
     - A random game's page
       - A link the user can click, and when they click it they are brought to the "Game Page" (see below) for a random game
-    - Upcoming games page
     - Hidden Gems page
+
 
 - **Home Page**:
   - Display details of 9 random games.
@@ -94,7 +92,8 @@ You are responsible for determining the **specific test cases** needed to verify
     - Title
     - Release year
     - Rating (out of 10)
-  - Clicking a game (i.e. clicking it's title) directs to its details page.
+  - Clicking a game (i.e. clicking its title) directs to its details page.
+
 
 - **Top Rated Games Page**:
   - Display the 15 highest-rated games, ordered by rating.
@@ -104,6 +103,7 @@ You are responsible for determining the **specific test cases** needed to verify
     - Rating (out of 10)
     - Brief description
   - Clicking a game directs to its details page.
+
 
 - **Game Page**:
   - Display detailed game information, including:
@@ -115,12 +115,6 @@ You are responsible for determining the **specific test cases** needed to verify
     - Genre
   - Include a recommendations section with three other games based on genre.
 
-- **Upcoming Games Page**:
-  - Display 5 upcoming games with:
-    - Title
-    - Release year
-    - Brief description
-  - Clicking a game directs to its details page.
 
 - **Hidden Gems Page**:
   - Display a list of "Hidden Gems".
@@ -131,6 +125,30 @@ You are responsible for determining the **specific test cases** needed to verify
     - Rating
     - Short description
   - Clicking a game directs to its details page.
+
+## REST API Endpoints
+Your project must expose the following REST API endpoints. Ensure that your endpoints return JSON responses using a consistent, standardized response structure (e.g., errors always including an `error` field). Make sure you use appropriate HTTP status codes.
+
+- `GET /api/games`
+  - Returns a list of all games.
+  - Each item should include the title, genre, release year, and rating.
+
+- `GET /api/games/:id`
+  - Returns the full details for the specified game.
+  - Returns a meaningful error response if the game ID does not exist.
+
+- `GET /api/games/genre/:genre`
+  - Returns all games matching the specified genre.
+  - Returns a meaningful error response if no games are found for that genre.
+
+- `GET /api/games/top-rated`
+  - Returns the top 10 rated games, ordered by rating.
+
+- `GET /api/games/:id/recommendations`
+  - Returns up to 3 recommended games based on the genre of the specified game.
+  - Returns a meaningful error response if the game ID does not exist.
+
+Input validation must be applied where appropriate (e.g., unknown IDs, unrecognized genres). Errors must return consistent, structured JSON and appropriate HTTP status codes should be used throughout.
 
 ## Pass Outstanding Criteria
 - Achieve a grade of 85% or above.
@@ -151,22 +169,24 @@ You are responsible for determining the **specific test cases** needed to verify
 ## Grading Rubric
 | **Category**                 | **Criteria**                                                                                                                                                                | **Points** |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
-| **Site Functionality**       | **Home Page**: Displays 9 random games, clicking a game directs to its details page.                                                                                        | 10         |
-|                              | **Top Rated Games Page**: Displays 15 top-rated games, ordered correctly, with required info. Clicking a game directs to details page.                                      | 5          |
-|                              | **Game Page**: Displays all required details, includes genre-based recommendations.                                                                                 | 10         |
-|                              | **Upcoming Games Page**: Displays 5 upcoming games with correct information. Clicking a game directs to details page.                                                       | 5          |
+| **Site Functionality**       | **Home Page**: Displays 9 random games; clicking a game directs to its details page.                                                                                        | 10         |
+|                              | **Top Rated Games Page**: Displays 15 top-rated games, ordered correctly, with required info. Clicking a game directs to its details page.                                  | 5          |
+|                              | **Game Page**: Displays all required details and includes genre-based recommendations.                                                                                      | 10         |
 |                              | **Hidden Gems Page**: Displays "Hidden Gems" based on the team's chosen criteria, linking to details pages.                                                                 | 5          |
-|                              | **Navigation**: Header/footer, is implemented with an ejs template and includes working links to all pages.                                                                 | 10         |
+|                              | **Navigation**: Header/footer is implemented as an EJS partial and includes working links to all pages.                                                                     | 5          |
 |                              | **Random Game Feature**: Clicking the random game link directs to a random game's details page.                                                                             | 5          |
-| **Site Functionality Total** |                                                                                                                                                                             | **50**     |
-| **Functions**                | **Functions and Testing**: Implementation and testing of the five required functions.                                                                                       |   25       |
-| **Functions Total**          |                                                                                                                                                                             | **25**     |
+| **Site Functionality Total** |                                                                                                                                                                             | **40**     |
+| **REST API**                 | **GET /api/games**: Returns all games with correct structure.                                                                                                               | 5          |
+|                              | **GET /api/games/:id**: Returns correct game details with proper error handling.                                                                                            | 5          |
+|                              | **GET /api/games/genre/:genre**: Returns correctly filtered results with proper error handling.                                                                             | 5          |
+|                              | **GET /api/games/top-rated**: Returns correctly ordered top 10 results.                                                                                                     | 5          |
+|                              | **GET /api/games/:id/recommendations**: Returns genre-based recommendations with proper error handling.                                                                     | 5          |
+| **REST API Total**           |                                                                                                                                                                             | **25**     |
+| **Functions**                | **Functions and Testing**: Implementation and testing of the four required functions.                                                                                       | 15         |
+| **Functions Total**          |                                                                                                                                                                             | **15**     |
 | **Code Quality**             | **Structure and Readability**: Code is well-organized, readable, and follows best practices.                                                                                | 10         |
 | **Code Quality Total**       |                                                                                                                                                                             | **10**     |
 | **Git Hygiene**              | **Commit Frequency**: Regular commits reflecting meaningful progress throughout development.                                                                                | 5          |
 |                              | **Commit Quality**: Commit messages are clear, concise, and descriptive.                                                                                                    | 5          |
 | **Git Hygiene Total**        |                                                                                                                                                                             | **10**     |
-| **User Experience/Design**   | **Design and Layout**: Site is visually clear and user-friendly, with appropriate styling. Some attention has been paid to the design to make the site astheticly pleasing. | 5          |
-| **User Experience Total**    |                                                                                                                                                                             | **5**      |
 | **Total Points**             |                                                                                                                                                                             | **100**    |
-
