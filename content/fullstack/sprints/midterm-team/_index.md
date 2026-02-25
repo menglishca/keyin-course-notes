@@ -6,7 +6,7 @@ cascade:
 
 ## Objective
 Complete the provided Express application with your team to view data about a collection of games. The application must include both a server-rendered frontend **and** a REST API.
-**Due date: March 6th, 2026 at 11:59PM**
+**Due date: March 7th, 2026 at 11:59PM**
 
 ## Getting Started
 - To help you get started, a [base repository](https://classroom.github.com/a/G54UQVNz) has been provided for you to work from. The repository is set up as a **GitHub Classroom Assignment** to help you quickly get started.

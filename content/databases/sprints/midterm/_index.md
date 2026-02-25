@@ -6,7 +6,7 @@ cascade:
 
 ## Objective 
 Individually design a database and its tables, verify tables are in **3NF**, perform queries on the database, and implement a **CLI application** to interact with it.
-**Due date: March 6th, 2026, at 11:59 PM**
+**Due date: March 7th, 2026, at 11:59 PM**
 
 ## Problem Statement
 Create a database for a **conference event management system** that keeps track of speakers, attendees, and event sessions. Your database needs to be able to store the following:
