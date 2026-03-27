@@ -5,11 +5,11 @@ cascade:
 ---
 
 ## Objective  
-Build a user management system using Express and EJS. Allow new users to register, existing users to sign in, admins to see all registered users and let users logout.
-**Due date: November 25th, 2025, at 11:59 PM**
+Build a user management system using Express and EJS. Allow new users to register, existing users to sign in, admins to see all registered users and let users logout.  
+**Due date: April 5th, 2025, at 11:59 PM NDT**
 
 ### Getting Started
-- To help you get started, a [base repository](https://classroom.github.com/a/P0d_vKNM) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/gWvGNXvW) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
 
 ### Steps to Create Your Own Repository  
 
