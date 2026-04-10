@@ -6,7 +6,7 @@ cascade:
 
 ## Preface
 **Objective**
-Build a feature-complete real-time chat application in groups of up to four members. This project will demonstrate your ability to integrate Express.js, MongoDB, EJS templates, and WebSockets.
+Build a feature-complete real-time chat application in groups of up to three members. This project will demonstrate your ability to integrate Express.js, MongoDB, EJS templates, and WebSockets.
 
 **Due Date**
 April 23rd, {{< year >}}, at 11:59 PM
