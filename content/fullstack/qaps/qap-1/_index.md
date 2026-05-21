@@ -5,8 +5,10 @@ cascade:
 ---
 
 ## Objective  
-Create a Command-Line Interface (CLI) application in Node.js that generates passwords for users based on arguments they provide via flags.  
-**Due Date: January 29th, 2025, at 11:59 PM**  
+Create a Command-Line Interface (CLI) application in Node.js that generates passwords for users based on arguments they provide via flags.
+
+**Due Date**
+May 28th, {{< year >}}, at 11:59 PM
 
 ## Getting Started  
 
@@ -57,9 +59,10 @@ Note: This code has been provided as a starting point for you to work from. It i
     - `--help`: displays a help message explaining how to use the application and its flags. This flag is **required to be implemented**.
     - `--length <number>`: specifies the length of the password.
     - `--lowercase`: include lowercase letters in the password.
+    - `--uppercase`: include lowercase letters in the password.
     - `--numbers`: include numbers in the password.
   - If no `--length` flag is provided, default the password length to 8.
-  - If neither `--lowercase` nor `--numbers` is provided, default to including lowercase letters.
+  - If none of `--uppercase`, `--lowercase` or `--numbers` are provided, default to just including lowercase letters.
   - The application should handle invalid input gracefully, displaying an informative error message rather than crashing.
 
 ### Testing  
@@ -74,13 +77,6 @@ Note: This code has been provided as a starting point for you to work from. It i
 ### Git Hygiene  
 - Regularly commit changes with meaningful messages.
 - Do not commit unnecessary files such as `node_modules` or temporary files.
-
-### Extra Files  
-- Your project must include:
-  - `README.md` explaining:
-    - The purpose of the application.
-    - How to use it.
-    - How to run the tests.
 
 ## Submission Guidelines  
 
@@ -100,7 +96,7 @@ Note: This code has been provided as a starting point for you to work from. It i
 | &nbsp;&nbsp;&nbsp;&nbsp;Default Length Behavior      | Defaults to 8 when no length is provided.                                          | 5       |
 | &nbsp;&nbsp;&nbsp;&nbsp;Default Character Behavior   | Defaults to lowercase when no character flags are provided.                        | 5       |
 | &nbsp;&nbsp;&nbsp;&nbsp;Invalid Input Handling       | Handles invalid input with clear error messages.                                   | 5       |
-| &nbsp;&nbsp;&nbsp;&nbsp;Character Flags              | Correctly implements `--lowercase` and `--numbers` flags.                          | 15      |
+| &nbsp;&nbsp;&nbsp;&nbsp;Character Flags              | Correctly implements `--uppercase`, `--lowercase` and `--numbers` flags.                          | 15      |
 | **Testing**                                          |                                                                                    | **20**  |
 | &nbsp;&nbsp;&nbsp;&nbsp;Test Coverage                | Adequate tests written for `generatePassword` covering different scenarios.        | 15      |
 | &nbsp;&nbsp;&nbsp;&nbsp;All Tests Passing            | All tests pass successfully.                                                       | 5       |
