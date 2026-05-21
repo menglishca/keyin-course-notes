@@ -157,7 +157,7 @@ Input validation must be applied where appropriate (e.g., unknown IDs, unrecogni
 - Ensure the application runs correctly (`npm start`) and all features are implemented.
 - Ensure all tests pass (`npm test`).
 - Submit a **GitHub repository link** on Teams (only one team member needs to submit).
-- Late submissions follow the Keyin late assessment policy [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD15Jan.2026-Apr.20262/IQB27M_3TuM7R4CffHQTsbiYAThObHy9b2Ta1SriDyA45k4?e=npqFCu).
+- Late submissions follow the Keyin late assessment policy [here](https://keyincollege289.sharepoint.com/:b:/s/SD-FullstackDevelopment-Spring20262/IQCw60ZkAlOWTLI1y9i44-UgAQhefH_8tyxuTdTAAkKMNsc?e=Wk32At).
 - If an extension is needed, please reach out before the due date.
 - **Teams can be a maximum of 3 members**
 

@@ -121,7 +121,7 @@ Input validation must be applied where appropriate (e.g., unknown destinations, 
 - Ensure the application runs correctly using `npm start`, and all features are implemented as specified.
 - Ensure all tests pass using `npm test`.
 - Submit your GitHub repository **link** on Teams under the appropriate assignment.
-- **Late submissions** will follow [Keyin's late assessment policy](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD15Jan.2026-Apr.20262/IQB27M_3TuM7R4CffHQTsbiYAThObHy9b2Ta1SriDyA45k4?e=npqFCu).
+- **Late submissions** will follow [Keyin's late assessment policy](https://keyincollege289.sharepoint.com/:b:/s/SD-FullstackDevelopment-Spring20262/IQCw60ZkAlOWTLI1y9i44-UgAQhefH_8tyxuTdTAAkKMNsc?e=Wk32At).
 - If an extension is needed, please reach out before the due date.
 
 ## Notes/Questions

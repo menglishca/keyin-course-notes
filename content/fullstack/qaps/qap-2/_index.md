@@ -106,7 +106,7 @@ You are free to add additional endpoints (e.g., to get a weekly summary) if you 
 
 - Ensure the app runs with `npm start`.
 - Submit the assignment by providing the link to your GitHub Classroom repository on Teams under the appropriate assignment.
-- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD15Jan.2026-Apr.20262/IQB27M_3TuM7R4CffHQTsbiYAThObHy9b2Ta1SriDyA45k4?e=npqFCu) 
+- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/SD-FullstackDevelopment-Spring20262/IQCw60ZkAlOWTLI1y9i44-UgAQhefH_8tyxuTdTAAkKMNsc?e=Wk32At) 
   - If an extension is needed, please reach out to me directly before the assignment due date.
 
 ## Grading Rubric

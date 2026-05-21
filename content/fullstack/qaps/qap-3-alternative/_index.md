@@ -84,7 +84,7 @@ Build a user management system using Express and EJS. Allow new users to registe
 - Submissions should be made on Teams under the appropriate assignment
 - Submissions should **only** include a link to your github repository which contains the complete code for the assignment
     - The repository used should be the private one in the github classroom, public repositories from your personal account should not be submitted.
-- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD15Jan.2026-Apr.20262/IQB27M_3TuM7R4CffHQTsbiYAThObHy9b2Ta1SriDyA45k4?e=npqFCu) 
+- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/SD-FullstackDevelopment-Spring20262/IQCw60ZkAlOWTLI1y9i44-UgAQhefH_8tyxuTdTAAkKMNsc?e=Wk32At) 
   - If an extension is needed, please reach out to me directly before the assignment due date.
 
 

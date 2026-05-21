@@ -69,7 +69,7 @@ Your database must support the following:
 - Diagrams do not have to be any standard form, as long as the data is present and readable. A tool like: [https://dbdiagram.io](https://dbdiagram.io) may help, but is not required. Something as simple as pictures of a hand drawn diagram are totally okay
 - Submissions should be made on Teams via the appropriate assignment
 - Submissions should **only** include your PDF file
-- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD15Jan.2026-Apr.20262/IQB27M_3TuM7R4CffHQTsbiYAThObHy9b2Ta1SriDyA45k4?e=npqFCu)
+- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/SD-FullstackDevelopment-Spring20262/IQCw60ZkAlOWTLI1y9i44-UgAQhefH_8tyxuTdTAAkKMNsc?e=Wk32At)
   - If an extension is needed please reach out before the due date
 
 ## Pass Outstanding Criteria

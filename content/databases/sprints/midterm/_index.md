@@ -90,7 +90,7 @@ You must provide PostgreSQL queries to:
 - **Test your queries on pgAdmin before submission**.
 - Submissions must be made on **Teams** under the appropriate assignment.
 - **Only submit your GitHub repository link**—do not attach files separately.
-- Late submissions follow the **Keyin late assessment policy** [found here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD15Jan.2026-Apr.20262/IQB27M_3TuM7R4CffHQTsbiYAThObHy9b2Ta1SriDyA45k4?e=npqFCu).
+- Late submissions follow the **Keyin late assessment policy** [found here](https://keyincollege289.sharepoint.com/:b:/s/SD-FullstackDevelopment-Spring20262/IQCw60ZkAlOWTLI1y9i44-UgAQhefH_8tyxuTdTAAkKMNsc?e=Wk32At).
 - If an extension is needed, please reach out before the due date.
 
 ## Notes

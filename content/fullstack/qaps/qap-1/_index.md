@@ -12,7 +12,7 @@ May 28th, {{< year >}}, at 11:59 PM
 
 ## Getting Started  
 
-To help you get started, a [base repository](https://classroom.github.com/a/iQ5c4iyI) has been provided for you to work from. The repository is set up as a GitHub Assignment to help you quickly get started.  
+To help you get started, a [base repository](https://classroom.github.com/a/2MqVnvOE) has been provided for you to work from. The repository is set up as a GitHub Assignment to help you quickly get started.  
 
 ### Steps to Create Your Own Repository  
 
@@ -83,7 +83,7 @@ Note: This code has been provided as a starting point for you to work from. It i
 - Ensure all code runs correctly and meets the requirements.  
 - Submissions should be made on Teams under the appropriate assignment.  
 - Submissions should **only** include a link to your GitHub repository containing the completed code for your QAP.  
-- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/FullstackJavascript-SD15Jan.2026-Apr.20262/IQB27M_3TuM7R4CffHQTsbiYAThObHy9b2Ta1SriDyA45k4?e=npqFCu)  
+- Submissions are subject to the Keyin late assessment policy found [here](https://keyincollege289.sharepoint.com/:b:/s/SD-FullstackDevelopment-Spring20262/IQCw60ZkAlOWTLI1y9i44-UgAQhefH_8tyxuTdTAAkKMNsc?e=Wk32At)  
 - If an extension is required, please contact me directly before the due date.  
 
 ## Grading Rubric  
@@ -105,8 +105,6 @@ Note: This code has been provided as a starting point for you to work from. It i
 | &nbsp;&nbsp;&nbsp;&nbsp;No Unnecessary Files         | No unnecessary files (e.g., `node_modules`) committed.                             | 5       |
 | **Code Quality**                                     |                                                                                    | **10**  |
 | &nbsp;&nbsp;&nbsp;&nbsp;Readability and Structure    | Code is well-organized, follows a clear structure, and uses appropriate style.     | 10      |
-| **Project Structure**                                |                                                                                    | **5**   |
-| &nbsp;&nbsp;&nbsp;&nbsp;README.md                    | Includes clear description, usage instructions, and test instructions.             | 5       |
-| **Total Points**                                     |                                                                                    | **100** |
+| **Total Points**                                     |                                                                                    | **90** |
 
 Good luck! If you have any questions, please don't hesitiate to ask!
