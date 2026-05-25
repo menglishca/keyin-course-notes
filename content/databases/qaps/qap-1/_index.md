@@ -9,8 +9,8 @@ Design a relational database schema based on a given scenario and demonstrate an
 - Designing tables that are normalized to Third Normal Form (3NF)
 - Explaining the benefits of using a database to manage the data
 
-### Due Date
-**January 26th, 2026 at 11:59PM**
+**Due Date**
+June 1st, {{< year >}}, at 11:59 PM
 
 ## Scenario
 The platform sells tickets for events such as concerts, comedy shows, and talks. Customers can purchase tickets for events, and events may feature multiple performers.
