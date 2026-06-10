@@ -6,10 +6,10 @@ cascade:
 
 ## Objective
 Complete both provided problems below, make sure to include all SQL to create the tables, insert the data and perform all queries.  
-**Due date: February 16th, 2025 at 11:59PM**
+**Due date: June 17th, {{< year >}} at 11:59PM**
 
 ## Getting Started
-- To help you get started, a [base repository](https://classroom.github.com/a/rDPZXj3z) has been provided for you to work from. The repository is set up as a **GitHub Assignment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/Zy8WDHH5) has been provided for you to work from. The repository is set up as a **GitHub Assignment** to help you quickly get started.
 
 ### Steps to Create Your Own Repository  
 
@@ -135,6 +135,7 @@ You are developing a system to manage products, customers, and their orders in a
   - The creation of all required tables
   - The insertion of all required data
   - All the tasks listed above for both problems
+  - The github repo should be from the Github classroom, not from your personal account
 - One script/file per problem is fine, or feel free to break it into multiple scripts if you'd prefer
 - It is recommended to test your queries and manipulations on pgAdmin to ensure things work correctly
 - Submissions should be made on Teams under the appropriate assignment
