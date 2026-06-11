@@ -7,7 +7,7 @@ cascade:
 ### Objective
 Build a small REST API with Express that lets a user manage daily habits (e.g., “Drink Water”, “Exercise”). The app should have full CRUD endponts with proper input validation and error handling.
 
-**Due date: February 17th, 2026 at 11:59PM**
+**Due date: June 18th, {{< year >}} at 11:59PM**
 
 ### Getting Started
 - To help you get started, a [base repository](https://classroom.github.com/a/lqboCF2-) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
