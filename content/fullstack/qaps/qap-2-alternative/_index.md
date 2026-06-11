@@ -12,7 +12,7 @@ Complete the provided Express application to practice simple math questions. Use
 **Due date: February 14th, 2025 at 11:59PM**
 
 ### Getting Started
-- To help you get started, a [base repository](https://classroom.github.com/a/Tw9ktGPW) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/eKGb5Eyx) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
 
 ### Steps to Create Your Own Repository
 

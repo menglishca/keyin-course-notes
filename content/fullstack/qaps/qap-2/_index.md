@@ -10,7 +10,7 @@ Build a small REST API with Express that lets a user manage daily habits (e.g., 
 **Due date: June 18th, {{< year >}} at 11:59PM**
 
 ### Getting Started
-- To help you get started, a [base repository](https://classroom.github.com/a/lqboCF2-) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/eKGb5Eyx) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
 
 #### Steps to Create Your Own Repository
 1. Click the GitHub Classroom assignment link and choose your name.  
