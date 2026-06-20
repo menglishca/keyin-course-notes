@@ -34,7 +34,7 @@ Create a database for a library management system that tracks members, books, an
 - Each borrowing record represents one instance of a member borrowing a book.
 
 ## Repository Setup
-A [base repository](https://classroom.github.com/a/dH7z_KBv) is provided as a **GitHub Assignment**.
+A [base repository](https://classroom.github.com/a/FEHIJ8ar) is provided as a **GitHub Assignment**.
 
 ### Setting Up Your Repository
 1. Click the link above and select your name on the list.
