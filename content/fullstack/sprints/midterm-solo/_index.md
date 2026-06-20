@@ -6,10 +6,10 @@ cascade:
 
 ## Objective
 Complete the provided Express application **independently** to generate fictional travel itineraries.
-**Due date: March 7th, 2026 at 11:59PM**
+**Due date: July 4th, {{< year >}}, at 11:59 PM**
 
 ### Getting Started
-- To help you get started, a [base repository](https://classroom.github.com/a/ylihB2hU) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
+- To help you get started, a [base repository](https://classroom.github.com/a/4pfX9bQg) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
 
 ### Steps to Create Your Own Repository
 

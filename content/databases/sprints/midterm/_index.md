@@ -4,93 +4,112 @@ cascade:
   type: docs
 ---
 
-## Objective 
-Individually design a database and its tables, verify tables are in **3NF**, perform queries on the database, and implement a **CLI application** to interact with it.
-**Due date: March 7th, 2026, at 11:59 PM**
+## Objective
+Individually design a database for a **Library Management System**, verify the tables are in **3NF**, and perform queries using PostgreSQL.  
+**Due date: July 4th, {{< year >}}, at 11:59 PM**
 
 ## Problem Statement
-Create a database for a **conference event management system** that keeps track of speakers, attendees, and event sessions. Your database needs to be able to store the following:
+Create a database for a library management system that tracks members, books, and borrowings.
 
-### Speakers
-- The speaker’s first name
-- The speaker’s last name
-- The speaker’s email address
-- The topic they specialize in
+### Members
+- First name
+- Last name
+- Email address
+- Membership type (e.g., Student, Faculty, Public)
 
-### Attendees
-- The attendee’s first name
-- The attendee’s last name
-- The attendee’s email address
-- The organization they represent (if any)
+### Books
+- Title
+- Author
+- ISBN
+- Genre
 
-### Sessions
-- The session title
-- The speaker presenting the session
-- The date and time of the session
-- The attendees registered for the session
+### Borrowings
+- Member who borrowed the book
+- Book borrowed
+- Borrow date
+- Due date
+- Return date (nullable)
 
 #### Hints/Notes
-- You *shouldn't* need more than three or four tables
-- Consider how to handle **many-to-many relationships** (e.g., an attendee can register for multiple sessions)
+- Each borrowing record represents one instance of a member borrowing a book.
 
 ## Repository Setup
-- To help you get started, a [base repository](https://classroom.github.com/a/dH7z_KBv) has been provided for you to work from. The repository is set up as a **GitHub Assigment** to help you quickly get started.
+A [base repository](https://classroom.github.com/a/dH7z_KBv) is provided as a **GitHub Assignment**.
 
 ### Setting Up Your Repository
-1. Click the link above, and select your name on the list that appears, if you haven't already
-2. Clone Your Repository:
+1. Click the link above and select your name on the list.
+2. Clone your repository:
    ```bash
    git clone <your-new-repo-url>
    cd <your-new-repo-name>
    ```
-3. Inside the repository, you will find:
-   - The `sql-queries/` folder for your SQL queries and 3NF explanation.
-   - The `cli-app/` folder containing a skeleton for your CLI application.
-4. Follow the instructions in the README inside the repository for further guidance.
+3. Inside the repository you will find:
+   - The `sql-queries/` folder for your SQL queries and normalization explanations.
+   - The `README.md` for further guidance.
+4. Follow the instructions in the README for further setup details.
 
 ## Requirements
 
 ### PostgreSQL Queries
-You must provide PostgreSQL queries to:
-- **Create the tables**
-- **Insert sample data** into the tables, including:
-  - At least **5 speakers**
-  - At least **10 attendees**
-  - At least **7 sessions**
-  - At least **15 attendee registrations**
+You must write and test PostgreSQL queries to:
+
+- **Create the tables** with appropriate primary keys, foreign keys, and constraints.
+- **Insert sample data** meeting these minimums:
+  - At least **5 members**
+  - At least **10 books**
+  - At least **15 borrowings**
+
 - **Solve the following queries**:
-  1. Find all sessions a specific attendee is registered for (given their email).
-  2. Given a session title, list all attendees registered for that session.
-  3. Retrieve the schedule (title, time, and speaker) for all sessions presented by a specific speaker.
-  4. Find all attendees attending at least one session from a specific speaker.
-  5. List all sessions occurring on a specific date
+  1. Find all books borrowed by a specific member (given their email).
+  2. Find all books borrowed by members of a specific membership type (e.g., all books borrowed by 'Student' members).
+  3. Find all members who have borrowed a book by a specific author (e.g., all members who borrowed a book by 'George Orwell').
+  4. Update a member's email address.
+  5. Remove a specific borrowing record from the database.
 
-### Normalization.
-- Explain how the tables (created using the previous queries) are each in **3NF**.
-- This explanation should be included in `sql-queries/normalization-explanation.txt`.
+### Normalization
 
-### CLI Application 
-- The `cli-app/` folder contains a **skeleton/template** for your CLI application.
-- The app should be able to:
-  - **Create all required tables**, if they do not exist.
-  - Support and argument to **show all sessions** available in the system.
-  - Support and argument to **update an attendee’s email address**.
-  - Support and argument to **insert a new session** into the database.
-  - Support and argument to **remove an attendee** from the system.
-- Instructions on how to **run the CLI application** are in the `README.md` inside the repository.
+#### 3NF Explanation
+Explain how your tables (Members, Books, Borrowings) meet **3NF**.
+Include this in `sql-queries/normalization-explanation.txt`.
 
-## Pass Outstanding Criteria 
-- Achieve a **grade of 85% or above**.
+#### Denormalization Exercise
+You are given a single table called `BorrowingRecord` with the following columns, your task is to:
+1. **Identify** which normal form it violates (it is **not** in 3NF).
+2. **Explain** why the table is not normalized.
+3. **Design normalized tables** (in 3NF) from this denormalized table.
+4. **Write CREATE TABLE statements** for the normalized tables.
+5. **Explain** why the normalized tables are each in 3NF.
+
+Columns:
+  - `borrowing_id` — unique identifier for each borrowing record
+  - `member_id` — unique identifier for the member
+  - `member_first_name` — the member's first name
+  - `member_last_name` — the member's last name
+  - `member_email` — the member's email address
+  - `membership_type` — the member's membership type (e.g., Student, Faculty, Public)
+  - `book_id` — unique identifier for the book
+  - `book_title` — the book's title
+  - `book_author` — the book's author
+  - `book_isbn` — the book's ISBN
+  - `book_genre` — the book's genre
+  - `borrow_date` — the date the book was borrowed
+  - `due_date` — the date the book is due back
+  - `return_date` — the date the book was returned (nullable)
+
+Include this in `sql-queries/denormalization-exercise.txt`.
+
+## Pass Outstanding Criteria
+Achieve a **grade of 85% or above**.
 
 ## Submission Guidelines
 - Submit your **GitHub repository link** containing:
-  - **A file (or multiple files) with all PostgreSQL queries** outlined above.
-  - **The CLI application code**.
-  - **A document explaining how your tables meet 3NF**.
-- **Test your queries on pgAdmin before submission**.
+  - A file (or multiple files) with all PostgreSQL queries outlined above.
+  - A document explaining how your tables meet 3NF.
+  - The denormalization exercise results.
+- **Test your queries on pgAdmin or your VS Code PostgreSQL extension** before submission.
 - Submissions must be made on **Teams** under the appropriate assignment.
-- **Only submit your GitHub repository link**—do not attach files separately.
-- Late submissions follow the **Keyin late assessment policy** [found here](https://keyincollege289.sharepoint.com/:b:/s/SD-FullstackDevelopment-Spring20262/IQCw60ZkAlOWTLI1y9i44-UgAQhefH_8tyxuTdTAAkKMNsc?e=Wk32At).
+- **Only submit your GitHub repository link** — do not attach files separately.
+- Late submissions follow the [Keyin late assessment policy](https://keyincollege289.sharepoint.com/:b:/s/SD-FullstackDevelopment-Spring20262/IQCw60ZkAlOWTLI1y9i44-UgAQhefH_8tyxuTdTAAkKMNsc?e=Wk32At).
 - If an extension is needed, please reach out before the due date.
 
 ## Notes
@@ -101,21 +120,25 @@ You must provide PostgreSQL queries to:
 
 ## Grading Rubric
 
-| Category                                                       | Criteria                                                                                   | Points  |
-|----------------------------------------------------------------|--------------------------------------------------------------------------------------------|---------|
-| **CLI Functionality**                                          |                                                                                            | **30**  |
-| &nbsp;&nbsp;&nbsp;&nbsp;CLI Table Creation                     | CLI creates the tables if not present                                                      | 5       |
-| &nbsp;&nbsp;&nbsp;&nbsp;CLI Data Management                    | Sessions can be inserted, deleted, updated and displayed                                   | 25      |
-| **PostgreSQL Queries**                                         |                                                                                            | **45**  |
-| &nbsp;&nbsp;&nbsp;&nbsp;Database Setup                         | Tables are created and populated correctly with sample data                                | 10      |
-| &nbsp;&nbsp;&nbsp;&nbsp;Find Sessions or Attendees             | Query to retrieve sessions for an attendee, attendees for a session and sessions on a date | 15      |
-| &nbsp;&nbsp;&nbsp;&nbsp;Speaker Session Schedule Query         | Query retrieves all sessions presented by a specific speaker                               | 10      |
-| &nbsp;&nbsp;&nbsp;&nbsp;Attendees of a Speaker's Session Query | Query retrieves attendees of at least one session by a given speaker                       | 10      |
-| **Normalization**                                              |                                                                                            | **5**   |
-| &nbsp;&nbsp;&nbsp;&nbsp;3NF Explanation                        | Correct explanation of how all tables meet 3NF                                             | 5       |<!-- collapsed -->
-| **Code Quality**                                               |                                                                                            | **10**  |
-| &nbsp;&nbsp;&nbsp;&nbsp;Readability                            | Code is clean, consistent, logically organized and uses readable naming                    | 5       |
-| &nbsp;&nbsp;&nbsp;&nbsp;SQL Syntax                             | Queries and commands are written with clear, correct SQL syntax.                           | 5       |<!-- collapsed -->
-| **Git Hygiene**                                                |                                                                                            | **10**  |
-| &nbsp;&nbsp;&nbsp;&nbsp;Commit Frequency                       | Frequent, meaningful commits throughout development with clear descriptive messages        | 10      |
-| **Total Points**                                               |                                                                                            | **100** |
+| Category | Criteria | Points |
+|---|---|---|
+| **Database Setup & Sample Data** | | **15** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Table Design | Tables created correctly with appropriate primary keys, foreign keys, and constraints | 5 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Sample Data | At least 5 members, 10 books, and 15 borrowings inserted | 10 |
+| **SQL Queries** | | **30** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Query 1 | Find all books borrowed by a specific member (given their email) | 6 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Query 2 | Find all books borrowed by members of a specific membership type | 6 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Query 3 | Find all members who have borrowed a book by a specific author | 6 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Query 4 | Update a member's email address | 6 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Query 5 | Remove a specific borrowing record from the database | 6 |
+| **Normalization** | | **40** |
+| &nbsp;&nbsp;&nbsp;&nbsp;3NF Explanation | Correct explanation of why own tables meet 3NF | 15 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Denormalization Exercise | Identifies violations, creates normalized tables, and explains why they are in 3NF | 25 |
+| **Code Quality** | | **10** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Readability | Code is clean, consistent, and logically organized | 5 |
+| &nbsp;&nbsp;&nbsp;&nbsp;SQL Syntax | Queries and commands are written with correct SQL syntax | 5 |
+| **Git Hygiene** | | **5** |
+| &nbsp;&nbsp;&nbsp;&nbsp;Commit Frequency | Frequent, meaningful commits with clear descriptive messages | 5 |
+| **Total Points** | | **100** |
+
+Good luck! If you have any questions, please don't hesitiate to ask!
